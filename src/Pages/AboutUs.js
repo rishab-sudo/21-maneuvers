@@ -1,6 +1,5 @@
 import React,{useState, useEffect} from 'react'
 import { Container,Row, Col } from 'react-bootstrap'
-import { ChevronDown, ChevronUp } from 'lucide-react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation } from 'swiper/modules';
 import 'swiper/css';
