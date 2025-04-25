@@ -49,10 +49,8 @@ const faqData = [
     return <h3>{count}+</h3>;
   };
 const About = () => {
-      const [activeIndex, setActiveIndex] = useState(null);
-    
-      
-      // const toggleFAQ = (index) => {
+      // const [activeIndex, setActiveIndex] = useState(null);
+     // const toggleFAQ = (index) => {
       //   setActiveIndex(index === activeIndex ? null : index);
       // };
   return (
