@@ -52,9 +52,9 @@ const About = () => {
       const [activeIndex, setActiveIndex] = useState(null);
     
       
-      const toggleFAQ = (index) => {
-        setActiveIndex(index === activeIndex ? null : index);
-      };
+      // const toggleFAQ = (index) => {
+      //   setActiveIndex(index === activeIndex ? null : index);
+      // };
   return (
     <>
     <Container fluid style={{paddingTop:"5%",paddingBottom:"5%",background:""}}>
