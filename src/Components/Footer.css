@@ -1,0 +1,76 @@
+.footer-container-fluid {
+    width: 100%;
+    height: fit-content;
+    background-color: #000;
+}
+.footer-container-overlay{
+    padding: 6% 10px;
+color: #fff;
+    text-align: left;
+}
+.footer-center2-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+   margin: auto;
+   width: 80%;
+}
+
+.footer-newsletter-form {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.footer-input-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.footer-email-input {
+    width: 100%;
+    padding: 8px 70px 8px 12px; /* space for the button on the right */
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.footer-signup-button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: 0px;
+    color: #000;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0;
+}
+
+.footer-checkbox-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.footer-checkbox {
+    margin-top: 5px;
+}
+.error-box{
+    background-color: rgba(255, 8, 0, 0.427);
+    width: 100%;
+    height: fit-content;
+    padding: 15px 10px;
+    margin-top: 5px;
+}
+.footer-error-text {
+    color: rgba(255, 0, 0, 0.471);
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* mobile-view */
+@media (max-width: 767px) {
+
+
+}

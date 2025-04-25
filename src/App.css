@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
+body.light {
+  background-color: #fff;
+  color: #000;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body.dark {
+  background-color: #121212;
+  color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Example: override sections if needed */
+.navbar, .footer {
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark .navbar{
+  background-color: transparent;
+  color: #fff;
+}
+body.dark .navbar.scrolled {
+  background-color: #0000005a;
+}
+
+
+/* LIGHT THEME - default */
+body.light .logo {
+  color: #fff;
+}
+
+body.light .hamburger span {
+  background: #fff;
+}
+body.light .navbar.scrolled .logo {
+  color: #000;
+}
+
+body.light .navbar.scrolled .hamburger span {
+  background: #000;
+}
+
+/* DARK THEME - override */
+body.dark .logo {
+  color: #fff;
+}
+
+body.dark .hamburger span {
+  background: #fff;
+}
+
+/* Optional: Also ensure when navbar is scrolled */
+body.dark .navbar.scrolled .logo {
+  color: #fff;
+}
+
+body.dark .navbar.scrolled .hamburger span {
+  background: #fff;
+}
+/* Apply black background when menu is open, in any theme */
+.navbar.menu-open {
+  background-color: rgba(20, 20, 20, 0.98) !important;
+}
+
+/* Ensure logo and hamburger lines are visible (white) on black */
+.navbar.menu-open .logo {
+  color: #fff !important;
+}
+
+.navbar.menu-open .hamburger span {
+  background: #fff !important;
+}
+/* footer */
+body.dark .footer {
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+/* website-font-css */
+.page_heading{
+  font-size: 38px;
+  font-weight: 600;
+}
+.page_main_heading{
+  font-size: 48px;
+  font-weight: 700;
+  font-family: 'DM Sans', sans-serif !important;
+}
+.page_text{
+  font-size: 17px;
+  font-family: 'DM Sans', sans-serif !important;
+}
+.page_main_heading {
+
+}
+
+/*  */
+@media screen and (max-width: 768px) {
+  .page_heading{
+    font-size: 20px;
+    font-weight: 600;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .page_main_heading{
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'DM Sans', sans-serif !important;
   }
-  to {
-    transform: rotate(360deg);
+  .page_text{
+    font-size: 14px;
+    font-family: 'DM Sans', sans-serif !important;
   }
 }

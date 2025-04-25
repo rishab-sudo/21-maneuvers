@@ -1,0 +1,66 @@
+.separate-container-fluid{
+    width: 100%;
+    height: fit-content;
+    padding: 5% 0px;
+    background-color: rgba(211, 211, 211, 0.078);
+}
+.separate-content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    text-align: left;
+  }
+  
+  .separate-right-section {
+    width: 50%;
+  }
+  
+  .award-imgs-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+  }
+  
+  .award-img-div {
+    flex: 0 0 calc(33.33% - 13.33px); /* 3 items in a row with gap */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.033);
+    color: aliceblue;
+
+  }
+  
+  .award-img-div img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  
+  /* ✅ For tablets and smaller: 2 items per row */
+  @media screen and (max-width: 768px) {
+    .separate-content-container {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  
+    .separate-right-section {
+      width: 100%;
+    }
+  
+    .award-img-div {
+      flex: 0 0 calc(50% - 10px); /* 2 items per row with gap */
+    }
+  }
+  
+  /* ✅ For very small screens: 1 item per row */
+  @media screen and (max-width: 480px) {
+    .award-img-div {
+      flex: 0 0 100%;
+    }
+  }
+  
