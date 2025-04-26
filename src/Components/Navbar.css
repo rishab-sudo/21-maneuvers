@@ -176,7 +176,7 @@
   }
   
   .menu-links a {
-    font-size: 50px;
+    font-size: 60px;
     font-weight: 600;
     color: #fff;
     text-decoration: none;
@@ -206,7 +206,7 @@
   
  
   .menu-links a.active {
-    color: #e30613; 
+    color: #e30613 !important; 
     -webkit-text-stroke: 0;
   }
   

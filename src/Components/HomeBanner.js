@@ -75,7 +75,7 @@ const HeroBanner = () => {
             <div className="top-row">
               <div className="center-box">
                 <h5 className='banner-subheading'>{slide.subheading}</h5>
-                <h1>{slide.heading}</h1>
+                <h1 style={{fontWieght:"500"}}>{slide.heading}</h1>
               </div>
               <div className="right-box">
                 <p>Ignite Your Brand's Potential Online.</p>
