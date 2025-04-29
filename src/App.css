@@ -9,14 +9,16 @@ body.dark {
 }
 
 /* Example: override sections if needed */
-.navbar, .footer {
+.navbar,
+.footer {
   transition: background 0.3s, color 0.3s;
 }
 
-body.dark .navbar{
+body.dark .navbar {
   background-color: transparent;
   color: #fff;
 }
+
 body.dark .navbar.scrolled {
   background-color: #0000005a;
 }
@@ -30,6 +32,7 @@ body.light .logo {
 body.light .hamburger span {
   background: #fff;
 }
+
 body.light .navbar.scrolled .logo {
   color: #000;
 }
@@ -55,6 +58,7 @@ body.dark .navbar.scrolled .logo {
 body.dark .navbar.scrolled .hamburger span {
   background: #fff;
 }
+
 /* Apply black background when menu is open, in any theme */
 .navbar.menu-open {
   background-color: rgba(20, 20, 20, 0.98) !important;
@@ -68,6 +72,7 @@ body.dark .navbar.scrolled .hamburger span {
 .navbar.menu-open .hamburger span {
   background: #fff !important;
 }
+
 /* footer */
 body.dark .footer {
   background-color: #1f1f1f;
@@ -75,35 +80,38 @@ body.dark .footer {
 }
 
 /* website-font-css */
-.page_heading{
+.page_heading {
   font-size: 38px;
   font-weight: 600;
 }
-.page_main_heading{
+
+.page_main_heading {
   font-size: 48px;
   font-weight: 700;
   font-family: 'DM Sans', sans-serif !important;
 }
-.page_text{
+
+.page_text {
   font-size: 17px;
   font-family: 'DM Sans', sans-serif !important;
 }
-.page_main_heading {
 
-}
+.page_main_heading {}
 
 /*  */
 @media screen and (max-width: 768px) {
-  .page_heading{
+  .page_heading {
     font-size: 20px;
     font-weight: 600;
   }
-  .page_main_heading{
+
+  .page_main_heading {
     font-size: 25px;
     font-weight: 700;
     font-family: 'DM Sans', sans-serif !important;
   }
-  .page_text{
+
+  .page_text {
     font-size: 14px;
     font-family: 'DM Sans', sans-serif !important;
   }

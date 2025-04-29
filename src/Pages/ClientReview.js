@@ -18,7 +18,7 @@ const ClientReview = () => {
       name: "Liam Carter",
       title: "CTO, TechNova",
       image: require("../assets/client-21.jpg"),
-           text: "From our first call to the final product launch, the team was incredibly responsive, creative, and technically sharp. They understood our business needs and transformed them into a digital experience that truly stands out."
+      text: "From our first call to the final product launch, the team was incredibly responsive, creative, and technically sharp. They understood our business needs and transformed them into a digital experience that truly stands out."
     },
     {
       name: "Ava Johnson",

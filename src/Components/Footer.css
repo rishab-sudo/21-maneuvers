@@ -4,7 +4,7 @@
     background-color: #000;
 }
 .footer-container-overlay{
-    padding: 6% 10px;
+    padding: 6.5% 10px;
 color: #fff;
     text-align: left;
 }
@@ -71,6 +71,9 @@ color: #fff;
 
 /* mobile-view */
 @media (max-width: 767px) {
-
-
-}
+    .footer-center2-section{
+   justify-content: flex-start !important;
+    margin: auto;
+    width: 100%;
+    }
+ }
