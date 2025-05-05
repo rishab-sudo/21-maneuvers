@@ -1,105 +1,325 @@
-import React from 'react'
-import { Container } from 'react-bootstrap'
-import "./SeoService.css"
+import React,{useEffect,useState,useRef} from "react";
+import { Link } from 'react-router-dom';
+import { Container, Row, Col, Carousel } from "react-bootstrap";
+import CountUp from 'react-countup';
+import ImageSwiper from '../Components/ImageSlider';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Autoplay, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
 
+import "./SeoService.css";
+import ServiceSlider from "../Components/ServiceSlider";
+
+const benefits = [
+  {
+    title: "Focus on what matters",
+    desc: "Every org has its limits, whether that’s budget, resources, time, or all 3. We know how to identify the 5% of SEO work that generates 95% of the results so you only focus on what matters.",
+  },
+  {
+    title: "Streamlined Strategy",
+    desc: "We develop SEO plans that align with your business goals and focus only on tactics that deliver real growth.",
+  },
+  {
+    title: "Scalable Execution",
+    desc: "From audits to implementation, we handle SEO at scale, letting your team focus on big-picture growth.",
+  },
+  {
+    title: "Data-Driven Decisions",
+    desc: "Our insights and reporting help prioritize SEO actions based on impact, not assumptions.",
+  },
+  {
+    title: "Data-Driven Decisions",
+    desc: "Our insights and reporting help prioritize SEO actions based on impact, not assumptions.",
+  },
+];
+const slideData = [
+  { image: require("../assets/seo-img.png"), tagline: 'Boosts Visibility' },
+  { image: require("../assets/seo-img.png"), tagline: 'Drives Traffic' },
+  { image: require("../assets/seo-img.png"), tagline: 'Builds Trust' },
+  { image:require("../assets/seo-img.png"), tagline: 'Cost-Effective' },
+  { image: require("../assets/seo-img.png"), tagline: 'Better Experience' },
+];
 const SeoService = () => {
+
+
   return (
     <>
-      <Container fluid className="seo-service-container-fluid g-0">
-        <Container className='seo-top-content-container'>
-          <div className='seo-service-top-section g-0'>
-            <div>
-              <img className='seo-img' src={require("../assets/slide21.jpg")} alt="Seo-Service" />
-            </div>
+    {/* seo-banner-starts */}
+    <div className="seo-section">
+   
+      <Carousel fade controls={false} indicators={false} interval={3000} className="seo-carousel">
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="https://via.placeholder.com/1920x1080/000000/FFFFFF?text=Slide+1"
+            alt="Slide 1"
+          />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="https://via.placeholder.com/1920x1080/111111/FFFFFF?text=Slide+2"
+            alt="Slide 2"
+          />
+        </Carousel.Item>
+      </Carousel>
 
-            <div>
-              <p className='page_text'>
-                Search Engine Optimization (SEO) 🔍 – The Foundation of Digital Growth
-                In today’s competitive digital space, *being found on Google is everything*. SEO isn’t just about rankings — it’s about visibility, credibility, and consistent lead generation without spending on ads.
-                At our agency, we focus on *proven strategies* that help your website rank higher, attract the right audience, and convert visitors into customers.
+      {/* Foreground Content */}
+      <Container  className="seo-content">
+        <div className="top-left">
+          <p className="seo-subtitle">Everything you need</p>
+          <p className="seo-title">to outshine with SEO</p>
+        </div>
+        <div className="bottom-right">
+          <p className="seo-description">Unlock repeatable SEO revenue growth with Graphite’s experience, services and tools.</p>
+          <button className="seo-button">Click</button>
+        </div>
+      </Container>
+    </div>
+{/* seo-banner-ends */}
+
+{/* seo-benefits */}
+    <ServiceSlider benefits={benefits} />
+{/*  */}
+
+{/* seo-growth-sec */}
+    <Container fluid className="growth-section">
+<Container className="growth-content-container">
+  <div className="underline "></div>
+  <p className="page_text">Graphite Growth boosted Webflow’s SEO with a targeted editorial strategy, strategic optimizations, and new page types like glossaries, listicles, and free tools.</p>
+
+  <Row>
+<Col lg={4} md={4} sm={12}>
+<div>
+  <p className="page_text"> IMpressions</p>
+  <div className="dotted-line"></div>
+  <p className="growth-number">
+                + <CountUp start={1} end={17} duration={3} separator="," suffix=" M" decimals={1} />
               </p>
             </div>
-          </div>
+          </Col>
 
-          <div>
-            <p className='page_heading'>Why SEO is Important: </p>
-            <p> 93% of online experiences begin with a search engine.</p>
-            <p> 75% of users never scroll past the first page of results.</p>
-            <p> Organic traffic brings *trust* and *long-term ROI*.</p>
-          </div>
-          <br />
-          <div className='we-do-div'>
-            <p className='page_heading'>What We Do in SEO:</p>
-            <p> ✅ Technical SEO & Site Audits  </p>
-            <p> ✅ Keyword Research & Strategy  </p>
-            <p> ✅ On-Page Optimization </p>
-            <p> ✅ High-Quality Link Building  </p>
-            <p> ✅ Local SEO & Google Business Profile  </p>
-            <p> ✅ Content Planning & Blog Strategy  </p>
-            <p> ✅ Monthly Reporting & Improvements </p>
-          </div>
+          <Col lg={4} md={4} sm={12}>
+            <div>
+              <p className="page_text">Clicks</p>
+              <div className="dotted-line"></div>
+              <p className="growth-number">
+                + <CountUp start={1} end={1.2} duration={3} separator="," suffix=" M" decimals={1} />
+              </p>
+            </div>
+          </Col>
 
-          <div>
-            <p>💡 *SEO is not a one-time task* — it’s a consistent process that delivers long-term results. We don’t promise shortcuts. We
-              deliver success with data, experience, and hard work.</p>
-          </div>
-        </Container>
-      </Container>
+          <Col lg={4} md={4} sm={12}>
+            <div>
+              <p className="page_text">Conversions</p>
+              <div className="dotted-line"></div>
+              <p className="growth-number">
+                + <CountUp start={1} end={7 } duration={3} separator="," suffix=" K" decimals={1} />
+              </p>
+</div>
+</Col>
+  </Row>
+  <img src={require("../assets/chart.png")} style={{maxHeight:"100%",maxWidth:"100%"}} alt=""/>
+</Container>
+    </Container>
+{/*  */}
+{/* seo-graphite-sec */}
+    <Container fluid className="graphite-section">
+<Container className="graphite-content-container">
+  <div className="graphite-text-div">
+  <p>Graphite</p>
+  <p className="page_heading">We are a full-service SEO agency dedicated to driving impact</p> <br/>
+  <p className="page_text">Our team integrates with your team to make sure the most important work gets done. It’s a collaborative, transparent approach that generates velocity across SEO (technical, programmatic and editorial) and CRO.</p>
+  <button>Let's Connect </button>
+  </div>
+  <div style={{width:"45%"}}>
+  <img src={require("../assets/chart.png")} style={{maxHeight:"100%",maxWidth:"100%"}} alt=""/>
+  </div>
+</Container>
+    </Container>
+{/*  */}
 
+{/* seo-img-slider */}
+    {/* <ServiceSlider benefits={benefits} /> */}
+ 
+    <ImageSwiper slides={slideData} />;
+    
+{/*  */}
 
-      <div className="seo-achieve-container">
-        <div className="seo-left">
-          <h2>🚀 What We've Achieved with SEO</h2>
-          <p>
-            Over the years, our strategic SEO campaigns have consistently delivered measurable results.
-            From dominating Google’s first page to driving thousands of monthly organic visitors,
-            our track record speaks for itself. Here’s a snapshot of our success.
+{/* seo - research -sec */}
+<Container fluid className="research-section">
+      <Container className="research-content-container">
+        <div className="research-left">
+          <p className="research-title">Our research shows</p>
+          <p className="research-number">
+              <CountUp start={1} end={95 } duration={2} separator="," suffix=" %" decimals={0} />
+              </p>
+        </div>
+
+        <div className="research-right">
+          <p className="research-highlight">of SEO work is wasted effort</p>
+          <p className="research-desc page_text">
+            We analyzed the blogs of 3,000 sites and found that it’s common for 95% of pages
+            to drive less than 5% of traffic.
           </p>
-          <ul>
-            <li>Consistent growth in high-converting traffic</li>
-            <li>Data-driven SEO tactics that actually work</li>
-            <li>Improved visibility for local and global brands</li>
-          </ul>
         </div>
-        <div className="seo-right">
-          <h3>📈 Numbers We’re Proud Of</h3>
-          <table>
-            <thead>
-              <tr>
-                <th>Result</th>
-                <th>Achievement</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Top 3 Google Rankings</td>
-                <td>30+ Competitive Keywords</td>
-              </tr>
-              <tr>
-                <td>Monthly Organic Visitors</td>
-                <td>50,000+ Across All Projects</td>
-              </tr>
-              <tr>
-                <td>Leads Generated via SEO</td>
-                <td>3,500+ Quality Leads</td>
-              </tr>
-              <tr>
-                <td>Blogs Ranked on 1st Page</td>
-                <td>100+ Articles</td>
-              </tr>
-              <tr>
-                <td>Local Businesses Boosted</td>
-                <td>15+ Businesses Ranked on Maps</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+      </Container>
+    </Container>
+
+    {/* seo-focus-sec */}
+    <Container fluid className="focus-section">
+<Container className="graphite-content-container">
+  <div className="graphite-text-div">
+  <p></p>
+  <p className="page_heading">How to focus on the 5% that matters</p> <br/>
+  <div className="bullet-paragraphs">
+  <div className="bullet-paragraphs">
+  <p className="square-bullet">Prioritize only high-impact work to generate results faster and more consistently</p>
+  <p className="square-bullet">Prioritize only high-impact work to generate results faster and more consistently</p>
+  <p className="square-bullet">Prioritize only high-impact work to generate results faster and more consistently</p>
+</div>
+
+</div>
+<button>Let's Connect </button>
+  </div>
+
+  <div style={{width:"45%"}}>
+  <img src={require("../assets/chart.png")} style={{maxHeight:"100%",maxWidth:"100%"}} alt=""/>
+  </div>
+</Container>
+</Container>
+
+<Container>
+  <div className="graphite-bottom-text-div">
+        <p className="page_heading " style={{fontWeight:"400"}}>
+          Graphite has proven that SEO isn’t a mysterious black box. They take a
+          systematic, guided approach to get repeatable results across many, many
+          clients. Very, very impressive results.
+        </p>
       </div>
-
-
+    </Container>
+ 
+{/* seo-contact */}
+    <Container style={{paddingTop:"7%",paddingBottom:"7%"}}>
+<div className="underline"></div>
+<p>How much impact will SEO have on your growth?</p>
+<Link to="/contact">
+  <button>Contact Us</button>
+</Link>
+    </Container>
+{/*  */}
     </>
+  );
+};
 
-  )
-}
+export default SeoService;
 
-export default SeoService
+
+
+
+// import React from 'react'
+// import { Container } from 'react-bootstrap'
+// import "./SeoService.css"
+
+// const SeoService = () => {
+//   return (
+//     <>
+//       <Container fluid className="seo-service-container-fluid g-0">
+//         <Container className='seo-top-content-container'>
+//           <div className='seo-service-top-section g-0'>
+//             <div>
+//               <img className='seo-img' src={require("../assets/slide21.jpg")} alt="Seo-Service" />
+//             </div>
+
+//             <div>
+//               <p className='page_text'>
+//                 Search Engine Optimization (SEO) 🔍 – The Foundation of Digital Growth
+//                 In today’s competitive digital space, *being found on Google is everything*. SEO isn’t just about rankings — it’s about visibility, credibility, and consistent lead generation without spending on ads.
+//                 At our agency, we focus on *proven strategies* that help your website rank higher, attract the right audience, and convert visitors into customers.
+//               </p>
+//             </div>
+//           </div>
+
+//           <div>
+//             <p className='page_heading'>Why SEO is Important: </p>
+//             <p> 93% of online experiences begin with a search engine.</p>
+//             <p> 75% of users never scroll past the first page of results.</p>
+//             <p> Organic traffic brings *trust* and *long-term ROI*.</p>
+//           </div>
+//           <br />
+//           <div className='we-do-div'>
+//             <p className='page_heading'>What We Do in SEO:</p>
+//             <p> ✅ Technical SEO & Site Audits  </p>
+//             <p> ✅ Keyword Research & Strategy  </p>
+//             <p> ✅ On-Page Optimization </p>
+//             <p> ✅ High-Quality Link Building  </p>
+//             <p> ✅ Local SEO & Google Business Profile  </p>
+//             <p> ✅ Content Planning & Blog Strategy  </p>
+//             <p> ✅ Monthly Reporting & Improvements </p>
+//           </div>
+
+//           <div>
+//             <p>💡 *SEO is not a one-time task* — it’s a consistent process that delivers long-term results. We don’t promise shortcuts. We
+//               deliver success with data, experience, and hard work.</p>
+//           </div>
+//         </Container>
+//       </Container>
+
+
+//       <div className="seo-achieve-container">
+//         <div className="seo-left">
+//           <h2>🚀 What We've Achieved with SEO</h2>
+//           <p>
+//             Over the years, our strategic SEO campaigns have consistently delivered measurable results.
+//             From dominating Google’s first page to driving thousands of monthly organic visitors,
+//             our track record speaks for itself. Here’s a snapshot of our success.
+//           </p>
+//           <ul>
+//             <li>Consistent growth in high-converting traffic</li>
+//             <li>Data-driven SEO tactics that actually work</li>
+//             <li>Improved visibility for local and global brands</li>
+//           </ul>
+//         </div>
+//         <div className="seo-right">
+//           <h3>📈 Numbers We’re Proud Of</h3>
+//           <table>
+//             <thead>
+//               <tr>
+//                 <th>Result</th>
+//                 <th>Achievement</th>
+//               </tr>
+//             </thead>
+//             <tbody>
+//               <tr>
+//                 <td>Top 3 Google Rankings</td>
+//                 <td>30+ Competitive Keywords</td>
+//               </tr>
+//               <tr>
+//                 <td>Monthly Organic Visitors</td>
+//                 <td>50,000+ Across All Projects</td>
+//               </tr>
+//               <tr>
+//                 <td>Leads Generated via SEO</td>
+//                 <td>3,500+ Quality Leads</td>
+//               </tr>
+//               <tr>
+//                 <td>Blogs Ranked on 1st Page</td>
+//                 <td>100+ Articles</td>
+//               </tr>
+//               <tr>
+//                 <td>Local Businesses Boosted</td>
+//                 <td>15+ Businesses Ranked on Maps</td>
+//               </tr>
+//             </tbody>
+//           </table>
+//         </div>
+//       </div>
+
+
+//     </>
+
+//   )
+// }
+
+// export default SeoService

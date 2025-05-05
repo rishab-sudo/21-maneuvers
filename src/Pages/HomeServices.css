@@ -99,8 +99,9 @@
 
   .service-services-box {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: flex-start;
     width: 100%;
-
+gap: 12px;
   }
 }

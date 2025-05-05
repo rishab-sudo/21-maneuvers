@@ -2,11 +2,10 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
-
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import "./OurServices.css";
+import "./HomeServices.css";
 
 // Images
 const images = [
@@ -54,6 +53,7 @@ const OurServices = () => {
               <p className='page_main_heading'>Full-service <br />
                 IT Solutions and <br />
                 Studio Level Design</p>
+              
             </div>
 
             <div className='service-services-box page_text fw-bold'>

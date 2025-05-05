@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import emailjs from 'emailjs-com';
 import './Home.css';
 import HomeBanner from '../Components/HomeBanner'
-import OurServices from './OurServices'
+import HomeServices from './HomeServices'
 import ClientReview from './ClientReview'
 import Separate from "../Components/Separate"
 import Work from './OurWork'
@@ -40,7 +40,7 @@ const Home = () => {
     return (
     <>
     <HomeBanner />
-      <OurServices />
+      <HomeServices />
       <div className=''>
         <FAQ
           faqs={faqData}

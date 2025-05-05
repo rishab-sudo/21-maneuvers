@@ -1,0 +1,26 @@
+/* components/ImageSwiper.css */
+.image-swiper-wrapper {
+    width: 100%;
+    padding: 7% 0px;
+  }
+  
+  .image-swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .image-swiper-img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+  
+  .image-swiper-tagline {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333;
+  }
+  
