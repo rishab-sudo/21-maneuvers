@@ -55,7 +55,7 @@ const router = createBrowserRouter(
       element: <Layout><PerformanceService /></Layout>,
     },
     {
-      path: '/Content-Creation',
+      path: '/content-creation',
       element: <Layout><ContentService /></Layout>,
     },
     {

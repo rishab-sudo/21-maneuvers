@@ -13,13 +13,13 @@ const workItems = [
     id: 2,
     image: require("../assets/slide21.jpg"),
     text: 'Seo',
-    link: '/Seo-Service',
+    link: '/seo-service',
   },
   {
     id: 3,
     image: require("../assets/slide21.jpg"),
     text: 'Content-Creation',
-    link: '/Content-Creation',
+    link: '/content-creation',
   },
 
 

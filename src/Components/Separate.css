@@ -1,10 +1,10 @@
-.Awards-container-fluid{
+.Separate-container-fluid{
     width: 100%;
     height: fit-content;
     padding: 5% 0px;
     background-color: rgba(211, 211, 211, 0.078);
 }
-.Awards-content-container {
+.Separate-content-container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -12,7 +12,7 @@
     text-align: left;
   }
   
-  .Awards-right-section {
+  .Separate-right-section {
     width: 50%;
   }
   
@@ -43,12 +43,12 @@
   
   /* ✅ For tablets and smaller: 2 items per row */
   @media screen and (max-width: 768px) {
-    .Awards-content-container {
+    .Separate-content-container {
       flex-direction: column;
       gap: 2rem;
     }
   
-    .Awards-right-section {
+    .Separate-right-section {
       width: 100%;
     }
   

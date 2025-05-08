@@ -9,7 +9,7 @@ import 'swiper/css/pagination';
 import './Home.css';
 import HomeBanner from '../Components/HomeBanner'
 import ClientReview from './ClientReview'
-import Separate from "../Components/Awards"
+import Separate from "../Components/Separate"
 import Work from './OurWork'
 import FAQ from './FAQ';
 import faqImage from '../assets/slide21.jpg';
