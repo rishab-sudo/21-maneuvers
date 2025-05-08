@@ -1,10 +1,8 @@
-import React,{useEffect,useState,useRef} from "react";
+import React from "react";
 import { Link } from 'react-router-dom';
 import { Container, Row, Col, Carousel } from "react-bootstrap";
 import CountUp from 'react-countup';
 import ImageSwiper from '../../Components/ImageSlider';
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 
