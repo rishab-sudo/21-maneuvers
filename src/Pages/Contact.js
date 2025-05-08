@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import ContactForm from '../Components/ContactForm'
-import { Container, Row, Col } from 'react-bootstrap'
+import { Container} from 'react-bootstrap'
 import contactBg from '../assets/slide21.jpg';
 import "./Contact.css"
 

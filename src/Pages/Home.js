@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import emailjs from 'emailjs-com';
+import React from 'react';
+// import emailjs from 'emailjs-com';
 import { Container } from 'react-bootstrap';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
