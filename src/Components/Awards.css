@@ -1,10 +1,10 @@
-.separate-container-fluid{
+.Awards-container-fluid{
     width: 100%;
     height: fit-content;
     padding: 5% 0px;
     background-color: rgba(211, 211, 211, 0.078);
 }
-.separate-content-container {
+.Awards-content-container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -12,7 +12,7 @@
     text-align: left;
   }
   
-  .separate-right-section {
+  .Awards-right-section {
     width: 50%;
   }
   
@@ -43,12 +43,12 @@
   
   /* ✅ For tablets and smaller: 2 items per row */
   @media screen and (max-width: 768px) {
-    .separate-content-container {
+    .Awards-content-container {
       flex-direction: column;
       gap: 2rem;
     }
   
-    .separate-right-section {
+    .Awards-right-section {
       width: 100%;
     }
   

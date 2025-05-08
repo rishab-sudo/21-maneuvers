@@ -1,12 +1,12 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
-import "./Separate.css"
+import "./Awards.css"
 
-const Separate = (props) => {
+const Awards = (props) => {
   return (
-    <Container fluid className='separate-container-fluid'>
-      <Container className='separate-content-container'>
-        <div className='separate-left-section'>
+    <Container fluid className='Awards-container-fluid'>
+      <Container className='Awards-content-container'>
+        <div className='Awards-left-section'>
           <p className='page_text'>{props.title}</p>
          
           <h3 className='page_main_heading'>
@@ -16,7 +16,7 @@ const Separate = (props) => {
           </h3>
         </div>
 
-        <div className='separate-right-section'>
+        <div className='Awards-right-section'>
           <div className='award-heading-box'>
             <p className='page_text'>{props.description}</p>
           </div>
@@ -35,4 +35,4 @@ const Separate = (props) => {
   )
 }
 
-export default Separate
+export default Awards
