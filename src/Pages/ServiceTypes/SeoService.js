@@ -2,14 +2,14 @@ import React,{useEffect,useState,useRef} from "react";
 import { Link } from 'react-router-dom';
 import { Container, Row, Col, Carousel } from "react-bootstrap";
 import CountUp from 'react-countup';
-import ImageSwiper from '../Components/ImageSlider';
+import ImageSwiper from '../../Components/ImageSlider';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 
 import "./SeoService.css";
-import ServiceSlider from "../Components/ServiceSlider";
+import ServiceSlider from "../../Components/ServiceSlider";
 
 const benefits = [
   {
@@ -34,11 +34,11 @@ const benefits = [
   },
 ];
 const slideData = [
-  { image: require("../assets/seo-img.png"), tagline: 'Boosts Visibility' },
-  { image: require("../assets/seo-img.png"), tagline: 'Drives Traffic' },
-  { image: require("../assets/seo-img.png"), tagline: 'Builds Trust' },
-  { image:require("../assets/seo-img.png"), tagline: 'Cost-Effective' },
-  { image: require("../assets/seo-img.png"), tagline: 'Better Experience' },
+  { image: require("../../assets/seo-img.png"), tagline: 'Boosts Visibility' },
+  { image: require("../../assets/seo-img.png"), tagline: 'Drives Traffic' },
+  { image: require("../../assets/seo-img.png"), tagline: 'Builds Trust' },
+  { image:require("../../assets/seo-img.png"), tagline: 'Cost-Effective' },
+  { image: require("../../assets/seo-img.png"), tagline: 'Better Experience' },
 ];
 const SeoService = () => {
 
@@ -120,7 +120,7 @@ const SeoService = () => {
 </div>
 </Col>
   </Row>
-  <img src={require("../assets/chart.png")} style={{maxHeight:"100%",maxWidth:"100%"}} alt=""/>
+  <img src={require("../../assets/chart.png")} style={{maxHeight:"100%",maxWidth:"100%"}} alt=""/>
 </Container>
     </Container>
 {/*  */}
@@ -134,7 +134,7 @@ const SeoService = () => {
   <button>Let's Connect </button>
   </div>
   <div style={{width:"45%"}}>
-  <img src={require("../assets/chart.png")} style={{maxHeight:"100%",maxWidth:"100%"}} alt=""/>
+  <img src={require("../../assets/chart.png")} style={{maxHeight:"100%",maxWidth:"100%"}} alt=""/>
   </div>
 </Container>
     </Container>
@@ -185,7 +185,7 @@ const SeoService = () => {
   </div>
 
   <div style={{width:"45%"}}>
-  <img src={require("../assets/chart.png")} style={{maxHeight:"100%",maxWidth:"100%"}} alt=""/>
+  <img src={require("../../assets/chart.png")} style={{maxHeight:"100%",maxWidth:"100%"}} alt=""/>
   </div>
 </Container>
 </Container>
@@ -229,7 +229,7 @@ export default SeoService;
 //         <Container className='seo-top-content-container'>
 //           <div className='seo-service-top-section g-0'>
 //             <div>
-//               <img className='seo-img' src={require("../assets/slide21.jpg")} alt="Seo-Service" />
+//               <img className='seo-img' src={require("../../assets/slide21.jpg")} alt="Seo-Service" />
 //             </div>
 
 //             <div>

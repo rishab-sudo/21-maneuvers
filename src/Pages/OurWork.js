@@ -6,8 +6,8 @@ const workItems = [
   {
     id: 1,
     image: require("../assets/slide21.jpg"),
-    text: 'Project One',
-    link: '/project-one',
+    text: 'Performance Marketing',
+    link: '/performance-service',
   },
   {
     id: 2,
@@ -18,8 +18,8 @@ const workItems = [
   {
     id: 3,
     image: require("../assets/slide21.jpg"),
-    text: 'Project Three',
-    link: '/project-three',
+    text: 'Content-Creation',
+    link: '/Content-Creation',
   },
 
 

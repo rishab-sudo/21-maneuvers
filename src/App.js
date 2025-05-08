@@ -10,10 +10,12 @@ import Navbar from './Components/Navbar';
 import Home from './Pages/Home';
 import About from './Pages/AboutUs';
 import Contact from './Pages/Contact';
-import SeoService from "./Pages/SeoService"
+import SeoService from "./Pages/ServiceTypes/SeoService"
 import Footer from './Components/Footer';
 import './App.css';
 import ThemeToggleButton from './Components/ThemeToggleButton';
+import PerformanceService from './Pages/ServiceTypes/PerformanceService';
+import ContentService from './Pages/ServiceTypes/ContentService';
 
 // Layout component for wrapping all routes with Navbar, Footer, etc.
 const Layout = ({ children }) => (
@@ -47,6 +49,14 @@ const router = createBrowserRouter(
     {
       path: '/seo-service',
       element: <Layout><SeoService /></Layout>,
+    },
+    {
+      path: '/performance-service',
+      element: <Layout><PerformanceService /></Layout>,
+    },
+    {
+      path: '/Content-Creation',
+      element: <Layout><ContentService /></Layout>,
     },
     {
       path: '*',

@@ -14,8 +14,9 @@
   .image-swiper-img {
     width: 100%;
     height: auto;
-    border-radius: 12px;
+    border-radius: 45px;
     object-fit: cover;
+    border-radius: 15px !important;
   }
   
   .image-swiper-tagline {

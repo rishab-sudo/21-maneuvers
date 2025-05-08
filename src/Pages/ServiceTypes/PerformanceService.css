@@ -1,0 +1,382 @@
+/* SeoService.css */
+
+.seo-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+  }
+  
+  .seo-carousel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  
+  .seo-carousel img {
+    object-fit: cover;
+    height: 100vh;
+    opacity: 0.5;
+  }
+  
+  .seo-content {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .top-left {
+    padding: 1rem;
+    padding-top: 10%;
+    text-align: left;
+  }
+  
+  .top-left p:first-child {
+    font-size: 5.5rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .top-left p:last-child {
+    font-size: 5.5rem;
+    font-weight: 500;
+  }
+  
+  .bottom-right {
+    width: 28%;
+    align-self: flex-end;
+    text-align: left;
+    padding: 1rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .bottom-right p {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  
+  .bottom-right button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 0.5rem 1rem;
+  }
+  /* SeoBenefits.css */
+  
+  .seo-benefit-container {
+    padding: 2rem 0;
+  }
+  
+  
+  /* growth-section-css */
+  .dotted-line {
+    width: 100%;
+    height: 1px;
+    margin: 1rem 0;
+    background-image: repeating-linear-gradient(
+      to right,
+      #999,
+      #999 0.5px,
+      transparent 10px
+    );
+  }
+  
+  .growth-number{
+    font-size: 5rem;
+  }
+  /* graphite- css */
+  .graphite-section{
+    padding-top: 10%;
+  }
+  .graphite-content-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .graphite-text-div{
+    width: 50%;
+  }
+  .research-section {
+    padding: 80px 0;
+  }
+  
+  .research-content-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    height: auto;
+    text-align: left;
+  }
+  
+  .research-left {
+    flex: 1 1 70%;
+    align-self: flex-start;
+    text-align: left;
+  }
+  
+  .research-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  .research-number {
+    font-size: 20rem;
+    font-weight: 500;
+    line-height: 1;
+  }
+  
+  .research-right {
+    flex: 1 1 25%;
+    align-self: flex-end;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  
+  .research-highlight {
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+   
+  }
+  
+  .research-desc {
+   
+  }
+  
+  .square-bullet {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .square-bullet::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 10px;
+    height: 10px;
+    background-color: #000; /* Change color if needed */
+  }
+  body.dark .square-bullet::before {
+    background-color: #fff;
+  }
+  
+  .graphite-bottom-text-div{
+  max-width: 75%;
+  }
+  
+  .focus-section{
+    padding: 7% 0px;
+  }
+  
+  /* mobile-css */
+  @media (max-width: 576px) {
+    .seo-section {
+      width: 100%;
+      height: auto;
+    }
+    
+    .seo-carousel {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+    
+    .seo-carousel img {
+      object-fit: cover;
+      height: 100%;
+      opacity: 0.5;
+    }
+    
+    .seo-content {
+      position: relative;
+      z-index: 1;
+      height: 100%;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    
+   }
+    .top-left {
+      padding: 0rem 1rem;
+      padding-top: 7.5rem;
+      text-align: left;
+      
+    }
+    
+    .top-left p:first-child {
+      font-size: 1.5rem;
+      margin-bottom: 0.25rem;
+    }
+    
+    .top-left p:last-child {
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+    
+    .bottom-right {
+      width: 100%;
+      align-self: flex-end;
+      text-align: left;
+      padding: 0rem 1rem;
+      margin-bottom: 2.5rem;
+    }
+    
+    .bottom-right p {
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+      font-weight: 400;
+    }
+    .bottom-right button {
+      background-color: #fff;
+      color: #000;
+    border-radius: 10px;
+      padding: 0.5rem 2rem;
+      margin-top: 1.2rem;
+      font-size: 16px;
+      font-weight: 500;
+    }
+    /*  */
+    .seo-benefit-slide {
+      padding: 1rem;
+    }
+  
+    .seo-benefit-title {
+      font-size: 1rem;
+    }
+  
+    .seo-benefit-desc {
+      font-size: 0.9rem;
+    }
+    /*  */
+    .research-content-container {
+      flex-direction: column;
+    }
+  
+    .research-left,
+    .research-right {
+      flex: 1 1 100%;
+      text-align: left;
+    }
+  
+    .research-number {
+      font-size: 12vw;
+    }
+  
+    .research-right {
+      align-items: flex-start;
+      margin-top: 20px;
+    }
+  }
+  
+  
+  
+  /* .seo-service-container-fluid {
+    padding: 5% 0px;
+    margin: 0%;
+  }
+  
+  .seo-service-top-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+  
+  .seo-img {
+    max-width: 90%;
+  }
+  
+  
+  .seo-achieve-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #ffffff;
+    color: #333;
+  }
+  
+  @media (max-width: 768px) {
+    .seo-service-top-section {
+      display: flex;
+      flex-direction: column !important;
+      justify-content: center;
+      align-items: center;
+      text-align: left;
+    }
+  
+    .seo-img {
+      min-width: 100%;
+      margin: 0;
+      padding: 0
+    }
+  
+    .seo-achieve-container {
+      grid-template-columns: 1fr;
+      align-items: start;
+    }
+  }
+  
+  .seo-left h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .seo-left p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+  
+  .seo-left ul {
+    list-style: disc inside;
+    padding-left: 1rem;
+  }
+  
+  .seo-right {
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .seo-right h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .seo-right table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .seo-right th,
+  .seo-right td {
+    padding: 0.75rem;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .seo-right th {
+    background-color: #eaeaea;
+  }  */

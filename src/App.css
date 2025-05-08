@@ -2,7 +2,10 @@ body.light {
   background-color: #fff;
   color: #000;
 }
-
+body{
+  padding-top: 100px;
+  
+}
 body.dark {
   background-color: #121212;
   color: #fff;

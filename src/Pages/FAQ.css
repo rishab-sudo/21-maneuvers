@@ -8,7 +8,7 @@
 .faq-content-container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center !important;
   /* align-items: stretch;  Make children stretch full height  */
   gap: 2rem;
   flex-wrap: wrap;
@@ -19,9 +19,11 @@
 .faq-left-section {
   width: 550px;
   max-width: 550px;
-  height: 700px;
+  height: auto;
+  max-height: 100%;
   text-align: left !important;
   margin-left: 5%;
+  
 }
 
 .fq-section-padding {
@@ -51,6 +53,7 @@
   transition: background 0.3s ease;
   font-size: 1rem !important;
   font-weight: 600;
+
 }
 
 .question {

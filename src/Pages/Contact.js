@@ -23,9 +23,9 @@ const Contact = () => {
         <p>
           Home <span className="">{'>'}</span> Contact Us
         </p>
-        <Row className='contactUs-row'>
           <h3 className='page_heading'>Get in touch</h3>
-          <Col lg={6} md={6} sm={12} xs={12}>
+        <div className='contactUs-row'>
+          <div  className='left-col'>
             <div className='left-col-content'>
               <div className='heading-text-div'>
                 <p>Work Inquiries</p>
@@ -39,10 +39,10 @@ const Contact = () => {
                 <p>Assistance hours:<br />Tuesday – Saturday <br />6 am to 8 pm EST</p>
               </div>
             </div>
-          </Col>
+          </div>
 
-          <Col lg={6} md={6} sm={12} xs={12} >
-            <div className='left-col-content'>
+          <div  className='right-col'>
+            <div className='right-col-content'>
               <div>
                 <p className='fw-bold'>Post address</p>
                 <p className='fw-bold'>Assettlor Interactive Studios.</p>
@@ -58,8 +58,8 @@ const Contact = () => {
                 <p className='fw-bold' style={{ marginTop: "-8px" }}>Twitter</p>
               </div>
             </div>
-          </Col>
-        </Row>
+          </div>
+        </div>
       </Container>
 
       <Container className='contactUs-underline mt-5'></Container>
