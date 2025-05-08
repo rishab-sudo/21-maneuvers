@@ -4,14 +4,7 @@ import FAQ from '../FAQ'
 import faqImage from '../../assets/slide21.jpg';
 import "./ContentService.css"
 
-const images = [
-    { id: 1, src: require("../../assets/slide21.jpg"), type: "large", tagline: "Stunning Mountains" },
-    { id: 2, src: require("../../assets/slide21.jpg"), type: "small", tagline: "Sunny Beach" },
-    { id: 3, src: require("../../assets/slide21.jpg"), type: "large", tagline: "Forest Trail" },
-    { id: 4, src: require("../../assets/slide21.jpg"), type: "small", tagline: "City Lights" },
-    { id: 5, src: require("../../assets/slide21.jpg"), type: "large", tagline: "Desert Dunes" },
-    { id: 6, src: require("../../assets/slide21.jpg"), type: "small", tagline: "Ocean Waves" },
-  ];
+
 
 const faqData = [
     {
