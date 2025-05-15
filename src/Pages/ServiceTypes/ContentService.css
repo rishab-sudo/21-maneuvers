@@ -1,42 +1,48 @@
-.content-fluid{
-    background-color: black;
-    color: #fff;
-    padding: 5% 0px;
+.serviceType-banner-section{
+  
 }
-.content-banner{
+.serviceType-banner-container{
+   
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.content-work-container{
-
+    padding: 50px 0px;
 }
 
-.gallery-container{
-    margin-top: 5%;
+.serviceType-images-section {
+  padding: 60px 0;
+  
+}
+
+.serviceType-banner-container h1,
+.serviceType-banner-container p {
+  text-align: center;
+}
+
+.serviceType-image-wrapper {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  padding: 5px;
+}
+
+.serviceType-image-wrapper img {
+    padding: 0;
+    margin: 0;
+  width: 100% ;
+  height: auto;
+  display: block;
+  border-radius: 2px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.serviceType-descp-content-container{
+    width: 80%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
+    text-align: center;
+    padding: 5% 0px;
 }
-.gallery-img{
-    width: 100%;
-    max-width: 100%;
-}
-.vertical_img{
-    height: 500px;
-}
-.square_img{
-    height: 250px;
-}
-.row2-colum2{
-    margin-top: -245px;
-}
-@media (max-width: 768px) {
-    .row2-colum2{
-        margin-top: 0px;
-    }
-}
-
-

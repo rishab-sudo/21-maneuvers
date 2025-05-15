@@ -9,7 +9,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 import "./SeoService.css";
-import ServiceSlider from "../../Components/ServiceSlider";
+import ServiceSlider from "../../Components/HomeServiceSlider";
 
 const benefits = [
   {

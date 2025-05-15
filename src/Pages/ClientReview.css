@@ -3,6 +3,7 @@
   background-size: cover;
   background-position: center;
   padding: 5%;
+  margin-top: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,7 +16,6 @@
   display: flex;
   justify-content: center;
 }
-
 .review-box {
   background-color: rgba(0, 0, 0, 0.75);
   max-width: 50%;

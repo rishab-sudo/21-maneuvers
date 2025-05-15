@@ -16,6 +16,7 @@ import './App.css';
 import ThemeToggleButton from './Components/ThemeToggleButton';
 import PerformanceService from './Pages/ServiceTypes/PerformanceService';
 import ContentService from './Pages/ServiceTypes/ContentService';
+import MainServicePage from './Pages/MainServicePage';
 
 // Layout component for wrapping all routes with Navbar, Footer, etc.
 const Layout = ({ children }) => (
@@ -41,6 +42,10 @@ const router = createBrowserRouter(
     {
       path: '/about',
       element: <Layout><About /></Layout>,
+    },
+      {
+      path: '/services',
+      element: <Layout><MainServicePage /></Layout>,
     },
     {
       path: '/contact',

@@ -4,9 +4,9 @@ import { Container } from 'react-bootstrap';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
-import './ServiceSlider.css';
+import './HomeServiceSlider.css';
 
-const ServiceSlider = () => {
+const HomeServiceSlider = () => {
   const benefits = [
     {
       title: "Boosts Visibility",
@@ -66,4 +66,4 @@ const ServiceSlider = () => {
   );
 };
 
-export default ServiceSlider;
+export default HomeServiceSlider;

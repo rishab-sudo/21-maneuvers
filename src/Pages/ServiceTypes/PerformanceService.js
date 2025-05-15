@@ -6,7 +6,7 @@ import ImageSwiper from '../../Components/ImageSlider';
 import "swiper/css";
 import "swiper/css/navigation";
 import "./PerformanceService.css";
-import ServiceSlider from "../../Components/ServiceSlider";
+import ServiceSlider from "../../Components/HomeServiceSlider";
 
 const benefits = [
   {

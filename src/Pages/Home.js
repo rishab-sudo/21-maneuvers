@@ -9,10 +9,11 @@ import 'swiper/css/pagination';
 import './Home.css';
 import HomeBanner from '../Components/HomeBanner'
 import ClientReview from './ClientReview'
-import Separate from "../Components/Separate"
+import Separate from "../Components/SeparateOurClient"
 import Work from './OurWork'
 import FAQ from './FAQ';
 import faqImage from '../assets/slide21.jpg';
+import LetsTalk from "../Components/LetsTalk"
 
 const images = [
   require('../assets/slide21.jpg'),
@@ -124,15 +125,44 @@ const Home = () => {
       awards={awardsList}
     /> */}
       <Work />
+      <Container fluid className='coffee-fluid'>
+<Container className='coffee-content-container'>
+  <div className='coffee-text-div'>
+    <img className='coffee-icons-img' src={require("../assets/coffee_icon.png")}alt=""/>
+    <p>COFFEE CUPS</p>
+    <p>20800</p>
+  </div>
+  <div className='vertical-line'></div>
+  <div className='coffee-text-div'>
+    <img className='coffee-icons-img' src={require("../assets/projects_icon.png")} alt=""/>
+    <p>PROJECTS</p>
+    <p>20800</p>
+  </div>
+    <div className='vertical-line'></div>
+    <div className='coffee-text-div'>
+    <img className='coffee-icons-img' src={require("../assets/working_days_icon.png")} alt=""/>
+    <p>WORKING DAYS</p>
+    <p>20800</p>
+  </div>
+     <div className='vertical-line'></div>
+   <div className='coffee-text-div'>
+    <img className='coffee-icons-img' src={require("../assets/clients_icon.png")}  alt=""/>
+    <p>CLIENTS</p>
+    <p>20800</p>
+  </div>
+</Container>
+      </Container>
       <ClientReview />
-      <div>
+      {/* <div>
         <Separate
           title="Our Client"
           heading={"We’re going to\nbecame partners\nfor the long run.."}
           description="Our clients describe us as a product team which creates amazing output, by crafting top-notch user experience."
           awards={awardsList}
         />
-      </div>
+      </div> */}
+
+      <LetsTalk/>
       {/* <div className="popup-overlay">
       <div className="popup-form">
         <h2>Get in Touch</h2>

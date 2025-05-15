@@ -1,0 +1,80 @@
+/* Container styling */
+.contact-section {
+  min-height: 100%;
+  padding: 7% 0px;
+}
+
+/* Input styling */
+.contact-form input,
+.contact-form textarea {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0;
+  width: 100%;
+  padding: 8px 4px;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+/* Remove Bootstrap focus box-shadow */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  box-shadow: none;
+
+}
+.contact-form textarea{
+    max-height: 50px;
+}
+/* Heading and social container */
+.contact-info {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .contact-info {
+    text-align: left;
+  }
+}
+
+/* Social Icons Row */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .social-icons {
+    justify-content: flex-start;
+  }
+}
+
+/* Mobile-only social icons (below form) */
+.mobile-only {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .mobile-only {
+    display: none;
+  }
+}
+
+/* Desktop-only social icons (above form) */
+.desktop-only {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .desktop-only {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+}

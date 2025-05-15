@@ -1,8 +1,8 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
-import "./Separate.css"
+import "./SeparateOurClient.css"
 
-const Separate = (props) => {
+const SeparateOurClient = (props) => {
   return (
     <Container fluid className='Separate-container-fluid'>
       <Container className='Separate-content-container'>
@@ -35,4 +35,4 @@ const Separate = (props) => {
   )
 }
 
-export default Separate
+export default SeparateOurClient;
