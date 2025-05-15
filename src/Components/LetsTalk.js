@@ -49,7 +49,7 @@ export default function ContactPage() {
         <Row>
           {/* Left Column: Headings + Desktop Icons */}
           <Col xs={12} md={6} className="contact-info mb-4 mb-md-0">
-            <h2>Get in Touch</h2>
+            <h2 className='fancy-text'> Get in Touch</h2>
             <h4>We'd Love to Hear From You</h4>
             <p className="fade-text">{description}</p>
 

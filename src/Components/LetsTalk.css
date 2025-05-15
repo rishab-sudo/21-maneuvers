@@ -3,6 +3,9 @@
   min-height: 100%;
   padding: 7% 0px;
 }
+.fancy-text{
+  font-family: Eurotypo BKL Italic;
+}
 
 /* Input styling */
 .contact-form input,
@@ -14,7 +17,7 @@
   padding: 8px 4px;
   background-color: transparent;
   box-shadow: none;
-}
+  }
 
 /* Remove Bootstrap focus box-shadow */
 .contact-form input:focus,

@@ -1,4 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react';
+import {Container} from "react-bootstrap"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
@@ -69,7 +70,8 @@ const ServiceSlider = () => {
   };
 
   return (
-    <div className="service-slider-wrapper">
+      <>
+    <Container fluid className="service-slider-wrapper">
       <Swiper
         className="service-swiper"
         slidesPerView={1}
@@ -125,7 +127,62 @@ const ServiceSlider = () => {
           })}
         </div>
       </div>
+    </Container>
+
+  <Container fluid className="mainservicepage-wrapper">
+  <div className="mainservicepage-content">
+    {/* Left Side */}
+    <div className="mainservicepage-left">
+      <div className="mainservicepage-left-inner">
+        <h1>Everything, Made Simple</h1>
+        <p>
+          At SimplePlan, we pretty much do it all. From creating an unforgettable brand identity to extending your brand's reach, our comprehensive range of customized services is all you and your brand need!
+        </p>
+      </div>
     </div>
+
+    {/* Right Side */}
+    <div className="mainservicepage-right">
+      <div className="mainservicepage-service">
+        <h2>Brand & Identity</h2>
+        <img src={require("../assets/social-media-creative-design.png")} alt="" />
+        <p>A charming personality can open many doors in life, and your brand's identity is no exception. We specialize in crafting brands that always leave an enduring impression.</p>
+        <ul>
+          <li>Brand Strategy & Positioning</li>
+          <li>Visual Identity Design</li>
+          <li>Logo & Brand Assets</li>
+          <li>Guideline Documentation</li>
+        </ul>
+      </div>
+
+      <div className="mainservicepage-service">
+        <h2>Social Media Marketing</h2>
+        <img src={require("../assets/social-media-creative-design.png")} alt="" />
+        <p>Creative campaigns that connect with your audience and help grow your online presence.</p>
+        <ul>
+          <li>Content Creation</li>
+          <li>Platform Strategy</li>
+          <li>Ad Management</li>
+          <li>Performance Analytics</li>
+        </ul>
+      </div>
+
+      <div className="mainservicepage-service">
+        <h2>Website Development</h2>
+        <img src={require("../assets/social-media-creative-design.png")} alt="" />
+        <p>Build modern, fast, and responsive websites designed to convert visitors into customers.</p>
+        <ul>
+          <li>UI/UX Design</li>
+          <li>Frontend & Backend Dev</li>
+          <li>E-commerce Solutions</li>
+          <li>SEO Optimization</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</Container>
+
+  </>
   );
 };
 
