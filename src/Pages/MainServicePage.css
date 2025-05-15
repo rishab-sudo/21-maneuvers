@@ -180,38 +180,65 @@
   scroll-behavior: smooth;
 }
 
-.mainservicepage-service {
-  background: #f9f9f9;
-  border-radius: 12px;
-  padding: 1rem;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+.mainservicepage {
+  display: flex;
+  padding: 4rem 2rem;
+  gap: 2rem;
+  background-color: #fff;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
-.mainservicepage-service h2 {
-  font-size: 1.4rem;
-  margin-bottom: 0.5rem;
+.mainservicepage-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 300px;
+}
+
+.mainservicepage-left h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.mainservicepage-left p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.mainservicepage-right {
+  flex: 1;
+  max-height: 100vh;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem;
+  background-color: #fafafa;
+  border-radius: 12px;
+  min-width: 300px;
+}
+
+/* Hide scrollbar for Chrome, Edge, and Safari */
+.mainservicepage-right::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+/* Hide scrollbar for Firefox */
+.mainservicepage-right {
+  scrollbar-width: none;
 }
 
 .mainservicepage-service img {
-  width: 100%;
+  max-width: 95%;
   height: auto;
-  margin: 1rem 0;
+  display: block;
+  object-fit: cover;
 }
-
-.mainservicepage-service p {
-  font-size: 0.95rem;
-  color: #444;
-}
-
-.mainservicepage-service ul {
-  padding-left: 1.2rem;
-}
-
-.mainservicepage-service ul li {
-  margin-bottom: 0.5rem;
-  list-style-type: disc;
-}
-
 
 @media (max-width: 900px) {
   .slide-content {
