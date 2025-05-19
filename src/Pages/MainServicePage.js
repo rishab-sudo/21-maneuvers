@@ -120,8 +120,10 @@ const ServiceSlider = () => {
                 className={`service-box${isActive ? ' active' : ''}`}
                 onClick={() => handleBoxClick(idx)}
                 ref={(el) => (boxRefs.current[idx] = el)}
+              
               >
                 {service.name}
+             
               </div>
             );
           })}
@@ -129,12 +131,12 @@ const ServiceSlider = () => {
       </div>
     </Container>
 
-  <Container fluid className="mainservicepage-wrapper">
+  <Container fluid className="mainservicepage-section">
   <div className="mainservicepage-content">
     {/* Left Side */}
     <div className="mainservicepage-left">
       <div className="mainservicepage-left-inner">
-        <h1>Everything, Made Simple</h1>
+        <h1 className='demo-heading'>Everything,<br/> Made <br/> Simple</h1>
         <p>
           At SimplePlan, we pretty much do it all. From creating an unforgettable brand identity to extending your brand's reach, our comprehensive range of customized services is all you and your brand need!
         </p>

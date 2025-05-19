@@ -86,24 +86,26 @@ const Home = () => {
                <div className='service-heading-box'>
                  <p className='page_text'>OUR SERVICES</p>
                  <p className='page_main_heading'>Full-service <br />
-                   IT Solutions and <br />
-                   Studio Level Design</p>
+                  Social Media & <br />
+                  Content Strategy</p>
                  
                </div>
    
                <div className='service-services-box page_text fw-bold'>
                  <div >
                    <div className='underline'></div>
-                   <p>Software Development</p>
-                   <p>Web Development</p>
-                   <p>Mobile Apps</p>
+                   <p> Digital Growth Marketing</p>
+                   <p>Visual Branding & Design</p>
+                   <p>Professional Shoots & Media</p>
+                        
                  </div>
    
                  <div >
                    <div className='underline'></div>
-                   <p>SEO & Marketing</p>
-                   <p>Brand Identity</p>
-                   <p>Content Creation</p>
+                    <p>Social Media & Content Strategy</p>
+                   <p>Print & Digital Collateral</p>
+                   <p>Website Development</p>
+             
                  </div>
                </div>
              </div>
