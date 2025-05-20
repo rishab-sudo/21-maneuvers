@@ -46,3 +46,17 @@
     text-align: center;
     padding: 5% 0px;
 }
+.elevate-content-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.elevate-left-side{
+width: 50%;
+font-size: 30px;
+font-weight: 600;
+}
+.elevate-right-side{
+margin-top: auto;
+width: 45%;
+}

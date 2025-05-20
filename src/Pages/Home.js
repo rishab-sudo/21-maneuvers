@@ -30,20 +30,20 @@ const awardsList = [
 ]
 const faqData = [
   {
-    question: "Cost-effective offshore delivery of design, development, testing and support services",
-    answer: "Offshore development and test services enable businesses to reduce costs and speed up innovation cycles..."
+    question: "Custom-built websites that drive results",
+    answer: " High-performance, scalable websites crafted with clean code, intuitive UX, and your  business goals in mind."
   },
   {
-    question: "One stop shop for product development, maintenance, and support",
-    answer: "Having the right team can streamline business processes, boost efficiency..."
+    question: "Marketing strategies that make an impact",
+    answer: " From Social Media to SEO, PPC, and Meta Ads—creative meets conversion in every campaign we run."
   },
   {
-    question: "One stop shop for product development, maintenance, and support",
-    answer: "Having the right team can streamline business processes, boost efficiency..."
+    question: "Design that defines your identity",
+    answer: " Powerful visual branding—from logos to complete brand systems—that connects with your audience at every touchpoint."
   },
   {
-    question: "One stop shop for product development, maintenance, and support",
-    answer: "Having the right team can streamline business processes, boost efficiency..."
+    question: "Visual storytelling that connect and convert",
+    answer: "From compelling brand videos to professional product shoots, we capture your story with style, clarity, and impact"
   },
 
 ];
@@ -115,7 +115,8 @@ const Home = () => {
       <div className=''>
         <FAQ
           faqs={faqData}
-          heading="We work in the fields of  art direction."
+          heading="We Design, Build & Market with Purpose
+"
           image={faqImage}
           imagePosition="right"
         />

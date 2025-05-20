@@ -52,7 +52,7 @@ const HeroBanner = () => {
     <Swiper
   modules={[EffectFade, Autoplay, Navigation]}
   effect="fade"
-  autoplay={{ delay: 4000 }}
+  autoplay={{ delay: 2000 }}
   loop
   navigation={{
     nextEl: '.custom-swiper-next',

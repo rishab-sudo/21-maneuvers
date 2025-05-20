@@ -5,6 +5,12 @@ import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import './MainServicePage.css';
 
+const circleData = [
+  { label: "Performance Marketing", back: "back-1", front: "front-1" },
+  { label: "SEO", back: "back-2", front: "front-2" },
+  { label: "Content Creations", back: "back-3", front: "front-3" }
+];
+
 const services = [
   {
     id: 1,
@@ -183,6 +189,16 @@ const ServiceSlider = () => {
     </div>
   </div>
 </Container>
+
+ <div className="circle-container">
+      {circleData.map((item, index) => (
+        <div className="circle-group" key={index}>
+          <div className={`circle small back ${item.back}`} />
+          <div className="circle main">{item.label}</div>
+          <div className={`circle small front small2 ${item.front}`} />
+        </div>
+      ))}
+    </div>
 
   </>
   );

@@ -51,6 +51,20 @@ const ContentService = () => {
       </Container>
     </Container>
 
+<Container className='elevate-section'>
+<Container className='elevate-content-container'>
+  <div className='elevate-left-side'>
+<p>Elevate Your</p>
+<p>Brand in</p>
+<p>the  Digital</p>
+<p>Realm</p>
+  </div>
+  <div className='elevate-right-side'>
+<p>In today's digital landscape, leveraging social buzz and optimizing Google rankings are essential for business success. Our established agency excels at tailored social media marketing across platforms, driving traffic and attention.</p>
+  </div>
+</Container>
+</Container>
+
     <LetsTalk/>
 </>
   )

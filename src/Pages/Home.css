@@ -1,7 +1,8 @@
+/* our serivce home */
 .service-container-fluid {
   padding: 5% 0px
 }
-
+ 
 .service-content-container {
   display: flex;
   justify-content: space-between;
@@ -50,8 +51,8 @@
 .service-right-section {
   display: flex;
   flex-direction: column;
-  justify-content: center ;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   gap: 1.5rem;
   text-align: left !important;
   width: 50%;

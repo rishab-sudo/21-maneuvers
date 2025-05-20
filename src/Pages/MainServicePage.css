@@ -149,22 +149,21 @@ html, body {
 /* Sticky Left Panel */
 .mainservicepage-left {
   flex: 0 0 40%;
-  position: sticky;
   top: 0;
-  height: 100vh;
+  height: auto;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center !important;
+  align-items: center !important;
   padding: 2rem;
   z-index: 1;
-  overflow-y: auto;
+
+  /* overflow-y: auto; */
 }
 
 .mainservicepage-left-inner {
   max-width: 100%;
-  position: sticky;
-  top: 50%;
-  transform: translateY(-50%);
+ top: 0;
+
 }
 
 .mainservicepage-left-inner h1 {
@@ -191,6 +190,7 @@ html, body {
 }
 
 .mainservicepage-service {
+  margin-top: 2.5rem;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -217,6 +217,106 @@ html, body {
   display: block;
   object-fit: cover;
 }
+/* responsive circles */
+.circle-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 4rem 2rem;
+  gap: 2rem;
+}
+
+.circle-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  transition: all 0.3s ease;
+}
+
+.circle {
+  border-radius: 50%;
+  transition: all 0.4s ease;
+  position: absolute;
+}
+
+.circle.main {
+  width: 175px;
+  height: 175px;
+  background-color: #e30613;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.4rem; /* Increased for visibility */
+  z-index: 2;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Small Circles */
+.circle.small {
+  width: 120px;
+  height: 120px;
+  background-color: #d31c32;
+  z-index: 1;
+  opacity: 1;
+}
+.circle.small2 {
+  width: 135px;
+  height: 135px;
+  background-color: #d31c32;
+  z-index: 1;
+  opacity: 1;
+}
+.circle.small.front {
+  z-index: 3; 
+}
+.circle.small.back {
+  z-index: 1;
+}
+/* Hover Effect */
+.circle-group:hover .circle.main {
+  transform: scale(1.2);
+}
+.circle-group:hover .circle.small {
+  opacity: 0;
+  transform: scale(0.5);
+}
+
+/* Unique positions for each circle set */
+.back-1 {
+  top: -50px;
+  left: 120px;
+}
+.front-1 {
+  bottom: 15px;
+  right: -80px;
+}
+
+.back-2 {
+  top: -35px;
+  right: 100px;
+}
+.front-2 {
+  bottom: 15px;
+  left: -70px;
+}
+
+.back-3 {
+  bottom: 20px;
+  /* left: -70px; */
+  right: -60px;
+}
+.front-3 {
+  top: -35px;
+  right: -35px;
+}
+
 
 @media (max-width: 900px) {
   .slide-content {
@@ -248,5 +348,9 @@ html, body {
     height: auto;
     max-height: unset;
     padding: 1rem;
+  }
+  /*  */
+    .circle-container {
+    flex-direction: column;
   }
 }
