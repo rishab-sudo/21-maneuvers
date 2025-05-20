@@ -3,6 +3,10 @@
   min-height: 100%;
   padding: 7% 0px;
 }
+/* Heading and social container */
+.contact-info {
+  text-align: center;
+}
 .fancy-text{
   font-family: Eurotypo BKL Italic;
 }
@@ -18,6 +22,10 @@
   background-color: transparent;
   box-shadow: none;
   }
+  .custom-placeholder::placeholder {
+  color: #999; 
+  opacity: 1; 
+}
 
 /* Remove Bootstrap focus box-shadow */
 .contact-form input:focus,
@@ -29,10 +37,7 @@
 .contact-form textarea{
     max-height: 50px;
 }
-/* Heading and social container */
-.contact-info {
-  text-align: center;
-}
+
 
 @media (min-width: 768px) {
   .contact-info {

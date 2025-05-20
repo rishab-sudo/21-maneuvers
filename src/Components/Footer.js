@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Container, Row, Col } from "react-bootstrap"
+import { FaFacebookF, FaInstagram, FaWhatsapp, FaLinkedinIn } from 'react-icons/fa';
 import "./Footer.css"
 
 const Footer = () => {
@@ -24,6 +25,12 @@ const Footer = () => {
         setError('');
     };
 
+      const socialIcons = [
+        { icon: <FaFacebookF />, name: 'Facebook' },
+        { icon: <FaInstagram />, name: 'Instagram' },
+        { icon: <FaWhatsapp />, name: 'WhatsApp' },
+        { icon: <FaLinkedinIn />, name: 'LinkedIn' }
+      ];
     return (
         <>
             <Container fluid className='footer-container-fluid'>
@@ -64,8 +71,8 @@ const Footer = () => {
                             </div>
                         </Col>
 
-                        <Col lg={3} md={3} sm={12} xs={12}>
-                            <div className='footer-right-section'>
+                        <Col lg={3} md={3} sm={12} xs={12} >
+                            {/* <div className='footer-right-section'>
                                 <p>Sign up for the newsletter</p>
                                 <form className="footer-newsletter-form" onSubmit={handleSubmit}>
                                     <div className="footer-input-wrapper">
@@ -98,7 +105,26 @@ const Footer = () => {
                                         </div>
                                     )}
                                 </form>
+                            </div> */}
+                            <div className=''>
+                                  <h3>Follow Us </h3>
                             </div>
+                              
+                            <div className="footer-social-icons">
+  <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="footer-social-icon footer-facebook">
+    <FaFacebookF />
+  </a>
+  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="footer-social-icon footer-insta">
+    <FaInstagram />
+  </a>
+  <a href="https://wa.me/yourwhatsapplink" target="_blank" rel="noopener noreferrer" className="footer-social-icon footer-whatsapp">
+    <FaWhatsapp />
+  </a>
+  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="footer-social-icon footer-linkedin">
+    <FaLinkedinIn />
+  </a>
+</div>
+
                         </Col>
 
                     </Row>

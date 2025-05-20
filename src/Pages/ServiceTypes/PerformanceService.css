@@ -9,7 +9,9 @@
     align-items: center;
     padding: 50px 0px;
 }
-
+.serviceType-banner-heading-div{
+  max-width: 75%;
+}
 .serviceType-images-section {
   padding: 60px 0;
   

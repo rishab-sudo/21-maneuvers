@@ -218,6 +218,14 @@ html, body {
   object-fit: cover;
 }
 /* responsive circles */
+.circle-link {
+  display: inline-block;
+  color: inherit;
+}
+.circle-link:hover {
+  text-decoration: none;
+}
+
 .circle-container {
   display: flex;
   justify-content: space-around;
@@ -248,14 +256,14 @@ html, body {
 .circle.main {
   width: 175px;
   height: 175px;
-  background-color: #e30613;
+  background-color: #F5A522;
   padding: 1rem;
 }
 .circle-overlay-text {
   position: absolute;
   z-index: 100; 
 color: #fff;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 500;
   text-align: center;
   pointer-events: none;
@@ -265,14 +273,16 @@ color: #fff;
 .circle.small {
   width: 120px;
   height: 120px;
-  background-color: #d31c32;
+  background-color: #F5A522;
+ outline-offset: 1px;
+ box-shadow: 0 0 8px rgba(0, 0, 0, 0.08); /* Light soft shadow */
   z-index: 1;
-  opacity: 1;
+    opacity: 1;
 }
 .circle.small2 {
   width: 135px;
   height: 135px;
-  background-color: #d31c32;
+ background-color: #F5A522;
   z-index: 1;
   opacity: 1;
 }

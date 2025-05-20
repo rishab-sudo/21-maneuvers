@@ -74,6 +74,7 @@ export default function ContactPage() {
                   value={formData.name}
                   onChange={handleChange}
                   placeholder="Enter your name"
+                   className="custom-placeholder"
                 />
               </Form.Group>
 
@@ -87,6 +88,7 @@ export default function ContactPage() {
                       value={formData.email}
                       onChange={handleChange}
                       placeholder="Email"
+                         className="custom-placeholder"
                     />
                   </Form.Group>
                 </Col>
@@ -99,6 +101,7 @@ export default function ContactPage() {
                       value={formData.contact}
                       onChange={handleChange}
                       placeholder="Contact No."
+                         className="custom-placeholder"
                     />
                   </Form.Group>
                 </Col>
@@ -113,6 +116,7 @@ export default function ContactPage() {
                   value={formData.message}
                   onChange={handleChange}
                   placeholder="Your message"
+                     className="custom-placeholder"
                 />
               </Form.Group>
 

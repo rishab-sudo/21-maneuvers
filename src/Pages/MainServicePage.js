@@ -6,52 +6,53 @@ import 'swiper/css';
 import './MainServicePage.css';
 
 const circleData = [
-  { label: "Performance Marketing", back: "back-1", front: "front-1" },
-  { label: "SEO", back: "back-2", front: "front-2" },
-  { label: "Content Creations", back: "back-3", front: "front-3" }
+  { label: "Performance Marketing", back: "back-1", front: "front-1", link: "/performance-service" },
+  { label: "SEO", back: "back-2", front: "front-2", link: "/seo-service" },
+  { label: "Content Creations", back: "back-3", front: "front-3", link: "/content-creation" }
 ];
+
 
 const services = [
   {
     id: 1,
     name: 'Logo Design',
-    title: 'CRAFTING YOUR ONLINE IDENTITY TODAY',
-    description: 'Shaping Future Digital Landscapes Today – Your Imagination, Our expertise, and Limitless Potential Waiting to Be Unveiled.',
+    title: ' Design a Logo That Speaks',
+    description: ' Craft a visual identity that resonates. We turn your story into an unforgettable symbol. Make your first impression count.',
     image: require("../assets/social-media-creative-design.png")
   },
   {
     id: 2,
-    name: 'Social Media',
-    title: 'SOCIAL MEDIA PRESENCE',
-    description: 'Grow your brand with creative and strategic social media campaigns.',
+    name: 'Packaging Design',
+    title: ' Packaging That Sells & Shines',
+    description: '  Stand out on every shelf with purpose.We blend form, function, and emotion.Packaging that tells your brand story.',
     image: require("../assets/social-media-creative-design.png")
   },
   {
     id: 3,
-    name: 'Website',
-    title: 'WEBSITE DEVELOPMENT',
-    description: 'Modern, responsive websites that convert visitors into customers.',
+    name: 'E-Invites',
+    title: 'Digital Invites That Impress Instantly',
+    description: 'Stylish, seamless, and ready to share.We design for both elegance and ease.Make every invite feel personal and memorable.',
     image: require("../assets/social-media-creative-design.png")
   },
   {
     id: 4,
-    name: 'Packaging Design',
-    title: 'PACKAGING DESIGN',
-    description: 'Stand out on the shelf with unique, memorable packaging.',
+    name: 'Performance Marketing',
+    title: 'Fueling Growth with Data-Driven Ads',
+    description: ' From clicks to conversions, we optimize every step.Get real results with ROI-focused strategies.Performance marketing that drives smart growth.',
     image: require("../assets/social-media-creative-design.png")
   },
   {
     id: 5,
-    name: 'Brand Design',
-    title: 'BRAND DESIGN',
-    description: 'Build a cohesive, powerful brand identity.',
+    name: 'Social Media Branding',
+    title: 'Crafting Your Brand Identity Today',
+    description: 'Your imagination, our expertise.Build trust with scroll-stopping visuals.Limitless growth through powerful presence.',
     image: require("../assets/social-media-creative-design.png")
   },
   {
     id: 6,
-    name: 'Logo Design',
-    title: 'LOGO DESIGN',
-    description: 'Stand out on the shelf with unique, memorable packaging.',
+    name: 'SEO',
+    title: 'Be Found. Stay Relevant. Win.',
+    description: ' Boost visibility with proven SEO strategies.We bring traffic that actually converts.Rank higher, grow faster, stay ahead.',
     image: require("../assets/social-media-creative-design.png")
   },
 ];
@@ -142,9 +143,10 @@ const ServiceSlider = () => {
     {/* Left Side */}
     <div className="mainservicepage-left">
       <div className="mainservicepage-left-inner">
-        <h1 className='demo-heading'>Everything,<br/> Made <br/> Simple</h1>
+        <h1 className='demo-heading'>Move Bold.<br/> Matter More.</h1>
         <p>
-          At SimplePlan, we pretty much do it all. From creating an unforgettable brand identity to extending your brand's reach, our comprehensive range of customized services is all you and your brand need!
+        At 21 Maneuvers, we don’t just do digital we master it. From iconic brand identities to 
+        high-impact campaigns, we help businesses stand out in a crowded world. Whether a startup or an established brand, our bold creativity and precise strategies give your brand the power to move and matter!
         </p>
       </div>
     </div>
@@ -154,35 +156,41 @@ const ServiceSlider = () => {
       <div className="mainservicepage-service">
         <h2>Brand & Identity</h2>
         <img src={require("../assets/social-media-creative-design.png")} alt="" />
-        <p>A charming personality can open many doors in life, and your brand's identity is no exception. We specialize in crafting brands that always leave an enduring impression.</p>
+        <p>From logos to packaging, we craft cohesive brand ecosystems that resonate deeply and leave a lasting impression. Every visual element reflects your brand’s story, values, and vision with clarity and consistency.</p>
         <ul>
-          <li>Brand Strategy & Positioning</li>
-          <li>Visual Identity Design</li>
-          <li>Logo & Brand Assets</li>
-          <li>Guideline Documentation</li>
+          <li>Logo Design</li>
+          <li> Packaging Design </li>
+          <li> Social Media Branding</li>
+          <li>E-Invites & E-Brochures</li>
+          <li>Hoardings & Banners</li>
         </ul>
       </div>
+      <br/>
 
       <div className="mainservicepage-service">
-        <h2>Social Media Marketing</h2>
+        <h2>Growth Marketing</h2>
         <img src={require("../assets/social-media-creative-design.png")} alt="" />
-        <p>Creative campaigns that connect with your audience and help grow your online presence.</p>
+        <p>Accelerate your brand’s expansion with a full-funnel approach that combines data, creativity, and automation. We integrate performance, retention, and engagement strategies to drive measurable growth.</p>
         <ul>
-          <li>Content Creation</li>
-          <li>Platform Strategy</li>
-          <li>Ad Management</li>
-          <li>Performance Analytics</li>
+          <li>Performance Marketing</li>
+          <li>Social Media Strategy & Content Marketing</li>
+          <li>Email Marketing & Automation Workflows</li>
+          <li>WhatsApp Marketing & CRM Integration</li>
+          <li> Influencer & Community Marketing </li>
+          <li> Conversion Rate Optimization (CRO) </li>
+          <li> Funnel Strategy & Campaign Setup </li>
         </ul>
       </div>
-
+ <br/>
       <div className="mainservicepage-service">
         <h2>Website Development</h2>
         <img src={require("../assets/social-media-creative-design.png")} alt="" />
-        <p>Build modern, fast, and responsive websites designed to convert visitors into customers.</p>
+        <p> We craft responsive, user-centric websites that embody your brand’s identity—while helping you rank for your industry's top keywords through smart, integrated SEO.</p>
         <ul>
           <li>UI/UX Design</li>
-          <li>Frontend & Backend Dev</li>
+          <li>Frontend & Backend Development</li>
           <li>E-commerce Solutions</li>
+          <li>SEO & PPC Campaigns</li>
           <li>SEO Optimization</li>
         </ul>
       </div>
@@ -190,19 +198,24 @@ const ServiceSlider = () => {
   </div>
 </Container>
 
-<div className="circle-container">
+<div className="circle-container" style={{ marginTop: "7%" }}>
   {circleData.map((item, index) => (
-    <div className="circle-group" key={index}>
-      {/* Overlay text comes FIRST so it stacks above */}
-      <div className="circle-overlay-text">{item.label}</div>
-
-      {/* Circles remain unchanged */}
-      <div className={`circle small back ${item.back}`} />
-      <div className="circle main" />
-      <div className={`circle small front small2 ${item.front}`} />
-    </div>
+    <a
+      href={item.link}
+      className="circle-link"
+      key={index}
+      style={{ textDecoration: "none" }}
+    >
+      <div className="circle-group">
+        <div className="circle-overlay-text">{item.label}</div>
+        <div className={`circle small back ${item.back}`} />
+        <div className="circle main" />
+        <div className={`circle small front small2 ${item.front}`} />
+      </div>
+    </a>
   ))}
 </div>
+
 
 
   </>

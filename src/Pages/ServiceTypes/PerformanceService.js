@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
 import LetsTalk from "../../Components/LetsTalk"
-import "./ContentService.css"
+import "./PerformanceService.css"
 
 const ContentService = () => {
    const images = [
@@ -18,11 +18,12 @@ const ContentService = () => {
    <>
     <Container  fluid className='serviceType-banner-section'>
 <Container className='serviceType-banner-container'>
-
-  <h1> Digital Marketing</h1>
-  <p>WE UNLOCK THE DIGITAL SOLUTIONS</p>
-  <p>The current market welcomes only if you are distinctive. How do the customers know about you? It’s through the digital platforms only, and that’s where Expand Buzz is there for you.</p>
-<p>Digital Marketing AGENCY | TAKE YOU TO THE WIDER SPACE</p>
+<div className='serviceType-banner-heading-div'>
+  <h1> Performance marketing</h1>
+  <p>WE UNLOCK DIGITAL POSSIBILITIES                         </p>
+<p>Your audience is on digital platforms, so that’s exactly where we take your brand. From building presence to driving engagement and results, we maneuver your brand through the digital maze with precision and creativity.</p>
+  <p>IN A WORLD WHERE EVERYONE’S ONLINE, ONLY THE BOLD STAND OUT </p>
+</div>
 <img className='mt-2' src={require("../../assets/social-media-creative-design.png")} alt="content-service-banner"/>
 </Container>
 </Container>
@@ -44,10 +45,11 @@ const ContentService = () => {
     <Container className='serviceType-descp-section'>
       <Container className='serviceType-descp-content-container'>
 <p>We Built Solid Digital Campaigns That</p>
-<h1>Converts into Better</h1>
-<h1>Return on investment</h1>
-<p className='mt-5'>In the present era, people are more connected; success happens at the convergence of culture, content, and technology. If you smartly use the ingredients and execute in the best manner, the victory is yours then. Here at Expand Buzz, we clearly understand this intersection and develop brands out of every digital platform, now and forever.</p>
-<p>In the digital world, the role of successful campaigns and knowing the strategies to implement is not everyone's cup of tea. That's why it's critical for your business to associate with the best digital marketing agency offering extensive digital marketing services & solutions. Our expert team in the digital marketing segment provides 360-degree digital marketing services for your brand.</p>
+<h1>Performance That Drives Growth</h1>
+
+<p className='mt-5'>At 21 Maneuvers, performance is more than just numbers it’s the outcome of strategy, creativity, and flawless execution. We don’t chase vanity metrics. We focus on what truly matters: growth, engagement, and ROI.</p>
+<p>Every campaign is meticulously planned, performance-tracked, and continuously optimized. From audience insights to conversion data, we leverage real-time analytics to fine-tune every move ensuring your brand achieves measurable, sustainable results.</p>
+    <p>BECAUSE WHEN PERFORMANCE LEADS, YOUR BRAND DOESN'T JUST COMPETE; IT DOMINATES.</p>
       </Container>
     </Container>
 
