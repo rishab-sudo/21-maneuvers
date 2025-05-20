@@ -232,6 +232,7 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   width: 200px;
   height: 200px;
   transition: all 0.3s ease;
@@ -241,21 +242,23 @@ html, body {
   border-radius: 50%;
   transition: all 0.4s ease;
   position: absolute;
+ 
 }
 
 .circle.main {
   width: 175px;
   height: 175px;
   background-color: #e30613;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-weight: bold;
-  font-size: 1.4rem; /* Increased for visibility */
-  z-index: 2;
-  text-align: center;
   padding: 1rem;
+}
+.circle-overlay-text {
+  position: absolute;
+  z-index: 100; 
+color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  pointer-events: none;
 }
 
 /* Small Circles */
@@ -281,7 +284,7 @@ html, body {
 }
 /* Hover Effect */
 .circle-group:hover .circle.main {
-  transform: scale(1.2);
+   transform: scale(1.2);
 }
 .circle-group:hover .circle.small {
   opacity: 0;
@@ -352,5 +355,8 @@ html, body {
   /*  */
     .circle-container {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
   }
 }

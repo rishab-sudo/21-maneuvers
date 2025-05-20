@@ -190,15 +190,20 @@ const ServiceSlider = () => {
   </div>
 </Container>
 
- <div className="circle-container">
-      {circleData.map((item, index) => (
-        <div className="circle-group" key={index}>
-          <div className={`circle small back ${item.back}`} />
-          <div className="circle main">{item.label}</div>
-          <div className={`circle small front small2 ${item.front}`} />
-        </div>
-      ))}
+<div className="circle-container">
+  {circleData.map((item, index) => (
+    <div className="circle-group" key={index}>
+      {/* Overlay text comes FIRST so it stacks above */}
+      <div className="circle-overlay-text">{item.label}</div>
+
+      {/* Circles remain unchanged */}
+      <div className={`circle small back ${item.back}`} />
+      <div className="circle main" />
+      <div className={`circle small front small2 ${item.front}`} />
     </div>
+  ))}
+</div>
+
 
   </>
   );
