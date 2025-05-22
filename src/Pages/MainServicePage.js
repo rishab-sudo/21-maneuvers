@@ -143,7 +143,7 @@ const ServiceSlider = () => {
     {/* Left Side */}
     <div className="mainservicepage-left">
       <div className="mainservicepage-left-inner">
-        <h1 className='demo-heading'>Move Bold.<br/> Matter More.</h1>
+        <h1 className='demo-heading'>Move Bold,<br/> Matter More!</h1>
         <p>
         At 21 Maneuvers, we don’t just do digital we master it. From iconic brand identities to 
         high-impact campaigns, we help businesses stand out in a crowded world. Whether a startup or an established brand, our bold creativity and precise strategies give your brand the power to move and matter!

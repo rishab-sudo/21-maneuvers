@@ -1,73 +1,82 @@
 .footer-container-fluid {
-    width: 100%;
-    height: fit-content;
-    background-color: #000;
-}
-.footer-container-overlay{
-    padding: 6.5% 10px;
-color: #fff;
-    text-align: left;
-}
-.footer-center2-section{
-    display: flex;
-    flex-direction: column;
-    justify-content: center !important;
-   margin: auto;
-   width: 80%;
+  width: 100%;
+  height: fit-content;
+  background-color: #000;
 }
 
-.footer-newsletter-form {
-    width: 100%;
-    margin-top: 10px;
+.footer-container-overlay {
+  padding: 6.5% 10px;
+  color: #fff;
+  text-align: left;
+}
+.footer-logo {
+  max-width: 100%;
+  max-height: 100%;
+  padding: 0;
+  margin: 0;
+}
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
-.footer-input-wrapper {
-    position: relative;
-    width: 100%;
+.footer-col {
+  display: flex;
+  justify-content: flex-start; /* changed from center to flex-start */
+  align-items: flex-start;
+  margin-bottom: 20px;
 }
 
-.footer-email-input {
-    width: 100%;
-    padding: 8px 70px 8px 12px; /* space for the button on the right */
-    border-radius: 4px;
-    border: 1px solid #ccc;
+
+.footer-section {
+  width: 100%;
+  max-width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* already fixed earlier */
+  text-align: left;        /* already fixed earlier */
 }
 
-.footer-signup-button {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    background: none;
-    border: 0px;
-    color: #000;
-    cursor: pointer;
-    font-weight: bold;
-    padding: 0;
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
 }
 
-.footer-checkbox-container {
-    display: flex;
-    align-items: flex-start;
-    gap: 8px;
-    margin-top: 12px;
+.footer-links li {
+  margin-bottom: 8px;
 }
 
-.footer-checkbox {
-    margin-top: 5px;
+.footer-links li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
 }
-.error-box{
-    background-color: rgba(255, 8, 0, 0.427);
-    width: 100%;
-    height: fit-content;
-    padding: 15px 10px;
-    margin-top: 5px;
+
+.footer-links li a:hover {
+  color: #00bcd4;
 }
-.footer-error-text {
-    color: rgba(255, 0, 0, 0.471);
-    font-size: 14px;
-    margin-top: 5px;
+
+
+
+.footer-left-section {
+  display: flex;
+  justify-content: flex-start !important;
+  align-items: flex-start !important;
+  padding: 0;
+  margin: 0;
 }
+
+.footer-center2-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center !important;
+  margin: auto;
+  width: 80%;
+}
+
 .footer-social-icons {
   margin-top: 20px;
   display: flex;
@@ -82,19 +91,19 @@ color: #fff;
 }
 
 .footer-social-icon:hover {
-  color: #00bcd4; /* You can customize hover color */
+  color: #00bcd4;
 }
 
-.footer-facebook { }
-.footer-insta { }
-.footer-whatsapp { }
-.footer-linkedin { }
+.footer-facebook {}
+.footer-insta {}
+.footer-whatsapp {}
+.footer-linkedin {}
 
 /* mobile-view */
 @media (max-width: 767px) {
-    .footer-center2-section{
-   justify-content: flex-start !important;
+  .footer-center2-section {
+    justify-content: flex-start !important;
     margin: auto;
     width: 100%;
-    }
- }
+  }
+}

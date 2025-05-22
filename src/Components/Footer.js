@@ -35,99 +35,49 @@ const Footer = () => {
         <>
             <Container fluid className='footer-container-fluid'>
                 <Container className="footer-container-overlay">
-                    <Row className='w-100'>
+               <Row className="w-100 footer-row">
+  <Col lg={3} md={6} sm={12} className="footer-col">
+    <div className="footer-section" style={{marginRight:"auto"}}>
+      <img className="footer-logo" src={require("../assets/logo-21.png")} alt="" />
+    </div>
+  </Col>
 
-                        <Col lg={3} md={3} sm={12} xs={12}>
-                            <div className='footer-left-section'>
-                                <h3>Assettlor <br/>
-                                    Interactive <br/>
-                                    Studios</h3>
-                            </div>
-                        </Col>
+  <Col lg={3} md={6} sm={12} className="footer-col">
+    <div className="footer-section">
+      <p><strong>Bareilly</strong></p>
+      <p>
+        Assettlor Interactive Studios.<br />
+        C-35, Ground Floor, Rampur Bagh,<br />
+        Bareilly 243001, India
+      </p>
+    </div>
+  </Col>
 
-                        <Col lg={3} md={3} sm={12} xs={12}>
-                            <div className='footer-center1-section'>
-                                <p>Bareilly</p>
-                                <p>Assettlor Interactive Studios.
-                                    C-35, ground floor, Rampur Bagh,
-                                    Bareilly 243001,
-                                    India</p>
-                            </div>
-                        </Col>
+  <Col lg={3} md={6} sm={12} className="footer-col">
+    <div className="footer-section">
+      <h4>Quick Links</h4>
+      <ul className="footer-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/services">Services</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </div>
+  </Col>
 
-                        <Col lg={3} md={3} sm={12} xs={12}>
-                            <div className='footer-center2-section'>
-                                <div>
-                                    <p>Work inquiries</p>
-                                    <p>Interested in working with us?
-                                        hello@assettlor.com</p>
-                                </div>
+  <Col lg={3} md={6} sm={12} className="footer-col">
+    <div className="footer-section">
+      <h4>Follow Us</h4>
+      <div className="footer-social-icons">
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="footer-social-icon"><FaFacebookF /></a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="footer-social-icon"><FaInstagram /></a>
+        <a href="https://wa.me/yourwhatsapplink" target="_blank" rel="noopener noreferrer" className="footer-social-icon"><FaWhatsapp /></a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="footer-social-icon"><FaLinkedinIn /></a>
+      </div>
+    </div>
+  </Col>
+</Row>
 
-                                <div>
-                                    <p>Career</p>
-                                    <p>Looking for a job opportunity?
-                                        See open positions</p>
-                                </div>
-                            </div>
-                        </Col>
-
-                        <Col lg={3} md={3} sm={12} xs={12} >
-                            {/* <div className='footer-right-section'>
-                                <p>Sign up for the newsletter</p>
-                                <form className="footer-newsletter-form" onSubmit={handleSubmit}>
-                                    <div className="footer-input-wrapper">
-                                        <input
-                                            type="email"
-                                            name="email"
-                                            placeholder="Enter your email"
-                                            className="footer-email-input"
-                                            value={email}
-                                            onChange={(e) => setEmail(e.target.value)}
-                                        />
-                                        <button type="submit" className="footer-signup-button">Sign up</button>
-                                    </div>
-                                    <div className="footer-checkbox-container">
-                                        <input
-                                            type="checkbox"
-                                            id="consent"
-                                            name="consent"
-                                            className="footer-checkbox"
-                                            checked={consent}
-                                            onChange={(e) => setConsent(e.target.checked)}
-                                        />
-                                        <label htmlFor="consent">
-                                            I'm okay with getting emails and having that activity tracked to improve my experience.
-                                        </label>
-                                    </div>
-                                    {error && (
-                                        <div className='error-box'>
-                                            <p className="footer-error-text">{error}</p>
-                                        </div>
-                                    )}
-                                </form>
-                            </div> */}
-                            <div className=''>
-                                  <h3>Follow Us </h3>
-                            </div>
-                              
-                            <div className="footer-social-icons">
-  <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="footer-social-icon footer-facebook">
-    <FaFacebookF />
-  </a>
-  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="footer-social-icon footer-insta">
-    <FaInstagram />
-  </a>
-  <a href="https://wa.me/yourwhatsapplink" target="_blank" rel="noopener noreferrer" className="footer-social-icon footer-whatsapp">
-    <FaWhatsapp />
-  </a>
-  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="footer-social-icon footer-linkedin">
-    <FaLinkedinIn />
-  </a>
-</div>
-
-                        </Col>
-
-                    </Row>
                 </Container>
             </Container>
         </>

@@ -1,74 +1,105 @@
 /* SeoService.css */
 
-.seo-section {
-  position: relative;
+.seo-banner-section {
   width: 100%;
   height: 100vh;
-  background-color: black;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 7% 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Bottom shadow */
 }
 
-.seo-carousel {
+
+.seo-banner-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  gap: 2rem;
+}
+
+.seo-left-content {
+  max-width: 50%;
+}
+.seo-image-wrapper {
+  position: relative; /* IMPORTANT: Circles are positioned relative to this */
+  max-width: 100%;
+  width: 100%;
+  margin: auto;
+}
+
+.seo-banner-right-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Base style for all 3 circles */
+.seo-circle {
   position: absolute;
+  width: 175px;
+  height: 175px;
+  perspective: 1000px;
+  z-index: 2;
+}
+
+.flip-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.seo-circle:hover .flip-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-front,
+.flip-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.flip-front {
+  background-color: #F5A522;
+}
+
+.flip-back {
+  background-color: #FFCD85;
+  transform: rotateY(180deg);
+}
+
+/* Circle positioning */
+.circle-1 {
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
+  transform: translate(-50%, -50%);
 }
 
-.seo-carousel img {
-  object-fit: cover;
-  height: 100vh;
-  opacity: 0.5;
+.circle-2 {
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
 }
 
-.seo-content {
-  position: relative;
-  z-index: 1;
-  height: 100%;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.circle-3 {
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%);
 }
 
-.top-left {
-  padding: 1rem;
-  padding-top: 10%;
-  text-align: left;
-}
-
-.top-left p:first-child {
-  font-size: 5.5rem;
-  margin-bottom: 0.25rem;
-}
-
-.top-left p:last-child {
-  font-size: 5.5rem;
-  font-weight: 500;
-}
-
-.bottom-right {
-  width: 28%;
-  align-self: flex-end;
-  text-align: left;
-  padding: 1rem;
-  margin-bottom: 2.5rem;
-}
-
-.bottom-right p {
-  margin-bottom: 0.5rem;
-  font-size: 1.5rem;
-  font-weight: 400;
-}
-
-.bottom-right button {
-  background-color: #fff;
-  color: #000;
-  border: none;
-  padding: 0.5rem 1rem;
-}
 /* SeoBenefits.css */
 
 .seo-benefit-container {
@@ -185,76 +216,33 @@ max-width: 75%;
 
 /* mobile-css */
 @media (max-width: 576px) {
-  .seo-section {
-    width: 100%;
-    height: auto;
-  }
-  
-  .seo-carousel {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-  }
-  
-  .seo-carousel img {
-    object-fit: cover;
-    height: 100%;
-    opacity: 0.5;
-  }
-  
-  .seo-content {
-    position: relative;
-    z-index: 1;
-    height: 100%;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-  
- }
-  .top-left {
-    padding: 0rem 1rem;
-    padding-top: 7.5rem;
-    text-align: left;
-    
-  }
-  
-  .top-left p:first-child {
-    font-size: 1.5rem;
-    margin-bottom: 0.25rem;
-  }
-  
-  .top-left p:last-child {
-    font-size: 1.5rem;
-    font-weight: 500;
-  }
-  
-  .bottom-right {
-    width: 100%;
-    align-self: flex-end;
-    text-align: left;
-    padding: 0rem 1rem;
-    margin-bottom: 2.5rem;
-  }
-  
-  .bottom-right p {
-    margin-bottom: 0.5rem;
-    font-size: 1rem;
-    font-weight: 400;
-  }
-  .bottom-right button {
-    background-color: #fff;
-    color: #000;
-  border-radius: 10px;
-    padding: 0.5rem 2rem;
-    margin-top: 1.2rem;
-    font-size: 16px;
-    font-weight: 500;
-  }
-  /*  */
+  .seo-banner-section {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 7% 20px;
+}
+.seo-banner-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  gap: 7rem;
+}
+
+.seo-left-content {
+  min-width: 100%;
+}
+
+.seo-image-wrapper {
+  position: relative; /* IMPORTANT: Circles are positioned relative to this */
+  max-width: 100%;
+}
+  /* seo-benefits-sec */
   .seo-benefit-slide {
     padding: 1rem;
   }

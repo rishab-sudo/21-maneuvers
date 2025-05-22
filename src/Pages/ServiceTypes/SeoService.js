@@ -3,13 +3,13 @@ import { Link } from 'react-router-dom';
 import { Container, Row, Col, Carousel } from "react-bootstrap";
 import CountUp from 'react-countup';
 import ImageSwiper from '../../Components/ImageSlider';
+import ServiceSlider from "../../Components/HomeServiceSlider";
 // import { Swiper, SwiperSlide } from "swiper/react";
 // import { Navigation, Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 
 import "./SeoService.css";
-import ServiceSlider from "../../Components/HomeServiceSlider";
 
 const benefits = [
   {
@@ -46,38 +46,45 @@ const SeoService = () => {
   return (
     <>
     {/* seo-banner-starts */}
-    <div className="seo-section">
-   
-      <Carousel fade controls={false} indicators={false} interval={3000} className="seo-carousel">
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="https://via.placeholder.com/1920x1080/000000/FFFFFF?text=Slide+1"
-            alt="Slide 1"
-          />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="https://via.placeholder.com/1920x1080/111111/FFFFFF?text=Slide+2"
-            alt="Slide 2"
-          />
-        </Carousel.Item>
-      </Carousel>
-
-      {/* Foreground Content */}
-      <Container  className="seo-content">
-        <div className="top-left">
-          <p className="seo-subtitle">Everything you need</p>
-          <p className="seo-title">to outshine with SEO</p>
-        </div>
-        <div className="bottom-right">
-          <p className="seo-description">Unlock repeatable SEO revenue growth with Graphite’s experience, services and tools.</p>
-          <button className="seo-button">Click</button>
-        </div>
-      </Container>
+ <div className="seo-banner-section">
+  <Container className="seo-banner-content">
+    <div className="seo-left-content">
+      <p>Driving $10 Billion in Revenue for Brands Worldwide</p>
+      <h3>SEO Services for Traffic & Revenue Generation</h3>
+      <p>
+        Get more traffic and revenue from search with award-winning SEO services that blend talent and tech to improve SEO performance while tracking its bottom-line impact. Connect with our SEO agency today to get a custom proposal!
+      </p>
     </div>
+
+    {/* Right image + circles */}
+    <div className="seo-image-wrapper">
+      <img className="seo-banner-right-img" src={require("../../assets/seo-img.png")} alt="SEO" />
+
+      {/* Circles attached to image */}
+      <div className="seo-circle circle-1">
+        <div className="flip-inner">
+          <div className="flip-front">A</div>
+          <div className="flip-back">A Back</div>
+        </div>
+      </div>
+      <div className="seo-circle circle-2">
+        <div className="flip-inner">
+          <div className="flip-front">B</div>
+          <div className="flip-back">B Back</div>
+        </div>
+      </div>
+      <div className="seo-circle circle-3">
+        <div className="flip-inner">
+          <div className="flip-front">C</div>
+          <div className="flip-back">C Back</div>
+        </div>
+      </div>
+    </div>
+  </Container>
+</div>
+
 {/* seo-banner-ends */}
+
 
 {/* seo-benefits */}
     <ServiceSlider benefits={benefits} />

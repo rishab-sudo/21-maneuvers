@@ -19,9 +19,10 @@ const ContentService = () => {
     <Container  fluid className='serviceType-banner-section'>
 <Container className='serviceType-banner-container'>
 
-  <h1> Digital Marketing</h1>
-  <p>WE UNLOCK THE DIGITAL SOLUTIONS</p>
-  <p>The current market welcomes only if you are distinctive. How do the customers know about you? It’s through the digital platforms only, and that’s where Expand Buzz is there for you.</p>
+  <h1> Content Creation</h1>
+  <p>We Build Strategic Digital Campaigns That Deliver Real ROI</p>
+  <p>In today’s hyper-connected world, success lies at the intersection of culture, content, and technology. At 21 Maneuvers, we understand that it's not just about being seen—it's about being remembered and driving results.
+</p>
 <p>Digital Marketing AGENCY | TAKE YOU TO THE WIDER SPACE</p>
 <img className='mt-2' src={require("../../assets/social-media-creative-design.png")} alt="content-service-banner"/>
 </Container>
