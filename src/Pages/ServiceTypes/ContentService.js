@@ -61,7 +61,8 @@ const ContentService = () => {
 <p>Realm</p>
   </div>
   <div className='elevate-right-side'>
-<p>In today's digital landscape, leveraging social buzz and optimizing Google rankings are essential for business success. Our established agency excels at tailored social media marketing across platforms, driving traffic and attention.</p>
+<p>In the battle for attention, content is your ultimate weapon. 21 Maneuvers equips you with scroll-stopping, strategy-driven content engineered to connect and convert. We craft every piece – from dynamic visuals to persuasive copy – to elevate your brand's narrative. Whether for social feeds, ad campaigns, or your website, our content moves audiences and drives your performance.
+</p>
   </div>
 </Container>
 </Container>
