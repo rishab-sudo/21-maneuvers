@@ -4,12 +4,12 @@ import { FaFacebookF, FaInstagram, FaWhatsapp, FaLinkedinIn } from 'react-icons/
 import "./LetsTalk.css";
 
 export default function ContactPage() {
-      const [description, setDescription] = useState("Fill out the form and our team will get back to you within 24 hours.");
+      const [description, setDescription] = useState("Buisness");
       const descriptions = [
-    "Fill out the form and our team will get back to you within 24 hours.",
-    "We are here to assist you 24/7 with all your queries.",
-    "Leave your details, and we'll ensure to respond promptly.",
-    "Our team is waiting to connect with you. Reach out today!"
+"Creative",
+"Ideas",
+"Digital",
+"Strategy"
   ];
       useEffect(() => {
     const interval = setInterval(() => {
@@ -49,9 +49,9 @@ export default function ContactPage() {
         <Row>
           {/* Left Column: Headings + Desktop Icons */}
           <Col xs={12} md={6} className="contact-info mb-4 mb-md-0">
-            <h2 className='fancy-text'> Get in Touch</h2>
-            <h4>We'd Love to Hear From You</h4>
-            <p className="fade-text">{description}</p>
+            <h2 className='fancy-text'> Let's Talk</h2>
+            <h4  className="fade-text">{description}</h4>
+            <p>Let's discuss your project at ideas@digitallatte.in</p>
 
             {/* Desktop-only Social Icons */}
             <div className="social-icons desktop-only">

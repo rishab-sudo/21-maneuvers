@@ -20,10 +20,10 @@ const ContentService = () => {
 <Container className='serviceType-banner-container'>
 
   <h1> Content Creation</h1>
-  <p>We Build Strategic Digital Campaigns That Deliver Real ROI</p>
-  <p>In today’s hyper-connected world, success lies at the intersection of culture, content, and technology. At 21 Maneuvers, we understand that it's not just about being seen—it's about being remembered and driving results.
+  <p>POWERING BRANDS WITH DATA-DRIVEN CAMPAIGNS THAT DELIVER RESULTS</p>
+  <p>In a world overwhelmed by noise, we create moments that stick. At 21 Maneuvers, we fuse culture, content, and technology to shape meaningful digital impact, because in today’s world, visibility isn’t enough. Memorability wins.
 </p>
-<p>Digital Marketing AGENCY | TAKE YOU TO THE WIDER SPACE</p>
+<p>21 Maneuvers | ELEVATING YOU INTO A BIGGER DIGITAL UNIVERSE</p>
 <img className='mt-2' src={require("../../assets/social-media-creative-design.png")} alt="content-service-banner"/>
 </Container>
 </Container>
@@ -44,21 +44,22 @@ const ContentService = () => {
 
     <Container className='serviceType-descp-section'>
       <Container className='serviceType-descp-content-container'>
-<p>We Built Solid Digital Campaigns That</p>
-<h1>Converts into Better</h1>
-<h1>Return on investment</h1>
+<p>21 Maneuvers | ELEVATING YOU INTO A BIGGER DIGITAL UNIVERSE</p>
+<h1>We Build Strategic Digital Campaigns</h1>
+<h1> That Deliver Real ROI</h1>
 <p className='mt-5'>In the present era, people are more connected; success happens at the convergence of culture, content, and technology. If you smartly use the ingredients and execute in the best manner, the victory is yours then. Here at Expand Buzz, we clearly understand this intersection and develop brands out of every digital platform, now and forever.</p>
 <p>In the digital world, the role of successful campaigns and knowing the strategies to implement is not everyone's cup of tea. That's why it's critical for your business to associate with the best digital marketing agency offering extensive digital marketing services & solutions. Our expert team in the digital marketing segment provides 360-degree digital marketing services for your brand.</p>
+    <p>LET’S NOT JUST MARKET, LET’S MOVE YOUR BRAND FORWARD.</p>
       </Container>
     </Container>
 
 <Container className='elevate-section'>
 <Container className='elevate-content-container'>
   <div className='elevate-left-side'>
-<p>Elevate Your</p>
-<p>Brand in</p>
-<p>the  Digital</p>
-<p>Realm</p>
+<p>Content That</p>
+<p>Commands </p>
+<p>ATTENTION &</p>
+<p>CONVERTS</p>
   </div>
   <div className='elevate-right-side'>
 <p>In the battle for attention, content is your ultimate weapon. 21 Maneuvers equips you with scroll-stopping, strategy-driven content engineered to connect and convert. We craft every piece – from dynamic visuals to persuasive copy – to elevate your brand's narrative. Whether for social feeds, ad campaigns, or your website, our content moves audiences and drives your performance.

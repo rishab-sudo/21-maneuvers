@@ -46,6 +46,9 @@
     text-align: center;
     padding: 5% 0px;
 }
+.elevate-section{
+  margin-top: 5%;
+}
 .elevate-content-container{
   display: flex;
   justify-content: space-between;

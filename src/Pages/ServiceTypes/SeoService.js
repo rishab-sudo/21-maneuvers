@@ -4,35 +4,13 @@ import { Container, Row, Col, Carousel } from "react-bootstrap";
 import CountUp from 'react-countup';
 import ImageSwiper from '../../Components/ImageSlider';
 import ServiceSlider from "../../Components/HomeServiceSlider";
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import { Navigation, Autoplay, Pagination } from "swiper/modules";
+import LetsTalk from "../../Components/LetsTalk"
+import benefits from "../../Components/HomeServiceSlider"
 import "swiper/css";
 import "swiper/css/navigation";
-
 import "./SeoService.css";
 
-const benefits = [
-  {
-    title: "Focus on what matters",
-    desc: "Every org has its limits, whether that’s budget, resources, time, or all 3. We know how to identify the 5% of SEO work that generates 95% of the results so you only focus on what matters.",
-  },
-  {
-    title: "Streamlined Strategy",
-    desc: "We develop SEO plans that align with your business goals and focus only on tactics that deliver real growth.",
-  },
-  {
-    title: "Scalable Execution",
-    desc: "From audits to implementation, we handle SEO at scale, letting your team focus on big-picture growth.",
-  },
-  {
-    title: "Data-Driven Decisions",
-    desc: "Our insights and reporting help prioritize SEO actions based on impact, not assumptions.",
-  },
-  {
-    title: "Data-Driven Decisions",
-    desc: "Our insights and reporting help prioritize SEO actions based on impact, not assumptions.",
-  },
-];
+
 const slideData = [
   { image: require("../../assets/seo-img.png"), tagline: 'Boosts Visibility' },
   { image: require("../../assets/seo-img.png"), tagline: 'Drives Traffic' },
@@ -40,6 +18,7 @@ const slideData = [
   { image:require("../../assets/seo-img.png"), tagline: 'Cost-Effective' },
   { image: require("../../assets/seo-img.png"), tagline: 'Better Experience' },
 ];
+
 const SeoService = () => {
 
 
@@ -49,10 +28,11 @@ const SeoService = () => {
  <div className="seo-banner-section">
   <Container className="seo-banner-content">
     <div className="seo-left-content">
-      <p>Driving $10 Billion in Revenue for Brands Worldwide</p>
-      <h3>SEO Services for Traffic & Revenue Generation</h3>
+      <p>EMPOWERING BRANDS WORLDWIDE TO REACH THEIR FULL POTENTIAL
+</p>
+      <h3>YOUR BRAND DESERVES TO RANK FIRST,<br/> WE MAKE IT HAPPEN</h3>
       <p>
-        Get more traffic and revenue from search with award-winning SEO services that blend talent and tech to improve SEO performance while tracking its bottom-line impact. Connect with our SEO agency today to get a custom proposal!
+      Boost your traffic and results with 21 Maneuvers’ expert SEO services. Combining creativity and technology, we deliver strategies that drive growth and track real business impact. Connect now for a personalized SEO plan!
       </p>
     </div>
 
@@ -63,20 +43,35 @@ const SeoService = () => {
       {/* Circles attached to image */}
       <div className="seo-circle circle-1">
         <div className="flip-inner">
-          <div className="flip-front">A</div>
-          <div className="flip-back">A Back</div>
+          <div className="flip-front">93% CLIENT SATISFACTION SCORE</div>
+          <div className="flip-back">
+          <p>WHY OUR SATISFACTION SCORE STANDS OUT:</p>
+          <li>Expert Project Management</li>
+          <li>Clear ROI Tracking</li>
+          <li>Wide-Ranging Skill Set</li>
+          </div>
         </div>
       </div>
       <div className="seo-circle circle-2">
         <div className="flip-inner">
-          <div className="flip-front">B</div>
-          <div className="flip-back">B Back</div>
+          <div className="flip-front">91% CLIENT RETENTION RATE </div>
+        <div className="flip-back">
+          <p>WHY IS OUR CLIENT RETENTION RATE SO HIGH?</p>
+          <li>Personalized engagement</li>
+          <li>Consistent results delivery</li>
+          <li>Transparent communication</li>
+          </div>
         </div>
       </div>
       <div className="seo-circle circle-3">
         <div className="flip-inner">
-          <div className="flip-front">C</div>
-          <div className="flip-back">C Back</div>
+          <div className="flip-front">300% AVERAGE ROI FOR CLIENTS</div>
+        <div className="flip-back">
+          <p>WHY IS OUR ROI CONSISTENTLY HIGH?</p>
+          <li>Data-driven strategies</li>
+          <li>Continuous optimization</li>
+          <li>Goal-focused execution</li>
+          </div>
         </div>
       </div>
     </div>
@@ -94,7 +89,8 @@ const SeoService = () => {
     <Container fluid className="growth-section">
 <Container className="growth-content-container">
   <div className="underline "></div>
-  <p className="page_text">Graphite Growth boosted Webflow’s SEO with a targeted editorial strategy, strategic optimizations, and new page types like glossaries, listicles, and free tools.</p>
+  <p className="page_text">21 Maneuvers scaled BD Aromatics’s  SEO by implementing a focused editorial strategy, on-page optimizations, and creating high-impact content like glossaries, listicles, and resource tools.
+</p>
 
   <Row>
 <Col lg={4} md={4} sm={12}>
@@ -136,8 +132,8 @@ const SeoService = () => {
 <Container className="graphite-content-container">
   <div className="graphite-text-div">
   <p>Graphite</p>
-  <p className="page_heading">We are a full-service SEO agency dedicated to driving impact</p> <br/>
-  <p className="page_text">Our team integrates with your team to make sure the most important work gets done. It’s a collaborative, transparent approach that generates velocity across SEO (technical, programmatic and editorial) and CRO.</p>
+  <p className="page_heading">We don’t just do SEO, we drive results that move the needle.</p> <br/>
+  <p className="page_text">Your team + our team = unstoppable momentum. Together, we drive smart, focused execution across technical SEO, content, and CRO: fast, clear, and collaborative.</p>
   <button>Let's Connect </button>
   </div>
   <div style={{width:"45%"}}>
@@ -147,8 +143,7 @@ const SeoService = () => {
     </Container>
 {/*  */}
 
-{/* seo-img-slider */}
-    {/* <ServiceSlider benefits={benefits} /> */}
+
  
     <ImageSwiper slides={slideData} />;
     
@@ -158,7 +153,8 @@ const SeoService = () => {
 <Container fluid className="research-section">
       <Container className="research-content-container">
         <div className="research-left">
-          <p className="research-title">Our research shows</p>
+          <p className="research-title">Our research reveals that 95% of SEO efforts go unnoticed.
+</p>
           <p className="research-number">
               <CountUp start={1} end={95 } duration={2} separator="," suffix=" %" decimals={0} />
               </p>
@@ -167,8 +163,7 @@ const SeoService = () => {
         <div className="research-right">
           <p className="research-highlight">of SEO work is wasted effort</p>
           <p className="research-desc page_text">
-            We analyzed the blogs of 3,000 sites and found that it’s common for 95% of pages
-            to drive less than 5% of traffic.
+           After analyzing over 3,000 websites, we found that the majority of blog pages contribute less than 5% of overall traffic. The key? Focusing your strategy on the high-performing 5% that actually moves the needle.
           </p>
         </div>
       </Container>
@@ -182,14 +177,14 @@ const SeoService = () => {
   <p className="page_heading">How to focus on the 5% that matters</p> <br/>
   <div className="bullet-paragraphs">
   <div className="bullet-paragraphs">
-  <p className="square-bullet">Prioritize only high-impact work to generate results faster and more consistently</p>
-  <p className="square-bullet">Prioritize only high-impact work to generate results faster and more consistently</p>
-  <p className="square-bullet">Prioritize only high-impact work to generate results faster and more consistently</p>
+  <p className="square-bullet">Focus on improving rankings, driving qualified traffic, and capturing search intent
+</p>
+  <p className="square-bullet">Prioritize content strategies that earn backlinks and boost engagement</p>
+  <p className="square-bullet">Optimize technical SEO to enhance crawlability, site speed, and long-term visibility</p>
 </div>
 
 </div>
-<button>Let's Connect </button>
-  </div>
+ </div>
 
   <div style={{width:"45%"}}>
   <img src={require("../../assets/chart.png")} style={{maxHeight:"100%",maxWidth:"100%"}} alt=""/>
@@ -200,21 +195,16 @@ const SeoService = () => {
 <Container>
   <div className="graphite-bottom-text-div">
         <p className="page_heading " style={{fontWeight:"400"}}>
-          Graphite has proven that SEO isn’t a mysterious black box. They take a
-          systematic, guided approach to get repeatable results across many, many
-          clients. Very, very impressive results.
+       By cutting out the guesswork, 21 Maneuvers delivers SEO that actually works, again and again. Our strategic, creative led approach drives scalable results across industries, turning rankings into revenues.
+How much impact will SEO have on your growth?
+
         </p>
+        <button>Let's Connect </button>
       </div>
     </Container>
  
 {/* seo-contact */}
-    <Container style={{paddingTop:"7%",paddingBottom:"7%"}}>
-<div className="underline"></div>
-<p>How much impact will SEO have on your growth?</p>
-<Link to="/contact">
-  <button>Contact Us</button>
-</Link>
-    </Container>
+   <LetsTalk/>
 {/*  */}
     </>
   );

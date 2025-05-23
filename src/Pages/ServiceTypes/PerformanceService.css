@@ -2,8 +2,7 @@
   
 }
 .serviceType-banner-container{
-   
-    display: flex;
+   display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -12,14 +11,14 @@
 .serviceType-banner-heading-div{
   max-width: 75%;
 }
-.serviceType-images-section {
-  padding: 60px 0;
-  
-}
 
 .serviceType-banner-container h1,
 .serviceType-banner-container p {
   text-align: center;
+}
+.serviceType-images-section {
+  padding: 60px 0;
+  
 }
 
 .serviceType-image-wrapper {
@@ -47,4 +46,19 @@
     align-items: center;
     text-align: center;
     padding: 5% 0px;
+}
+
+@media (max-width: 768px) {
+  .serviceType-images-section {
+  padding: 0;
+  margin: auto;
+  max-width: 95%;
+  
+}
+.serviceType-image-wrapper img {
+    padding: 0;
+    margin: auto;
+ max-width: 95%;
+
+}
 }
