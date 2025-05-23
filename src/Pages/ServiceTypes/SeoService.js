@@ -153,7 +153,7 @@ const SeoService = () => {
 <Container fluid className="research-section">
       <Container className="research-content-container">
         <div className="research-left">
-          <p className="research-title">Our research reveals that 95% of SEO efforts go unnoticed.
+          <p className="research-title">Our research reveals that 
 </p>
           <p className="research-number">
               <CountUp start={1} end={95 } duration={2} separator="," suffix=" %" decimals={0} />
