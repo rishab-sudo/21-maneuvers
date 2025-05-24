@@ -191,8 +191,8 @@ body {
 }
 
 .mainservicepage-service {
-  margin-top: 2.5rem;
-  min-height: 100vh;
+  margin-top: 5rem;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;

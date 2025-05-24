@@ -14,17 +14,18 @@
   padding: 60px 0;
   
 }
-
+.serviceType-content-container{
+  padding: 15px;
+}
 .serviceType-banner-container h1,
 .serviceType-banner-container p {
   text-align: center;
 }
 
 .serviceType-image-wrapper {
-    padding: 0;
+    padding: 5px;
     margin: 0;
     width: 100%;
-  padding: 5px;
 }
 
 .serviceType-image-wrapper img {
