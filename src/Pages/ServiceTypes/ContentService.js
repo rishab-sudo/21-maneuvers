@@ -24,7 +24,7 @@ const ContentService = () => {
   <p>In a world overwhelmed by noise, we create moments that stick. At 21 Maneuvers, we fuse culture, content, and technology to shape meaningful digital impact, because in today’s world, visibility isn’t enough. Memorability wins.
 </p>
 <p>21 Maneuvers | ELEVATING YOU INTO A BIGGER DIGITAL UNIVERSE</p>
-<img className='mt-2' src={require("../../assets/social-media-creative-design.png")} alt="content-service-banner"/>
+<img className='mt-2 performance-banner-img' src={require("../../assets/social-media-creative-design.png")} alt="content-service-banner"/>
 </Container>
 </Container>
 

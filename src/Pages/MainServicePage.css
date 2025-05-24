@@ -197,7 +197,7 @@ body {
   flex-direction: column;
   justify-content: center;
   padding: 2rem 0;
-  background-color: #22cef5;
+ 
 }
 
 .demo-heading {
@@ -352,33 +352,26 @@ body {
   width: 100%;
   height: 100% !important;
   max-height: 100%;
-background-color: #F5A522;
-
- }.slide-content {
+/* background-color: #F5A522; */
+  }
+.slide {
+  width: 100%;
+  height: 100%;
+}
+ .slide-content {
     width: 100%;
     max-height: 100% !important;
     flex-direction: column;
     text-align: center;
     gap: 1rem;
-    padding: 0 !important;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
     margin: 0;
-  background-color: #22cef5;
-    
-  }
-.slide {
-  width: 100%;
-  height: 80vh;
+   }
 
-}
 .service-swiper {
   height: 100%;
 }
-  .service-swiper {
-    width: 100%;
-    max-height: 80%;
-min-height: 100%;
-
-  }
   .left-text,
   .right-image {
     max-width: 100%;
@@ -389,10 +382,9 @@ min-height: 100%;
     max-width: 100%;
     max-height: 100%;
   }
-
-
 .service-bar-section{
-  padding: 20px 0px;
+  padding: 10px 0px;
+
 }
   /* below-banner-sec service-vertical-crousel*/
   .mainservicepage-section {
@@ -410,19 +402,7 @@ min-height: 100%;
     max-height: 100%;
   }
 
-  .mainservicepage-service {
-    margin: 0;
-    max-height: 100%;
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0px !important;
-    /* background-color: red; */
-
-  }
-
-  .mainservicepage-left {
+.mainservicepage-left {
     position: relative;
     height: auto;
     width: 100%;
@@ -433,8 +413,18 @@ min-height: 100%;
     height: auto;
     max-height: unset;
     padding: 1rem;
+ 
   }
-
+  .mainservicepage-service {
+    margin-top: 1.2rem;
+    margin-bottom: 0rem;
+  height: 100%;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   /* background-color: red; */
+}
 
   /*  */
   .circle-container {
@@ -443,4 +433,31 @@ min-height: 100%;
     align-items: center;
     margin: auto;
   }
+
+.circle.main {
+  width: 170px;
+  height: 170px;
+  background-color: #F5A522;
+  padding: 1rem;
+}
+/* Small Circles */
+.circle.small {
+  width: 120px;
+  height: 120px;
+  background-color: #F5A522;
+  outline-offset: 1px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+  /* Light soft shadow */
+  z-index: 1;
+  opacity: 1;
+}
+
+.circle.small2 {
+  width: 135px;
+  height: 135px;
+  background-color: #F5A522;
+  z-index: 1;
+  opacity: 1;
+}
+
 }

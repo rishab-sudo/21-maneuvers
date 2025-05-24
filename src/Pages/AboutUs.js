@@ -55,8 +55,8 @@ const About = () => {
   // };
   return (
     <>
-      <Container fluid style={{ paddingTop: "5%", paddingBottom: "5%", background: "" }}>
-        <Container  >
+      <Container fluid className='aboutus-banner-section'>
+        <Container className='aboutus-banner-heading-div' >
           <p className='page_main_heading'>About Studio </p>
         </Container>
       </Container>
@@ -199,6 +199,22 @@ We’re a crew of curious minds and bold creators, always chasing the next big i
                   delay: 4000,
                   disableOnInteraction: false,
                 }}
+                  breakpoints={{
+  
+    992: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+    },
+    768: {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+    },
+ 
+    0: {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+    },
+  }}
                 onInit={(swiper) => {
                   swiper.params.navigation.prevEl = '.testimonial-prev';
                   swiper.params.navigation.nextEl = '.testimonial-next';

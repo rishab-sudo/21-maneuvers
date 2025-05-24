@@ -2,7 +2,6 @@
   
 }
 .serviceType-banner-container{
-   
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -63,4 +62,14 @@ font-weight: 600;
 .elevate-right-side{
 margin-top: auto;
 width: 45%;
+}
+
+@media (max-width: 768px) {
+  .serviceType-banner-section{
+  max-height: 100%;
+  /* background-color: aqua; */
+}
+.serviceType-banner-container{
+    padding: 5rem 0px;
+}
 }
