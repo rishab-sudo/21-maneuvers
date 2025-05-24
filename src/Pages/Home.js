@@ -35,11 +35,11 @@ const faqData = [
   },
   {
     question: "Marketing strategies that make an impact",
-    answer: " From Social Media to SEO, PPC, and Meta Ads—creative meets conversion in every campaign we run."
+    answer: " From Social Media to SEO, PPC, and Meta Ads, creative meets conversion in every campaign we run."
   },
   {
     question: "Design that defines your identity",
-    answer: " Powerful visual branding—from logos to complete brand systems—that connects with your audience at every touchpoint."
+    answer: "  Powerful visual branding, from logos to complete brand systems, that connects with your audience at every touchpoint."
   },
   {
     question: "Visual storytelling that connect and convert",
@@ -85,9 +85,9 @@ const Home = () => {
              <div className='service-right-section'>
                <div className='service-heading-box'>
                  <p className='page_text'>OUR SERVICES</p>
-                 <p className='page_main_heading'>Full-service <br />
-                  Social Media & <br />
-                  Content Strategy</p>
+                 <p className='page_main_heading'>Complete Digital  <br />
+                  Growth Solutions &<br />
+                 Creative Brand Experiences</p>
                  
                </div>
    

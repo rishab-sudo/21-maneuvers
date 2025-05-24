@@ -131,22 +131,22 @@ const SeoService = () => {
     <Container fluid className="graphite-section">
 <Container className="graphite-content-container">
   <div className="graphite-text-div">
-  <p>Graphite</p>
+   {/* <p>graphite</p> */}
+  <p>21 Maneuvers </p>
   <p className="page_heading">We don’t just do SEO, we drive results that move the needle.</p> <br/>
   <p className="page_text">Your team + our team = unstoppable momentum. Together, we drive smart, focused execution across technical SEO, content, and CRO: fast, clear, and collaborative.</p>
-  <button>Let's Connect </button>
+  {/* <button>Let's Connect </button> */}
   </div>
-  <div style={{width:"45%"}}>
-  <img src={require("../../assets/chart.png")} style={{maxHeight:"100%",maxWidth:"100%"}} alt=""/>
+  <div className="graphite-img-wrapper">
+  <img className="graphite-img"src={require("../../assets/chart.png")} style={{maxHeight:"100%",maxWidth:"100%"}} alt=""/>
   </div>
 </Container>
     </Container>
+
 {/*  */}
 
-
- 
     <ImageSwiper slides={slideData} />;
-    
+
 {/*  */}
 
 {/* seo - research -sec */}
@@ -171,7 +171,7 @@ const SeoService = () => {
 
     {/* seo-focus-sec */}
     <Container fluid className="focus-section">
-<Container className="graphite-content-container">
+<Container  className="focus-content-container">
   <div className="graphite-text-div">
   <p></p>
   <p className="page_heading">How to focus on the 5% that matters</p> <br/>
@@ -186,20 +186,20 @@ const SeoService = () => {
 </div>
  </div>
 
-  <div style={{width:"45%"}}>
-  <img src={require("../../assets/chart.png")} style={{maxHeight:"100%",maxWidth:"100%"}} alt=""/>
+  <div className="focus-img-sec">
+  <img className="focus-img" src={require("../../assets/chart.png")} style={{maxHeight:"100%",maxWidth:"100%"}} alt=""/>
   </div>
 </Container>
 </Container>
 
 <Container>
-  <div className="graphite-bottom-text-div">
+  <div className="seo-bottom-text-div">
         <p className="page_heading " style={{fontWeight:"400"}}>
        By cutting out the guesswork, 21 Maneuvers delivers SEO that actually works, again and again. Our strategic, creative led approach drives scalable results across industries, turning rankings into revenues.
 How much impact will SEO have on your growth?
 
         </p>
-        <button>Let's Connect </button>
+        {/* <button>Let's Connect </button> */}
       </div>
     </Container>
  

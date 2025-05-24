@@ -47,8 +47,9 @@ const ContentService = () => {
 <p>21 Maneuvers | ELEVATING YOU INTO A BIGGER DIGITAL UNIVERSE</p>
 <h1>We Build Strategic Digital Campaigns</h1>
 <h1> That Deliver Real ROI</h1>
-<p className='mt-5'>In the present era, people are more connected; success happens at the convergence of culture, content, and technology. If you smartly use the ingredients and execute in the best manner, the victory is yours then. Here at Expand Buzz, we clearly understand this intersection and develop brands out of every digital platform, now and forever.</p>
-<p>In the digital world, the role of successful campaigns and knowing the strategies to implement is not everyone's cup of tea. That's why it's critical for your business to associate with the best digital marketing agency offering extensive digital marketing services & solutions. Our expert team in the digital marketing segment provides 360-degree digital marketing services for your brand.</p>
+<p className='mt-5'>IWe don’t believe in one-size-fits-all marketing. Instead, we craft data-driven, creatively charged campaigns that align with your brand goals and audience behavior. From increasing visibility to boosting conversions, every campaign we build is designed to perform.</p>
+<p>Digital success takes more than just presence, it takes precision. That’s why businesses partner with 21 Maneuvers, a digital marketing agency known for its full-spectrum solutions, sharp strategies, and a team that maneuvers your brand through the ever-evolving digital landscape.
+</p>
     <p>LET’S NOT JUST MARKET, LET’S MOVE YOUR BRAND FORWARD.</p>
       </Container>
     </Container>
@@ -62,7 +63,8 @@ const ContentService = () => {
 <p>CONVERTS</p>
   </div>
   <div className='elevate-right-side'>
-<p>In the battle for attention, content is your ultimate weapon. 21 Maneuvers equips you with scroll-stopping, strategy-driven content engineered to connect and convert. We craft every piece – from dynamic visuals to persuasive copy – to elevate your brand's narrative. Whether for social feeds, ad campaigns, or your website, our content moves audiences and drives your performance.
+<p>In the battle for attention, content is your ultimate weapon. 21 Maneuvers equips you with scroll stopping, 
+  strategy driven content engineered to connect and convert. We craft every piece, from dynamic visuals to persuasive copy, to elevate your brand's narrative. Whether for social feeds, ad campaigns, or your website, our content moves audiences and drives your performance.
 </p>
   </div>
 </Container>

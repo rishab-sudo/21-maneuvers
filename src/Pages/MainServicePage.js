@@ -31,21 +31,21 @@ const services = [
     id: 3,
     name: 'E-Invites',
     title: 'Digital Invites That Impress Instantly',
-    description: 'Stylish, seamless, and ready to share.We design for both elegance and ease.Make every invite feel personal and memorable.',
+    description: ' Stylish, seamless, and ready to share. We design for both elegance and ease. Make every invite feel personal and memorable.',
     image: require("../assets/social-media-creative-design.png")
   },
   {
     id: 4,
     name: 'Performance Marketing',
     title: 'Fueling Growth with Data-Driven Ads',
-    description: ' From clicks to conversions, we optimize every step.Get real results with ROI-focused strategies.Performance marketing that drives smart growth.',
+    description: ' From clicks to conversions, we optimize every step. Get real results with ROI-focused strategies.Performance marketing that drives smart growth.',
     image: require("../assets/social-media-creative-design.png")
   },
   {
     id: 5,
     name: 'Social Media Branding',
     title: 'Crafting Your Brand Identity Today',
-    description: 'Your imagination, our expertise.Build trust with scroll-stopping visuals.Limitless growth through powerful presence.',
+    description: 'Your imagination, our expertise. Build trust with scroll-stopping visuals. Limitless growth through powerful presence.',
     image: require("../assets/social-media-creative-design.png")
   },
   {

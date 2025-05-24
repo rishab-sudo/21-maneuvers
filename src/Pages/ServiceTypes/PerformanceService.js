@@ -19,13 +19,13 @@ const ContentService = () => {
     <Container  fluid className='serviceType-banner-section'>
 <Container className='serviceType-banner-container'>
 <div className='serviceType-banner-heading-div'>
-  <h1> Performance marketing</h1>
+  <h1>Performance Marketing</h1>
   <p>YOUR BRAND DESERVES MORE THAN VISIBILITY, IT DESERVES VELOCITY.</p>
 <p>We don’t just take you online. We position you precisely where your audience scrolls, clicks, and connects. With sharp strategy and standout creativity, 21 Maneuvers navigates the digital maze, turning presence into performance.
 </p>
   <p>FUELING RESULTS, NOT JUST REACH</p>
 </div>
-<img className='mt-2' src={require("../../assets/social-media-creative-design.png")} alt="content-service-banner"/>
+<img className='mt-2 performance-banner-img' src={require("../../assets/social-media-creative-design.png")} alt="content-service-banner"/>
 </Container>
 </Container>
 
@@ -35,7 +35,7 @@ const ContentService = () => {
   {images.map((imgSrc, index) => (
     <Col xs={12} md={6} key={index} className='p-0 g-0'>
       <div className="serviceType-image-wrapper">
-        <img src={imgSrc} alt={`Post ${index + 1}`} />
+        <img className="serviceType-grid-img"src={imgSrc} alt={`Post ${index + 1}`} />
       </div>
     </Col>
   ))}
