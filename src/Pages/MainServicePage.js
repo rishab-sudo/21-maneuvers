@@ -113,7 +113,7 @@ const ServiceSlider = () => {
         ))}
       </Swiper>
 
-      <div className="service-bar">
+      <div className="service-bar-section">
         <div className="service-bar-line"></div>
         <div
           className="service-boxes"
@@ -165,7 +165,7 @@ const ServiceSlider = () => {
           <li>Hoardings & Banners</li>
         </ul>
       </div>
-      <br/>
+
 
       <div className="mainservicepage-service">
         <h2>Growth Marketing</h2>
@@ -181,7 +181,7 @@ const ServiceSlider = () => {
           <li> Funnel Strategy & Campaign Setup </li>
         </ul>
       </div>
- <br/>
+
       <div className="mainservicepage-service">
         <h2>Website Development</h2>
         <img src={require("../assets/social-media-creative-design.png")} alt="" />

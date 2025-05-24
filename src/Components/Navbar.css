@@ -222,8 +222,8 @@
      }
     
       .menu-links {
-        margin-top: 2.5rem;
-        margin-left: 20px;
+        margin-top: 5.25rem;
+        margin-left: 2px;
         gap: 1.5rem; /* slightly tighter spacing for mobile */
       }
       .hamburger {

@@ -10,20 +10,20 @@ import "./AboutUs.css"
 
 const faqData = [
   {
-    question: "Cost-effective offshore delivery of design, development, testing and support services",
-    answer: "Offshore development and test services enable businesses to reduce costs and speed up innovation cycles..."
+    question: "One Stop for Performance-Driven Digital Campaigns",
+    answer: "We turn traffic into conversions with sharp creatives, smart targeting, and campaign optimization."
   },
   {
-    question: "One stop shop for product development, maintenance, and support",
-    answer: "Having the right team can streamline business processes, boost efficiency..."
+    question: "One Stop for SEO that Delivers Results",
+    answer: "Boost rankings, drive traffic, and generate leads with proven, data-backed SEO strategies."
   },
   {
-    question: "One stop shop for product development, maintenance, and support",
-    answer: "Having the right team can streamline business processes, boost efficiency..."
+    question: "One Stop for Growth Marketing That Scales",
+    answer: "Fuel business growth with full-funnel strategies, performance media, and data-driven execution."
   },
   {
-    question: "One stop shop for product development, maintenance, and support",
-    answer: "Having the right team can streamline business processes, boost efficiency..."
+    question: "One Stop for Content Creation That Connects",
+    answer: "Engaging content that stops the scroll and sparks action across all digital platforms."
   },
 
 ];
@@ -66,16 +66,25 @@ const About = () => {
 
           <div className='about-left-section'>
             <p className='page_text fw-bold'> ABOUT US</p>
-            <p className='page_heading'>We're a team of creatives who are excited about new ideas and unique mutual opportunities.</p>
+            <p className='page_heading'>            
+          "People do not buy goods and services. They buy relations, stories and magic." <br/>
+Bharat Aggarwal
+</p>
           </div>
 
           <div className='about-right-section'>
-            <p className='page_text'>We are a multidisciplinary digital agency delivering innovative marketing and design
-              solutions. From startups to seasoned brands, we enable businesses to thrive in the digital
-              landscape through storytelling, branding, and digital transformation.</p>
+            <p className='page_text'>
+We’re a crew of curious minds and bold creators, always chasing the next big idea and unforgettable collaborations.
 
-            <div className='service-services-box page_text fw-bold'>
-              <div >
+</p>
+
+            <div className=' page_text fw-bold'>
+              <h2>We’re 21 Maneuvers, a multidisciplinary force of strategy, story, and style.
+</h2>
+<p>From scrappy startups to seasoned giants, we craft bold brands, magnetic designs, and digital experiences that don’t just compete, they captivate.
+</p>
+<p>In a world of noise, we help you speak louder, clearer, and more creatively. Welcome to your next leap forward.</p>
+              {/* <div >
                 <div className='underline'></div>
                 <p>Social Media Management</p>
                 <p>Graphic Designing</p>
@@ -89,7 +98,7 @@ const About = () => {
                 <p>Brand Development</p>
                 <p>Performance Marketing</p>
                 <p>Content Creation</p>
-              </div>
+              </div> */}
             </div>
           </div>
         </Container>
