@@ -79,7 +79,7 @@ We’re a crew of curious minds and bold creators, always chasing the next big i
 </p>
 
             <div className=' page_text fw-bold'>
-              <h2>We’re 21 Maneuvers, a multidisciplinary force of strategy, story, and style.
+              <h2 className='page_heading'>We’re 21 Maneuvers, a multidisciplinary force of strategy, story, and style.
 </h2>
 <p>From scrappy startups to seasoned giants, we craft bold brands, magnetic designs, and digital experiences that don’t just compete, they captivate.
 </p>
