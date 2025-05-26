@@ -184,20 +184,20 @@ body {
   padding: 2rem;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
   border-radius: 12px;
   scroll-behavior: smooth;
   position: relative;
+  /* background-color: #F5A522; */
 }
 
 .mainservicepage-service {
-  margin-top: 5rem;
+  margin-top: 2rem;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 2rem 0;
- 
+ /* background-color: #00aaff; */
 }
 
 .demo-heading {
@@ -400,23 +400,13 @@ body {
 
   .mainservicepage-right {
     max-height: 100%;
-  }
-
-.mainservicepage-left {
-    position: relative;
-    height: auto;
-    width: 100%;
-    padding: .5rem;
-  }
-
-  .mainservicepage-right {
-    height: auto;
+  gap: 2.5rem;
+        height: auto;
     max-height: unset;
     padding: 1rem;
- 
   }
-  .mainservicepage-service {
-    margin-top: 1.2rem;
+    .mainservicepage-service {
+    margin-top: 1rem;
     margin-bottom: 0rem;
   height: 100%;
     padding: 0px;
@@ -425,6 +415,14 @@ body {
     justify-content: center;
    /* background-color: red; */
 }
+
+.mainservicepage-left {
+    position: relative;
+    height: auto;
+    width: 100%;
+    padding: .5rem;
+  }
+
 
   /*  */
   .circle-container {
