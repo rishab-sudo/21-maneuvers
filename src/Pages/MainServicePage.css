@@ -221,7 +221,9 @@ body {
   height: auto;
   display: block;
   object-fit: cover;
+
 }
+
 
 /* responsive circles */
 .circle-link {
@@ -283,7 +285,7 @@ body {
   height: 120px;
   background-color: #F5A522;
   outline-offset: 1px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
   /* Light soft shadow */
   z-index: 1;
   opacity: 1;

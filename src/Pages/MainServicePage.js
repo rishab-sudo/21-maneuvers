@@ -154,8 +154,8 @@ const ServiceSlider = () => {
     {/* Right Side */}
     <div className="mainservicepage-right">
       <div className="mainservicepage-service">
-        <h2>Brand & Identity</h2>
-        <img src={require("../assets/social-media-creative-design.png")} alt="" />
+        <h2 className='mb-2'>Brand & Identity</h2>
+        <img className=" mainservicepage-service-img" src={require("../assets/social-media-creative-design.png")} alt="" />
         <p>From logos to packaging, we craft cohesive brand ecosystems that resonate deeply and leave a lasting impression. Every visual element reflects your brand’s story, values, and vision with clarity and consistency.</p>
         <ul>
           <li>Logo Design</li>
@@ -168,7 +168,7 @@ const ServiceSlider = () => {
 
 
       <div className="mainservicepage-service">
-        <h2>Growth Marketing</h2>
+        <h2 className='mb-2'>Growth Marketing</h2>
         <img src={require("../assets/social-media-creative-design.png")} alt="" />
         <p>Accelerate your brand’s expansion with a full-funnel approach that combines data, creativity, and automation. We integrate performance, retention, and engagement strategies to drive measurable growth.</p>
         <ul>
@@ -183,7 +183,7 @@ const ServiceSlider = () => {
       </div>
 
       <div className="mainservicepage-service">
-        <h2>Website Development</h2>
+        <h2 className='mb-2'>Website Development</h2>
         <img src={require("../assets/social-media-creative-design.png")} alt="" />
         <p> We craft responsive, user-centric websites that embody your brand’s identity—while helping you rank for your industry's top keywords through smart, integrated SEO.</p>
         <ul>
