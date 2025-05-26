@@ -41,9 +41,10 @@ const ContentService = () => {
 
 <Container fluid>
   <Container className='performance-platform-container'>
-    <div className='performance-platform-box'>
+   
+<div className='performance-platform-box'>
 <div className=''>
-  <img src={require("../../assets/coffee_icon.png")} alt=""/>
+  <img className='ads-icon' src={require("../../assets/google.png")} alt=""/>
 </div>
 <div>
   <p>Google Ads</p>
@@ -55,10 +56,10 @@ const ContentService = () => {
 
  <div className='performance-platform-box'>
 <div className=''>
-  <img src={require("../../assets/coffee_icon.png")} alt=""/>
+  <img className='ads-icon' src={require("../../assets/meta.png")} alt=""/>
 </div>
 <div>
-  <p>Google Ads</p>
+  <p>Meta Ads</p>
     <p> rs 10,0000</p>
       <p>1800 Leads</p>
         <p> 520 Connections</p>
@@ -67,10 +68,10 @@ const ContentService = () => {
 
  <div className='performance-platform-box'>
 <div className=''>
-  <img src={require("../../assets/coffee_icon.png")} alt=""/>
+  <img className='ads-icon' src={require("../../assets/linkedin.png")} alt=""/>
 </div>
 <div>
-  <p>Google Ads</p>
+  <p>Linkedin Ads</p>
     <p> rs 10,0000</p>
       <p>1800 Leads</p>
         <p> 520 Connections</p>
@@ -79,10 +80,10 @@ const ContentService = () => {
 
  <div className='performance-platform-box'>
 <div className=''>
-  <img src={require("../../assets/coffee_icon.png")} alt=""/>
+  <img className='ads-icon' src={require("../../assets/whatsapp.png")} alt=""/>
 </div>
 <div>
-  <p>Google Ads</p>
+  <p>Whatsapp Marketing</p>
     <p> rs 10,0000</p>
       <p>1800 Leads</p>
         <p> 520 Connections</p>
