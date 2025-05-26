@@ -8,7 +8,7 @@ import './MainServicePage.css';
 const circleData = [
   { label: "Performance Marketing", back: "back-1", front: "front-1", link: "/performance-service" },
   { label: "SEO", back: "back-2", front: "front-2", link: "/seo-service" },
-  { label: "Content Creations", back: "back-3", front: "front-3", link: "/content-creation" }
+  { label: "Content Creation", back: "back-3", front: "front-3", link: "/content-creation" }
 ];
 
 

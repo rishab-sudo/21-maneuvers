@@ -12,7 +12,7 @@ const workItems = [
   {
     id: 2,
     image: require("../assets/slide21.jpg"),
-    text: 'Seo',
+    text: 'SEO',
     link: '/seo-service',
   },
   {
