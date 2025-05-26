@@ -203,8 +203,8 @@ body {
  background-color: #00aaff;
 } */
  .mainservicepage-service {
-  margin-top: 3rem; /* Increased for better spacing */
-  margin-bottom: 3rem; /* NEW: ensure spacing from next section */
+  margin-top: 2rem; /* Increased for better spacing */
+  margin-bottom: 0rem; 
   height: auto; /* UPDATED: prevent forced full height that causes overflow on smaller screens */
   display: flex;
   flex-direction: column;
