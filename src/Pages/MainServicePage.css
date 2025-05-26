@@ -180,6 +180,7 @@ body {
 .mainservicepage-right {
   flex: 1;
   height: 100vh;
+  gap: 5rem;
   overflow-y: auto;
   padding: 2rem;
   display: flex;
@@ -400,7 +401,7 @@ body {
 
   .mainservicepage-right {
     max-height: 100%;
-  gap: 2.5rem;
+  gap: 3.5rem;
         height: auto;
     max-height: unset;
     padding: 1rem;
