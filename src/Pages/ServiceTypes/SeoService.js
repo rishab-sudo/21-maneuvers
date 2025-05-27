@@ -132,7 +132,7 @@ const SeoService = () => {
 <Container className="graphite-content-container">
   <div className="graphite-text-div">
    {/* <p>graphite</p> */}
-  <p>21 Maneuvers </p>
+  <p className='page_text'>21 Maneuvers </p>
   <p className="page_heading">We don’t just do SEO, we drive results that move the needle.</p> <br/>
   <p className="page_text">Your team + our team = unstoppable momentum. Together, we drive smart, focused execution across technical SEO, content, and CRO: fast, clear, and collaborative.</p>
   {/* <button>Let's Connect </button> */}

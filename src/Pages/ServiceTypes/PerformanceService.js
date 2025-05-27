@@ -21,10 +21,10 @@ const ContentService = () => {
 <Container className='serviceType-banner-container'>
 <div className='serviceType-banner-hebannering-div'>
   <h1>Performance Marketing</h1>
-  <p>YOUR BRAND DESERVES MORE THAN VISIBILITY, IT DESERVES VELOCITY.</p>
+  <p className='page_text'>YOUR BRAND DESERVES MORE THAN VISIBILITY, IT DESERVES VELOCITY.</p>
 <p>We don’t just take you online. We position you precisely where your audience scrolls, clicks, and connects. With sharp strategy and standout creativity, 21 Maneuvers navigates the digital maze, turning presence into performance.
 </p>
-  <p>FUELING RESULTS, NOT JUST REACH</p>
+  <p className='page_text'>FUELING RESULTS, NOT JUST REACH</p>
 </div>
 
 
@@ -95,14 +95,14 @@ const ContentService = () => {
 
     <Container className='serviceType-descp-section'>
       <Container className='serviceType-descp-content-container'>
-<p>We Unlock Digital Possibilities.
+<p >We Unlock Digital Possibilities.
 </p>
 <h1>Performance That Drives Growth</h1>
 
-<p className='mt-5'>At 21 Maneuvers, performance is more than just numbers, it’s the outcome of strategy, creativity, and flawless execution. We don’t chase vanity metrics. We focus on what truly matters: growth, engagement, and ROI.</p>
+<p className='mt-5 page_text'>At 21 Maneuvers, performance is more than just numbers, it’s the outcome of strategy, creativity, and flawless execution. We don’t chase vanity metrics. We focus on what truly matters: growth, engagement, and ROI.</p>
 <p>Every campaign is meticulously planned, performance-tracked, and continuously optimized. From audience insights to conversion data, we leverage real-time analytics to fine-tune every move, ensuring your brand achieves measurable, sustainable results.
 </p>
-    <p>BECAUSE WHEN PERFORMANCE LEbannerS, YOUR BRAND DOESN'T JUST COMPETE; IT DOMINATES.</p>
+    <p className='page_text'>BECAUSE WHEN PERFORMANCE LEbannerS, YOUR BRAND DOESN'T JUST COMPETE; IT DOMINATES.</p>
       </Container>
     </Container>
 
@@ -117,7 +117,7 @@ const ContentService = () => {
 </p>
   </div>
   <div className='amplify-right-side'>
-<p>We merge strategy and creativity to fuel meaningful engagement across digital platforms. Our approach ensures your brand builds a powerful presence where your audience alrebannery lives. With data-led performance marketing, we turn insights into action and clicks into conversions. Every move is designed to drive real, measurable growth, consistently and effectively.
+<p className='page_text'>We merge strategy and creativity to fuel meaningful engagement across digital platforms. Our approach ensures your brand builds a powerful presence where your audience alrebannery lives. With data-led performance marketing, we turn insights into action and clicks into conversions. Every move is designed to drive real, measurable growth, consistently and effectively.
 </p>
   </div>
 </Container>

@@ -144,7 +144,7 @@ const ServiceSlider = () => {
     <div className="mainservicepage-left">
       <div className="mainservicepage-left-inner">
         <h1 className='demo-heading'>Move Bold,<br/> Matter More!</h1>
-        <p>
+        <p className='page_text'>
         At 21 Maneuvers, we don’t just do digital we master it. From iconic brand identities to 
         high-impact campaigns, we help businesses stand out in a crowded world. Whether a startup or an established brand, our bold creativity and precise strategies give your brand the power to move and matter!
         </p>
@@ -156,7 +156,7 @@ const ServiceSlider = () => {
       <div className="mainservicepage-service">
         <h2 className='mb-2'>Brand & Identity</h2>
         <img className=" mainservicepage-service-img" src={require("../assets/social-media-creative-design.png")} alt="" />
-        <p>From logos to packaging, we craft cohesive brand ecosystems that resonate deeply and leave a lasting impression. Every visual element reflects your brand’s story, values, and vision with clarity and consistency.</p>
+        <p className='page_text'>From logos to packaging, we craft cohesive brand ecosystems that resonate deeply and leave a lasting impression. Every visual element reflects your brand’s story, values, and vision with clarity and consistency.</p>
         <ul>
           <li>Logo Design</li>
           <li> Packaging Design </li>
@@ -170,8 +170,8 @@ const ServiceSlider = () => {
       <div className="mainservicepage-service">
         <h2 className='mb-2'>Growth Marketing</h2>
         <img src={require("../assets/social-media-creative-design.png")} alt="" />
-        <p>Accelerate your brand’s expansion with a full-funnel approach that combines data, creativity, and automation. We integrate performance, retention, and engagement strategies to drive measurable growth.</p>
-        <ul>
+        <p className='page_text'>Accelerate your brand’s expansion with a full-funnel approach that combines data, creativity, and automation. We integrate performance, retention, and engagement strategies to drive measurable growth.</p>
+        <ul className='page_text'>
           <li>Performance Marketing</li>
           <li>Social Media Strategy & Content Marketing</li>
           <li>Email Marketing & Automation Workflows</li>
@@ -185,7 +185,7 @@ const ServiceSlider = () => {
       <div className="mainservicepage-service">
         <h2 className='mb-2'>Website Development</h2>
         <img src={require("../assets/social-media-creative-design.png")} alt="" />
-        <p> We craft responsive, user-centric websites that embody your brand’s identity—while helping you rank for your industry's top keywords through smart, integrated SEO.</p>
+        <p className='page_text'> We craft responsive, user-centric websites that embody your brand’s identity—while helping you rank for your industry's top keywords through smart, integrated SEO.</p>
         <ul>
           <li>UI/UX Design</li>
           <li>Frontend & Backend Development</li>

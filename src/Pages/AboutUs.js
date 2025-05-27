@@ -6,6 +6,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import FAQ from './FAQ';
 import faqImage from "../assets/slide21.jpg"
+import bannerImg from "../assets/21-about2.jpg"
 import "./AboutUs.css"
 
 const faqData = [
@@ -55,11 +56,29 @@ const About = () => {
   // };
   return (
     <>
-      <Container fluid className='aboutus-banner-section'>
+      {/* <Container fluid className='aboutus-banner-section'>
         <Container className='aboutus-banner-heading-div' >
           <p className='page_main_heading'>About Studio </p>
         </Container>
-      </Container>
+      </Container> */}
+      <Container
+  fluid
+  className='aboutus-banner-section'
+  style={{
+   backgroundImage: `url(${bannerImg})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    minHeight: "400px", // or your preferred height
+    display: "flex",
+    alignItems: "center"
+  }}
+>
+  <Container className='aboutus-banner-heading-div'>
+    {/* <p className='page_main_heading'>About Studio</p> */}
+  </Container>
+</Container>
+
 
       <Container fluid className='about-container-fluid'>
         <Container className='about-content-container'>
@@ -75,11 +94,9 @@ Bharat Aggarwal
           <div className='about-right-section'>
             <p className='page_text'>
 We’re a crew of curious minds and bold creators, always chasing the next big idea and unforgettable collaborations.
-
 </p>
-
-            <div className=' page_text fw-bold'>
-              <h2 className='page_heading'>We’re 21 Maneuvers, a multidisciplinary force of strategy, story, and style.
+ <div className=' page_text fw-bold'>
+    <h2 className='page_heading'>We’re 21 Maneuvers, a multidisciplinary force of strategy, story, and style.
 </h2>
 <p>From scrappy startups to seasoned giants, we craft bold brands, magnetic designs, and digital experiences that don’t just compete, they captivate.
 </p>
