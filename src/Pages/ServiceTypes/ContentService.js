@@ -23,7 +23,7 @@ const ContentService = () => {
   <p className="page_text">POWERING BRANDS WITH DATA-DRIVEN CAMPAIGNS THAT DELIVER RESULTS</p>
   <p className="page_text">In a world overwhelmed by noise, we create moments that stick. At 21 Maneuvers, we fuse culture, content, and technology to shape meaningful digital impact, because in today’s world, visibility isn’t enough. Memorability wins.
 </p>
-<p>21 Maneuvers | ELEVATING YOU INTO A BIGGER DIGITAL UNIVERSE</p>
+<p className='page_text'>21 Maneuvers | ELEVATING YOU INTO A BIGGER DIGITAL UNIVERSE</p>
 <img className='mt-2 performance-banner-img' src={require("../../assets/social-media-creative-design.png")} alt="content-service-banner"/>
 </Container>
 </Container>
@@ -47,8 +47,8 @@ const ContentService = () => {
 <p className='page_text'>21 Maneuvers | ELEVATING YOU INTO A BIGGER DIGITAL UNIVERSE</p>
 <h1>We Build Strategic Digital Campaigns</h1>
 <h1> That Deliver Real ROI</h1>
-<p className='mt-5'>IWe don’t believe in one-size-fits-all marketing. Instead, we craft data-driven, creatively charged campaigns that align with your brand goals and audience behavior. From increasing visibility to boosting conversions, every campaign we build is designed to perform.</p>
-<p>Digital success takes more than just presence, it takes precision. That’s why businesses partner with 21 Maneuvers, a digital marketing agency known for its full-spectrum solutions, sharp strategies, and a team that maneuvers your brand through the ever-evolving digital landscape.
+<p className='mt-5 page_text'>IWe don’t believe in one-size-fits-all marketing. Instead, we craft data-driven, creatively charged campaigns that align with your brand goals and audience behavior. From increasing visibility to boosting conversions, every campaign we build is designed to perform.</p>
+<p className='page_text'>Digital success takes more than just presence, it takes precision. That’s why businesses partner with 21 Maneuvers, a digital marketing agency known for its full-spectrum solutions, sharp strategies, and a team that maneuvers your brand through the ever-evolving digital landscape.
 </p>
     <p className="page_text">LET’S NOT JUST MARKET, LET’S MOVE YOUR BRAND FORWARD.</p>
       </Container>
