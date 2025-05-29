@@ -5,7 +5,7 @@ import { Autoplay, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import FAQ from './FAQ';
-import faqImage from "../assets/slide21.jpg"
+import faqImage from "../assets/21-creative2.jpg"
 import bannerImg from "../assets/21-about2.jpg"
 import "./AboutUs.css"
 

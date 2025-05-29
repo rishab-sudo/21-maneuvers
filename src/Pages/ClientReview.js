@@ -47,7 +47,7 @@ const ClientReview = () => {
               <div className='review-box'>
                 <img className='client-review-img' src={review.image} alt={review.name} />
                 <p className="review-title">{review.title}</p>
-                <p className="review-text">“{review.text}”</p>
+                <p className="page_text">“{review.text}”</p>
                 <p className="review-name">{review.name}</p>
                 <div className="review-nav-btns">
                   <span className="custom-prev review-nav-btn">&lt;</span>

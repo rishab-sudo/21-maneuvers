@@ -22,7 +22,7 @@ const ContentService = () => {
 <div className='serviceType-banner-hebannering-div'>
   <h1>Performance Marketing</h1>
   <p className='page_text'>YOUR BRAND DESERVES MORE THAN VISIBILITY, IT DESERVES VELOCITY.</p>
-<p>We don’t just take you online. We position you precisely where your audience scrolls, clicks, and connects. With sharp strategy and standout creativity, 21 Maneuvers navigates the digital maze, turning presence into performance.
+<p className='page_text'>We don’t just take you online. We position you precisely where your audience scrolls, clicks, and connects. With sharp strategy and standout creativity, 21 Maneuvers navigates the digital maze, turning presence into performance.
 </p>
   <p className='page_text'>FUELING RESULTS, NOT JUST REACH</p>
 </div>
@@ -95,12 +95,12 @@ const ContentService = () => {
 
     <Container className='serviceType-descp-section'>
       <Container className='serviceType-descp-content-container'>
-<p >We Unlock Digital Possibilities.
+<p className='page_text' >We Unlock Digital Possibilities.
 </p>
 <h1>Performance That Drives Growth</h1>
 
 <p className='mt-5 page_text'>At 21 Maneuvers, performance is more than just numbers, it’s the outcome of strategy, creativity, and flawless execution. We don’t chase vanity metrics. We focus on what truly matters: growth, engagement, and ROI.</p>
-<p>Every campaign is meticulously planned, performance-tracked, and continuously optimized. From audience insights to conversion data, we leverage real-time analytics to fine-tune every move, ensuring your brand achieves measurable, sustainable results.
+<p className='page_text'>Every campaign is meticulously planned, performance-tracked, and continuously optimized. From audience insights to conversion data, we leverage real-time analytics to fine-tune every move, ensuring your brand achieves measurable, sustainable results.
 </p>
     <p className='page_text'>BECAUSE WHEN PERFORMANCE LEbannerS, YOUR BRAND DOESN'T JUST COMPETE; IT DOMINATES.</p>
       </Container>
