@@ -149,46 +149,12 @@ We’re a crew of curious minds and bold creators, always chasing the next big i
       </div>
       {/* About us award section starts */}
       <Container fluid className='about-awards-container-fluid'>
-        <Container>
-          <Row>
-            <Col lg={4} md={4} sm={12} xs={12}>
-              <p className='page_text fw-bold'>Awards & Honors</p>
-              <p className='page_heading'>The awards won by our project.</p>
-            </Col>
-
-            <Col lg={4} md={4} sm={12} xs={12}>
-              <div className='about-awards-text-div'>
-                <p className='page_text'>Our passion for digital innovation has earned us accolades and loyal collaborations. We’re
-                  proud to be a creative engine for brands that dare to stand out.</p>
-              </div>
-            </Col>
-
-            <Col lg={4} md={4} sm={12} xs={12} className='d-flex justify-content-between align-items-center'>
-              <div>
-                <div>
-                  <img src={""} alt="" />
-                  <p className='page_text fw-bold'>5x Developer Award</p>
-                </div>
-
-                <div>
-                  <img src={""} alt="" />
-                  <p className='page_text fw-bold'>5x Developer Award</p>
-                </div>
-              </div>
-
-              <div>
-                <div>
-                  <img src={""} alt="" />
-                  <p className='page_text fw-bold'>5x Developer Award</p>
-                </div>
-
-                <div>
-                  <img src={""} alt="" />
-                  <p className='page_text fw-bold'>5x Developer Award</p>
-                </div>
-              </div>
-            </Col>
-          </Row>
+        <Container className='text-center'>
+          <p className='page_heading'>21 Steps. One Vision. The Journey Begins.</p><br/>
+       <p className='page_text'>
+        Our story began not in a boardroom, but amidst the vibrant energy of Italy. During their Masters, our founders, fueled by late-night conversations and the timeless pursuit of growth, stumbled upon a profound question over drinks: What are the 21 essential things a brand truly needs to scale? That pivotal discussion sparked a vision. It was in that moment, distilling years of insights into actionable strategies, that the foundation of 21 Maneuvers was laid – 
+        built on the ambition to empower and scale brands through precise, impactful strategies.
+        </p>
         </Container>
       </Container>
       {/* About us award section ends */}

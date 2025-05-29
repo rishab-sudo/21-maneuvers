@@ -57,10 +57,11 @@ const ContentService = () => {
 <Container className='elevate-section'>
 <Container className='elevate-content-container'>
   <div className='elevate-left-side'>
-<p>Content That</p>
-<p>Commands </p>
-<p>ATTENTION &</p>
-<p>CONVERTS</p>
+<p className='fancy-txt'>Content <span style={{fontFamily:"arial"}}>That</span></p>
+<p className='extrabold-fancy-text'>Commands </p>
+<p className='extrabold-fancy-text'style={{color:"#F5A522"}}> ATTENTION</p>
+<p className='fancy-txt'>&</p>
+<p className='extrabold-fancy-text'style={{color:"#F5A522"}}>CONVERTS</p>
   </div>
   <div className='elevate-right-side'>
 <p className='page_text'>In the battle for attention, content is your ultimate weapon. 21 Maneuvers equips you with scroll stopping, 
