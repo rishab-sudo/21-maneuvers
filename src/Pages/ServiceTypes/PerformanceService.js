@@ -110,10 +110,10 @@ const ContentService = () => {
 <Container className='amplify-section'>
 <Container className='amplify-content-container'>
   <div className='amplify-left-side'>
-<p className='fancy-txt'>Amplify <span className='extrabold-fancy-text'>YOUR</span></p>
+<p className='fancy-txt'>Amplify <span className='extrabold-fancy-text' style={{fontFamily:"arial"}}>YOUR</span></p>
 <p  className='extrabold-fancy-text'>IMPACT</p>
-<p className='fancy-txt'>across <span  className='extrabold-fancy-text' style={{color:"#F5A522"}}>DIGITAL</span></p>
-  <p  className='extrabold-fancy-text' style={{color:"#F5A522"}}>PLATFORMS</p>
+<p className='fancy-txt'>across <span  className='extrabold-fancy-text' style={{color:"#F5A522",fontFamily:"arial"}}>DIGITAL</span></p>
+  <p  className='extrabold-fancy-text' style={{color:"#F5A522",fontFamily:"arial"}}>PLATFORMS</p>
 
   </div>
   <div className='amplify-right-side'>

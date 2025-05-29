@@ -135,7 +135,8 @@ width: 42%;
 
 }
   .performance-banner-box {
-  flex: 1 1 calc(50% - 20px); /* 2 boxes per row */    max-width: 100%;
+  flex: 1 1 calc(50% - 20px); /* 2 boxes per row */   
+   max-width: 100%;
   }
 .performance-platform-box {
   min-width: 90%;
