@@ -102,7 +102,7 @@ const ContentService = () => {
 <p className='mt-5 page_text'>At 21 Maneuvers, performance is more than just numbers, it’s the outcome of strategy, creativity, and flawless execution. We don’t chase vanity metrics. We focus on what truly matters: growth, engagement, and ROI.</p>
 <p className='page_text'>Every campaign is meticulously planned, performance-tracked, and continuously optimized. From audience insights to conversion data, we leverage real-time analytics to fine-tune every move, ensuring your brand achieves measurable, sustainable results.
 </p>
-    <p className='page_text'>BECAUSE WHEN PERFORMANCE LEbannerS, YOUR BRAND DOESN'T JUST COMPETE; IT DOMINATES.</p>
+    <p className='page_text'>BECAUSE WHEN PERFORMANCE LEADS, YOUR BRAND DOESN'T JUST COMPETE; IT DOMINATES.</p>
       </Container>
     </Container>
 
@@ -110,11 +110,11 @@ const ContentService = () => {
 <Container className='amplify-section'>
 <Container className='amplify-content-container'>
   <div className='amplify-left-side'>
-<p>Amplify YOUR</p>
-<p>IMPACT</p>
-<p>across </p>
-<p>DIGITAL PLATFORMS.
-</p>
+<p className='fancy-txt'>Amplify <span className='extrabold-fancy-text'>YOUR</span></p>
+<p  className='extrabold-fancy-text'>IMPACT</p>
+<p className='fancy-txt'>across <span  className='extrabold-fancy-text' style={{color:"#F5A522"}}>DIGITAL</span></p>
+  <p  className='extrabold-fancy-text' style={{color:"#F5A522"}}>PLATFORMS</p>
+
   </div>
   <div className='amplify-right-side'>
 <p className='page_text'>We merge strategy and creativity to fuel meaningful engagement across digital platforms. Our approach ensures your brand builds a powerful presence where your audience alrebannery lives. With data-led performance marketing, we turn insights into action and clicks into conversions. Every move is designed to drive real, measurable growth, consistently and effectively.

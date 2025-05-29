@@ -69,6 +69,7 @@
   font-size: 14px;
   color: #555;
 }
+
 /*  plat form boxes*/
 .performance-platform-container{
   margin-top: 5%;
@@ -99,6 +100,15 @@
 
 
 /* bottom-sec-amplify */
+.fancy-txt{
+  font-size: 5vw;
+    font-family: Eurotypo BKL Italic;
+    font-weight: 500;
+}
+.extrabold-fancy-text{
+  font-weight: 700;
+  font-size: 5vw;
+}
 .amplify-section{
   margin-top: 5% !important;
 }
@@ -110,13 +120,13 @@
   padding: 20px 0px;
 }
 .amplify-left-side{
-max-width: 100%;
-font-size: 30px;
-font-weight: 600;
+  max-width: 100%;
 }
 .amplify-right-side{
 margin-top: auto;
-max-width: 50%;
+margin-left: auto;
+width: 42%;
+
 }
 @media (max-width: 768px) {
   .performance-banner-img {

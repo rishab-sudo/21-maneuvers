@@ -69,10 +69,10 @@ const Footer = () => {
     <div className="footer-section">
       <h4>Follow Us</h4>
       <div className="footer-social-icons">
-        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="footer-social-icon"><FaFacebookF /></a>
-        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="footer-social-icon"><FaInstagram /></a>
-        <a href="https://wa.me/yourwhatsapplink" target="_blank" rel="noopener noreferrer" className="footer-social-icon"><FaWhatsapp /></a>
-        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="footer-social-icon"><FaLinkedinIn /></a>
+        <a href="https://www.facebook.com/21Maneuvers" target="_blank" rel="noopener noreferrer" className="footer-social-icon"><FaFacebookF /></a>
+        <a href="https://www.instagram.com/21.maneuvers/" target="_blank" rel="noopener noreferrer" className="footer-social-icon"><FaInstagram /></a>
+        <a href="https://wa.me/919927600436" target="_blank" rel="noopener noreferrer" className="footer-social-icon"><FaWhatsapp /></a>
+        <a href="https://www.linkedin.com/company/21-maneuvers/" target="_blank" rel="noopener noreferrer" className="footer-social-icon"><FaLinkedinIn /></a>
       </div>
     </div>
   </Col>

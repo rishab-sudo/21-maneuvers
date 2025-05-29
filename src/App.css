@@ -4,7 +4,10 @@ body.light {
 }
 body{
   padding-top: 100px;
-  
+
+}
+.App{
+   font-family: "Montserrat", sans-serif;
 }
 body.dark {
   background-color: #121212;
@@ -91,14 +94,13 @@ body.dark .footer {
 .page_main_heading {
   font-size: 48px;
   font-weight: 700;
-  font-family: 'DM Sans', sans-serif !important;
 }
 
 .page_text {
   font-size: 17px;
-  font-family: 'DM Sans', sans-serif !important;
-  color: aqua !important;
+ color: aqua !important;
 }
+
 
 .page_main_heading {}
 
@@ -113,11 +115,11 @@ body.dark .footer {
   .page_main_heading {
     font-size: 25px;
     font-weight: 700;
-    font-family: 'DM Sans', sans-serif !important;
+   
   }
 
   .page_text {
     font-size: 14px;
-    font-family: 'DM Sans', sans-serif !important;
+   
   }
 }

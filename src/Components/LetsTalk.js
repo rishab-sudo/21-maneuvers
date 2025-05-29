@@ -37,10 +37,10 @@ export default function ContactPage() {
   };
 
   const socialIcons = [
-    { icon: <FaFacebookF />, name: 'Facebook' },
-    { icon: <FaInstagram />, name: 'Instagram' },
-    { icon: <FaWhatsapp />, name: 'WhatsApp' },
-    { icon: <FaLinkedinIn />, name: 'LinkedIn' }
+    { icon: <FaFacebookF />, name: 'Facebook',link:'  https://www.facebook.com/21Maneuvers' },
+    { icon: <FaInstagram />, name: 'Instagram',link:' https://www.instagram.com/21.maneuvers/' },
+    { icon: <FaWhatsapp />, name: 'WhatsApp',link:'https://wa.me/9927600436' },
+    { icon: <FaLinkedinIn />, name: 'LinkedIn',link:'https://www.linkedin.com/company/21-maneuvers/' }
   ];
 
   return (
@@ -50,15 +50,29 @@ export default function ContactPage() {
           {/* Left Column: Headings + Desktop Icons */}
           <Col xs={12} md={6} className="contact-info mb-4 mb-md-0">
             <h2 className='fancy-text'> Let's Talk</h2>
-            <h4  className="fade-text">{description}</h4>
+            <h4  className="fade-text fancy-text">{description}</h4>
             <p className='page_text'>Let's discuss your project at ideas@digitallatte.in</p>
 
             {/* Desktop-only Social Icons */}
             <div className="social-icons desktop-only">
               {socialIcons.map((item) => (
-                <div key={item.name} title={item.name} style={{ fontSize: '1.5rem', cursor: 'pointer' }}>
-                  {item.icon}
-                </div>
+             <a
+        key={item.name}
+        href={item.link}
+        title={item.name}
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{
+          fontSize: '1.5rem',
+          marginRight: '1rem',
+          color: 'inherit',
+          textDecoration: 'none',
+        }}
+      >
+        <div style={{ cursor: 'pointer' }}>
+          {item.icon}
+        </div>
+      </a>
               ))}
             </div>
           </Col>
