@@ -46,7 +46,7 @@ const ContentService = () => {
 <div className=''>
   <img className='ads-icon' src={require("../../assets/google.png")} alt=""/>
 </div>
-<div>
+<div className='ads-text-div'>
   <p>Google Ads</p>
     <p> rs 10,0000</p>
       <p>1800 Leads</p>
@@ -58,7 +58,7 @@ const ContentService = () => {
 <div className=''>
   <img className='ads-icon' src={require("../../assets/meta.png")} alt=""/>
 </div>
-<div>
+<div className='ads-text-div'>
   <p>Meta Ads</p>
     <p> rs 10,0000</p>
       <p>1800 Leads</p>
@@ -70,7 +70,7 @@ const ContentService = () => {
 <div className=''>
   <img className='ads-icon' src={require("../../assets/linkedin.png")} alt=""/>
 </div>
-<div>
+<div className='ads-text-div'>
   <p>Linkedin Ads</p>
     <p> rs 10,0000</p>
       <p>1800 Leads</p>
@@ -79,10 +79,10 @@ const ContentService = () => {
 </div>
 
  <div className='performance-platform-box'>
-<div className=''>
+<div >
   <img className='ads-icon' src={require("../../assets/whatsapp.png")} alt=""/>
 </div>
-<div>
+<div className='ads-text-div'>
   <p>Whatsapp Marketing</p>
     <p> rs 10,0000</p>
       <p>1800 Leads</p>

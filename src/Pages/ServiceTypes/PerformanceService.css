@@ -98,7 +98,13 @@
   width: 50px;
   height: 50px;
 }
+.ads-text-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 135px;
 
+}
 
 /* bottom-sec-amplify */
 .fancy-txt{
