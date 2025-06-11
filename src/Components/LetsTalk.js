@@ -51,7 +51,7 @@ export default function ContactPage() {
           <Col xs={12} md={6} className="contact-info mb-4 mb-md-0">
             <h2 className='fancy-text'> Let's Talk</h2>
             <h4  className="fade-text fancy-text">{description}</h4>
-            <p className='page_text'>Let's discuss your project at ideas@digitallatte.in</p>
+            <p className='page_text'>Let's discuss your project at Twentyone@21maneuvers.in</p>
 
             {/* Desktop-only Social Icons */}
             <div className="social-icons desktop-only">

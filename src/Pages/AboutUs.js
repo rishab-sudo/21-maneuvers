@@ -69,7 +69,6 @@ const About = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
-    minHeight: "400px", // or your preferred height
     display: "flex",
     alignItems: "center"
   }}

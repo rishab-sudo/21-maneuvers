@@ -1,5 +1,6 @@
 .aboutus-banner-section{
-  padding: 6.5% 0px;
+  padding: 0px;
+  height: 45vh;
 }
 .about-container-fluid {
   width: 100%;
@@ -130,9 +131,14 @@
 @media screen and (max-width: 768px) {
   .about-container-fluid {
   }
- .aboutus-banner-section{
-padding: 5% 0px;
-    }
+.aboutus-banner-section {
+  padding: 0 !important;
+  height: 25vh !important;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  background-position: center !important;
+}
     .aboutus-banner-heading-div{
 margin-top: 5rem;
 margin-bottom: 2rem;

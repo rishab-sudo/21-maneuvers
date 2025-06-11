@@ -58,6 +58,7 @@
 width: 50%;
 font-size: 30px;
 font-weight: 600;
+line-height: 5rem;
 }
 .elevate-right-side{
 margin-top: auto;
@@ -71,5 +72,19 @@ width: 45%;
 }
 .serviceType-banner-container{
     padding: 5rem 0px;
+}
+.elevate-content-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.elevate-left-side{
+min-width: 100%;
+line-height: normal !important ;
+}
+.elevate-right-side{
+margin-top: auto;
+width: 100%;
 }
 }

@@ -44,11 +44,13 @@ const Footer = () => {
 
   <Col lg={3} md={6} sm={12} className="footer-col">
     <div className="footer-section">
-      <p><strong>Bareilly</strong></p>
+      <p><strong>21 Maneuverse</strong></p>
       <p>
-        Assettlor Interactive Studios.<br />
-        C-35, Ground Floor, Rampur Bagh,<br />
-        Bareilly 243001, India
+       Strategy. Creativity. Growth.
+<br />
+       K.B. Marketing OPC Pvt. Ltd., C-12-35 Rampur Bagh,<br /> Bareilly-243001, Uttar Pradesh.
+
+    
       </p>
     </div>
   </Col>
