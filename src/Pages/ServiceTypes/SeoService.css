@@ -438,3 +438,8 @@ width: 100%;
 .seo-right th {
   background-color: #eaeaea;
 }  */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .seo-banner-right-img{
+width: 90%;
+    }
+  }
