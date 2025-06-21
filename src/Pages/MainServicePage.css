@@ -268,7 +268,7 @@ body {
   width: 200px;
   height: 200px;
   transition: all 0.3s ease;
- background-color: #fff;
+
 }
 
 .circle {
@@ -444,7 +444,7 @@ body {
   }
 
 
-  /*  */
+  /* circle */
   .circle-container {
     flex-direction: column;
     justify-content: center;
@@ -458,7 +458,7 @@ body {
   height: 170px;
   background-color: #F5A522;
   padding: 1rem;
-}
+ }
 /* Small Circles */
 .circle.small {
   width: 120px;
@@ -477,8 +477,20 @@ body {
   background-color: #F5A522;
   z-index: 1;
   opacity: 1;
-}
 
+}
+.circle-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  transition: all 0.3s ease;
+
+ 
+}
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -488,6 +500,7 @@ body {
     align-items: center;
     margin: auto;
     gap: 5rem;
+   
   }
 .mainservicepage-right {
   flex: 1;
