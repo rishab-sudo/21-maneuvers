@@ -222,7 +222,7 @@ const ServiceSlider = () => {
     className="circle-link"
     style={{ textDecoration: "none" }}
   >
-    <div className="circle-group">
+    <div className="circle-group circle-group1">
       <div className="circle-overlay-text">Performance Marketing</div>
       <div className="circle small back back-1" />
       <div className="circle main" />
@@ -236,7 +236,7 @@ const ServiceSlider = () => {
     className="circle-link"
     style={{ textDecoration: "none" }}
   >
-    <div className="circle-group">
+    <div className="circle-group circle-group2">
       <div className="circle-overlay-text">SEO</div>
       <div className="circle small back back-2" />
       <div className="circle main" />
@@ -250,7 +250,7 @@ const ServiceSlider = () => {
     className="circle-link"
     style={{ textDecoration: "none" }}
   >
-    <div className="circle-group">
+    <div className="circle-group circle-group3">
       <div className="circle-overlay-text">Content Creation</div>
       <div className="circle small back back-3" />
       <div className="circle main" />

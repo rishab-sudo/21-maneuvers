@@ -498,8 +498,16 @@ body {
   height: 200px;
   transition: all 0.3s ease;
 
- 
 }
+.circle-group1{
+  margin-left: -4rem !important;
+}
+.circle-group2{
+  margin-left: 4rem !important;
+}
+.circle-group3{
+   margin-left: 3.5rem !important;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
