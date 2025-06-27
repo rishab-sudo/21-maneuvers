@@ -30,7 +30,7 @@ const Contact = () => {
               <div className='heading-text-div'>
                 <p>Work Inquiries</p>
                 <p className='fw-bold'>+91 9311849502</p>
-                <p>Assistance hours:<br /> Monday – Friday <br />6 am to 8 pm EST</p>
+                <p>Assistance hours:<br /> Monday – Saturday <br />11 am to 7 pm EST</p>
               </div>
 
               <div className='heading-text-div'>
@@ -46,16 +46,17 @@ const Contact = () => {
               <div>
                 <p className='fw-bold'>Post address</p>
                 <p className='fw-bold'>Assettlor Interactive Studios.</p>
-                <p>Am 113, 2nd floor, Shalimar Bagh,</p>
+                <p>K.B. Marketing OPC Pvt. Ltd, C-12-35 Rampur Bagh,</p>
                 <p>Bareilly,</p>
                 <p>India </p>
               </div>
               <div>
                 <p className='fw-bold'>Social media</p>
-                <p className='fw-bold' >Facebook</p>
-                <p className='fw-bold' style={{ marginTop: "-8px" }}>Instagram</p>
-                <p className='fw-bold' style={{ marginTop: "-8px" }}>Linkedin</p>
-                <p className='fw-bold' style={{ marginTop: "-8px" }}>Twitter</p>
+                 <a style={{textDecoration:"none,",color:"#ffffff"}} href="https://www.facebook.com/21Maneuvers" target="_blank" rel="noopener noreferrer" > <p className='fw-bold' >Facebook</p></a>
+                        <a style={{textDecoration:"none,",color:"#ffffff"}} href="https://www.instagram.com/21.maneuvers/" target="_blank" rel="noopener noreferrer" >  <p className='fw-bold' style={{ marginTop: "-8px" }}>Instagram</p></a>
+                        <a style={{textDecoration:"none,",color:"#ffffff"}} href="https://wa.me/919927600436" target="_blank" rel="noopener noreferrer" ></a>
+                        <a style={{textDecoration:"none,",color:"#ffffff"}} href="https://www.linkedin.com/company/21-maneuvers/" target="_blank" rel="noopener noreferrer" >                <p className='fw-bold' style={{ marginTop: "-8px" }}>Linkedin</p></a>
+               
               </div>
             </div>
           </div>
