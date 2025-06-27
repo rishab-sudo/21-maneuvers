@@ -17,14 +17,15 @@
 }
 
 .service-image-swiper {
-  width: 100%;
+  max-width: 100%;
+ 
 }
 
 .service-swiper-image {
-  width: 100%;
+  max-width: 100%;
   height: 80vh;
   border-radius: 2px;
-  object-fit: cover;
+  object-fit:contain;
 }
 
 .custom-swiper-button-prev,

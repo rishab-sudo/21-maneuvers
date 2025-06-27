@@ -16,9 +16,9 @@ import faqImage from '../assets/slide21.jpg';
 import LetsTalk from "../Components/LetsTalk"
 
 const images = [
-  require('../assets/slide21.jpg'),
-  require('../assets/slide21.jpg'),
-  require('../assets/slide21.jpg'),
+  require('../assets/home-service1.jpg'),
+  require('../assets/home-service2.jpg'),
+  require('../assets/home-service1.jpg'),
 ];
 const Counter = ({ end }) => {
   const [count, setCount] = useState(0);
@@ -73,7 +73,7 @@ const Home = () => {
     <HomeBanner />
     {/* Home-service-section */}
        <Container fluid className='service-container-fluid'>
-           <Container className='service-content-container'>
+           <Container  className='service-content-container'>
    
              <div className='service-left-section'>
                <Swiper
@@ -154,9 +154,9 @@ const Home = () => {
 <Container className='coffee-content-container'>
   <div className='coffee-text-div'>
     <img className='coffee-icons-img' src={require("../assets/coffee_icon.png")}alt=""/>
-    <p>COFFEE CUPS</p>
+    <p className='page_text' >COFFEE CUPS</p>
       <Counter end={20800} >
-    <p>20800</p>
+    <p className='' >20800</p>
     </Counter>
     
   </div>
@@ -186,6 +186,7 @@ const Home = () => {
   </div>
 </Container>
       </Container>
+      
       <ClientReview />
       {/* <div>
         <Separate

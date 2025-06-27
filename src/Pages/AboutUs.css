@@ -203,5 +203,9 @@ margin-bottom: 2rem;
   .about-testimonial-text-div{
     min-width: 100%;
    
+
   }
+  .about-awards-text-div {
+  width: 90%;
+}
 }

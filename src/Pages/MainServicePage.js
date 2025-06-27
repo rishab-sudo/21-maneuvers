@@ -198,7 +198,7 @@ const ServiceSlider = () => {
   </div>
 </Container>
 
-<div className="circle-container" style={{ marginTop: "7%" }}>
+{/* <div className="circle-container" style={{ marginTop: "7%" }}>
   {circleData.map((item, index) => (
     <a
       href={item.link}
@@ -214,7 +214,51 @@ const ServiceSlider = () => {
       </div>
     </a>
   ))}
+</div> */}
+<div className="circle-container" style={{ marginTop: "7%" }}>
+  {/* Circle Group 1 */}
+  <a
+    href="/performance-service"
+    className="circle-link"
+    style={{ textDecoration: "none" }}
+  >
+    <div className="circle-group">
+      <div className="circle-overlay-text">Performance Marketing</div>
+      <div className="circle small back back-1" />
+      <div className="circle main" />
+      <div className="circle small front small2 front-1" />
+    </div>
+  </a>
+
+  {/* Circle Group 2 */}
+  <a
+    href="/seo-service"
+    className="circle-link"
+    style={{ textDecoration: "none" }}
+  >
+    <div className="circle-group">
+      <div className="circle-overlay-text">SEO</div>
+      <div className="circle small back back-2" />
+      <div className="circle main" />
+      <div className="circle small front small2 front-2" />
+    </div>
+  </a>
+
+  {/* Circle Group 3 */}
+  <a
+    href="/content-creation"
+    className="circle-link"
+    style={{ textDecoration: "none" }}
+  >
+    <div className="circle-group">
+      <div className="circle-overlay-text">Content Creation</div>
+      <div className="circle small back back-3" />
+      <div className="circle main" />
+      <div className="circle small front small2 front-3" />
+    </div>
+  </a>
 </div>
+
 
 
 

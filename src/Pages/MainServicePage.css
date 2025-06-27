@@ -145,6 +145,7 @@ body {
   flex-direction: row;
   position: relative;
   min-height: 100vh;
+  padding-left: 5%;
 }
 
 /* Sticky Left Panel */
@@ -414,19 +415,8 @@ body {
     position: relative;
     height: 100%;
   }
-  .mainservicepage-content {
-    flex-direction: column;
-  }
-
-  .mainservicepage-right {
-    max-height: 100%;
-  gap: 3.5rem;
-        height: auto;
-    max-height: unset;
-    padding: 1rem;
-  }
-    .mainservicepage-service {
-    margin-top: 2rem;
+      .mainservicepage-service {
+    margin-top: 0rem;
     margin-bottom: 0rem;
   height: 100%;
     padding: 0px;
@@ -434,14 +424,33 @@ body {
     flex-direction: column;
     justify-content: center;
    /* background-color: red; */
+   
 }
-
+  .mainservicepage-content {
+    flex-direction: column;
+    
+  }
 .mainservicepage-left {
     position: relative;
     height: auto;
     width: 100%;
     padding: .5rem;
+
   }
+  .mainservicepage-right {
+    max-height: 100%;
+  gap: 3.5rem;
+        height: auto;
+    max-height: unset;
+    padding: .5rem;
+    margin-top: 2rem;
+  }
+
+ .demo-heading {
+  font-size: 35px !important;
+  font-weight: 600;
+  line-height: normal;
+}
 
 
   /* circle */
@@ -502,6 +511,7 @@ body {
     gap: 5rem;
    
   }
+  
 .mainservicepage-right {
   flex: 1;
   height: 100vh;

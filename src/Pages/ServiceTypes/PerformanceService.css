@@ -167,6 +167,7 @@ width: 42%;
 }
 .amplify-section{
   margin-top: 5% !important;
+  text-align: left;
 }
 .amplify-content-container{
   display: flex;
