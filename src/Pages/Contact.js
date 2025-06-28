@@ -7,6 +7,8 @@ import "./Contact.css"
 
 const Contact = () => {
   return (
+    <> 
+  
     <Container fluid className='g-0' >
       <div
         className="contact-banner"
@@ -85,6 +87,7 @@ const Contact = () => {
       </Container>
 
     </Container>
+    </>
   )
 }
 

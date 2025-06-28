@@ -7,6 +7,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+ 
 }
 
 .service-left-section {
@@ -14,6 +15,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 .service-image-swiper {
@@ -112,6 +114,7 @@ padding: 5% 0px;
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
+    /* background-color: aqua; */
   }
 
   .service-left-section {
@@ -120,7 +123,12 @@ padding: 5% 0px;
     justify-content: center;
     align-items: center;
   }
-
+.service-swiper-image {
+  max-width: 100%;
+  height: 100%;
+  border-radius: 2px;
+  object-fit:contain;
+}
   .service-right-section {
     gap: 1.5rem;
     text-align: left !important;
@@ -135,7 +143,7 @@ padding: 5% 0px;
     width: 100%;
 gap: 12px;
   }
-
+/*  */
 .coffee-content-container {
   display: flex;
   flex-wrap: wrap;

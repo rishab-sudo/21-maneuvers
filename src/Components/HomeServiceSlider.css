@@ -64,9 +64,9 @@ background-color: #fff;
     /* color: 	#ddddddef; */
   }
 
-  @media (max-width: 576px) {
+  @media (max-width: 768px) {
     .seo-benefit-container{
-  
+ 
   }
     .seo-benefit-slide {
       padding: 1rem;
