@@ -108,6 +108,9 @@ padding: 5% 0px;
 }
 /* mobile-view */
 @media screen and (max-width: 768px) {
+  .service-container-fluid {
+  padding: 6% 0px
+}
   .service-content-container {
     display: flex;
     flex-direction: column;

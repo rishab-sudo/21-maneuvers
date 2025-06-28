@@ -161,8 +161,8 @@ body.dark .bottom-tag-box{
     max-height: 100% !important;
     width: 100%;
     overflow: hidden; /* Prevent overflow */
-    background-color: aqua;
-   }
+   
+  }
 
   .slide-bg {
     min-height: 100%;
