@@ -82,35 +82,7 @@
   background-color: gray;
   margin-bottom: 2rem;
 }
-/* coffee-page-css */
-.coffee-fluid{
-    background-color: black;
-    color: #fff;
-  width: 100%;
-  gap: 0px;
-  padding: 10px;
-}
-.coffee-content-container{
-display: flex;
-justify-content: space-around;
-align-items: center;
-padding: 5% 0px;
-}
-.coffee-text-div{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.coffee-icons-img{
-  margin-bottom: 15px;
-}
-.vertical-line {
-  width: 2px;
-  background-color: white;
-  height: 150px;
-  align-self: stretch; 
-}
+
 /* mobile-view */
 @media screen and (max-width: 768px) {
   .service-container-fluid {

@@ -53,13 +53,17 @@
   font-size: 1.5rem;
   font-weight: bold;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transform: scale(0.8);           
+  transition: opacity 0.3s ease,  
+              transform 0.3s ease; 
   text-align: center;
 }
 
 .card:hover .overlay-text {
   opacity: 1;
+  transform: scale(1);           
 }
+
 
 /* Mobile: one card per row */
 @media (max-width: 768px) {

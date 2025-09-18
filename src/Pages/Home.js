@@ -15,33 +15,14 @@ import FAQ from './FAQ';
 import faqImage from '../assets/slide21.jpg';
 import LetsTalk from "../Components/LetsTalk"
 import Blog from '../Components/Blog';
+import Stats from '../Components/Stats';
 
 const images = [
   require('../assets/home-service1.jpg'),
   require('../assets/home-service2.jpg'),
   require('../assets/home-service1.jpg'),
 ];
-const Counter = ({ end }) => {
-  const [count, setCount] = useState(0);
 
-  useEffect(() => {
-    let start = 15000;
-    const speed = Math.ceil(end / 80); // Adjust speed
-    const interval = setInterval(() => {
-      start += speed;
-      if (start >= end) {
-        setCount(end);
-        clearInterval(interval);
-      } else {
-        setCount(start);
-      }
-    }, 50); // Delay between steps
-
-    return () => clearInterval(interval);
-  }, [end]);
-
-  return <h3>{count}+</h3>;
-};
 const awardsList = [
   { img: require("../assets/award_21.png"), imgTitle: "5x Developer Award" },
   { img: require("../assets/award_21.png"), imgTitle: "Best UI/UX 2023" },
@@ -151,42 +132,7 @@ const Home = () => {
     /> */}
       <Work />
       
-      <Container fluid className='coffee-fluid'>
-<Container className='coffee-content-container'>
-  <div className='coffee-text-div'>
-    <img className='coffee-icons-img' src={require("../assets/coffee_icon.png")}alt=""/>
-    <p className='page_text' >COFFEE CUPS</p>
-      <Counter end={20800} >
-    <p className='' >20800</p>
-    </Counter>
-    
-  </div>
-  <div className='vertical-line'></div>
-  <div className='coffee-text-div'>
-    <img className='coffee-icons-img' src={require("../assets/projects_icon.png")} alt=""/>
-    <p>PROJECTS</p>
-        <Counter end={20800} >
-    <p>20800</p>
-    </Counter>
-  </div>
-    <div className='vertical-line'></div>
-    <div className='coffee-text-div'>
-    <img className='coffee-icons-img' src={require("../assets/working_days_icon.png")} alt=""/>
-    <p>WORKING DAYS</p>
-         <Counter end={20800} >
-    <p>20800</p>
-    </Counter>
-  </div>
-     <div className='vertical-line'></div>
-   <div className='coffee-text-div'>
-    <img className='coffee-icons-img' src={require("../assets/clients_icon.png")}  alt=""/>
-    <p>CLIENTS</p>
-        <Counter end={20800} >
-    <p>20800</p>
-    </Counter>
-  </div>
-</Container>
-      </Container>
+ <Stats/>
       
       <ClientReview />
       {/* <div>
