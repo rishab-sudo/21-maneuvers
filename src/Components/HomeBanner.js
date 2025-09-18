@@ -22,7 +22,7 @@ const slides = [
   {
     id: 2,
     image: '/slide21.jpg',
-    heading: 'Branding & Identity Design',
+    heading: 'Branding & Identity Design Design',
     subheading: 'Shape a Distinctive Brand Presence',
     about: 'We help brands express their personality through bold visual identity and strategic design choices.',
     tags: [

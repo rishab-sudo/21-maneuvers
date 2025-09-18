@@ -17,12 +17,16 @@ import ThemeToggleButton from './Components/ThemeToggleButton';
 import PerformanceService from './Pages/ServiceTypes/PerformanceService';
 import ContentService from './Pages/ServiceTypes/ContentService';
 import MainServicePage from './Pages/MainServicePage';
+import BeforeAfter from "./Components/BeforeAfter/BeforeAfter"
+import Blog from './Components/Blog';
+import BlogDetail from './Components/BlogDetail';
 
 // Layout component for wrapping all routes with Navbar, Footer, etc.
 const Layout = ({ children }) => (
   <>
     <ThemeToggleButton />
     <Navbar />
+  
     {children}
     <Footer />
   </>
@@ -67,6 +71,14 @@ const router = createBrowserRouter(
       path: '*',
       element: <Layout><Home /></Layout>, // fallback route
     },
+{
+  path: '/blog',
+  element: <Layout><Blog /></Layout>,
+},
+{
+  path: '/blog/:id',
+  element: <Layout><BlogDetail /></Layout>,
+},
   ],
   {
     future: {

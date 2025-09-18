@@ -14,6 +14,7 @@ import Work from './OurWork'
 import FAQ from './FAQ';
 import faqImage from '../assets/slide21.jpg';
 import LetsTalk from "../Components/LetsTalk"
+import Blog from '../Components/Blog';
 
 const images = [
   require('../assets/home-service1.jpg'),
@@ -239,6 +240,7 @@ const Home = () => {
         </form>
       </div>
     </div> */}
+
 
 
     </>

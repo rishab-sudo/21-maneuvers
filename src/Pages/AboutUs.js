@@ -135,7 +135,7 @@ We’re a crew of curious minds and bold creators, always chasing the next big i
       </div>
       {/* About-FAQ-section */}
       <div className='w-auto'>
-        <Container style={{ marginTop: "5%", marginBottom: "5%" }}>
+        <Container style={{ marginTop: "6%", marginBottom: "5%",backgroundColor:"#0099FF" }}>
           <p className='page_text'> CAPABILITIES</p>
           <p className='page_heading'> Creative studio with<br />art & technologies.</p>
         </Container>
@@ -147,7 +147,7 @@ We’re a crew of curious minds and bold creators, always chasing the next big i
         />
       </div>
       {/* About us award section starts */}
-      <Container fluid className='about-awards-container-fluid'>
+      <Container fluid className='about-awards-container-fluid' >
         <Container className='text-center'>
           <p className='page_heading'>21 Steps. One Vision. The Journey Begins.</p><br/>
        <p className='page_text'>

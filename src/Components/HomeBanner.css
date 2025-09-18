@@ -1,5 +1,5 @@
 .hero-container {
-  height: 100vh;
+  height: 100%;
   width: 100%;
 
 }
@@ -36,7 +36,9 @@
 .slide-bg {
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  object-fit: contain;
+  background-repeat: no-repeat;
+  height: 100%;
   position: relative; /* ADD THIS */
 }
 
@@ -44,7 +46,7 @@
   display: flex;
   justify-content: space-between;
   align-items: stretch; /* Full height columns */
-  height: 100%;
+  min-height: 100%;
   width: 100%;
   text-align: left;
   padding-top: 100px;
@@ -89,13 +91,13 @@ body.dark .right-section{
   align-items: flex-start;
   margin-top: auto !important;
   gap: 0rem;
-  
+  text-align: left;
 }
 body.dark.top-row{
   color: #fff !important;
 }
 .center-box {
-  max-width: 400px;
+  max-width: 415px;
  
 }
 
@@ -114,6 +116,7 @@ body.dark .center-box h5{
   font-size: 3rem;
   font-weight: bold;
   line-height: 1.2;
+  text-align: left;
 }
 .banner-subheading {
   max-width: 200px;
@@ -165,6 +168,7 @@ body.dark .bottom-tag-box{
   }
 
   .slide-bg {
+    object-fit: contain;
     min-height: 100%;
     height: auto;
     padding: 0% !important;
