@@ -7,6 +7,14 @@
   position: relative;
 
 }
+.link-text{
+  color: #ffffff;
+  text-decoration: none !important;
+
+}
+.body.light .link-text {
+  color: #000;
+}
 
 .contact-banner-heading {
   position: absolute;

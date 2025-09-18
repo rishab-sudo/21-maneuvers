@@ -54,10 +54,10 @@ const Contact = () => {
               </div>
               <div>
                 <p className='fw-bold'>Social media</p>
-                 <a style={{textDecoration:"none,",color:"#ffffff"}} href="https://www.facebook.com/21Maneuvers" target="_blank" rel="noopener noreferrer" > <p className='fw-bold' >Facebook</p></a>
-                        <a style={{textDecoration:"none,",color:"#ffffff"}} href="https://www.instagram.com/21.maneuvers/" target="_blank" rel="noopener noreferrer" >  <p className='fw-bold' style={{ marginTop: "-8px" }}>Instagram</p></a>
-                        <a style={{textDecoration:"none,",color:"#ffffff"}} href="https://wa.me/919927600436" target="_blank" rel="noopener noreferrer" ></a>
-                        <a style={{textDecoration:"none,",color:"#ffffff"}} href="https://www.linkedin.com/company/21-maneuvers/" target="_blank" rel="noopener noreferrer" >                <p className='fw-bold' style={{ marginTop: "-8px" }}>Linkedin</p></a>
+                 <a style={{textDecoration:"none,", textDecoration:"none"}} href="https://www.facebook.com/21Maneuvers" target="_blank" rel="noopener noreferrer" > <p className='fw-bold link-text' >Facebook</p></a>
+                        <a style={{textDecoration:"none,", textDecoration:"none"}} href="https://www.instagram.com/21.maneuvers/" target="_blank" rel="noopener noreferrer" >  <p className='fw-bold link-text' style={{ marginTop: "-8px" }}>Instagram</p></a>
+                        <a style={{textDecoration:"none,", textDecoration:"none"}} href="https://wa.me/919927600436" target="_blank" rel="noopener noreferrer" >     <p className='fw-bold link-text' style={{ marginTop: "-8px" }}>Whatsapp</p></a>
+                        <a style={{textDecoration:"none,", textDecoration:"none"}} href="https://www.linkedin.com/company/21-maneuvers/" target="_blank" rel="noopener noreferrer" > <p className='fw-bold link-text' style={{ marginTop: "-8px" }}>Linkedin</p></a>
                
               </div>
             </div>

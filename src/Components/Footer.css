@@ -4,12 +4,12 @@
   background-color: #000;
 }
 
-.footer-container-overlay {
+.footer-container-overlay{
   padding: 6.5% 10px;
   color: #fff;
   text-align: left;
 }
-.footer-logo {
+.footer-logo{
   max-width: 100%;
   max-height: 100%;
   padding: 0;
@@ -24,7 +24,7 @@
 
 .footer-col {
   display: flex;
-  justify-content: flex-start; /* changed from center to flex-start */
+  justify-content: flex-start; 
   align-items: flex-start;
   margin-bottom: 20px;
 }
@@ -35,8 +35,8 @@
   max-width: 220px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* already fixed earlier */
-  text-align: left;        /* already fixed earlier */
+  align-items: flex-start; 
+  text-align: left;       
 }
 
 .footer-links {
@@ -58,8 +58,6 @@
 .footer-links li a:hover {
   color: #F2A836;
 }
-
-
 
 .footer-left-section {
   display: flex;
@@ -105,5 +103,6 @@
     justify-content: flex-start !important;
     margin: auto;
     width: 100%;
+    
   }
 }
