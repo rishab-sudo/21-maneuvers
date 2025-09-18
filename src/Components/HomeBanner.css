@@ -68,6 +68,8 @@
   color: white;
   padding: 20px;
   max-width: 50%;
+  height: 205px;
+  max-height: auto;
   margin-bottom: 2rem; /* adds bottom spacing */
 }
 
@@ -80,6 +82,7 @@
   gap: 2rem;
   padding: 2rem;
   color: #000;
+  /* background-color: #000; */
 }
 body.dark .right-section{
   color: #fff !important;
@@ -92,22 +95,25 @@ body.dark .right-section{
   margin-top: auto !important;
   gap: 0rem;
   text-align: left;
+  /* background-color: #000; */
 }
 body.dark.top-row{
   color: #fff !important;
 }
 .center-box {
   max-width: 415px;
- 
+ /* background-color: aqua; */
 }
 
 .center-box h5 {
+  min-width: 60%;
   font-size: 15px;
   text-transform: capitalize;
   letter-spacing: 2px;
   margin-bottom: 10px;
   margin-bottom: 5%;
   color: #000;
+  /* background-color: #000; */
 }
 body.dark .center-box h5{
   color: #fff !important;

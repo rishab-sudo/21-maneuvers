@@ -19,12 +19,14 @@ import ContentService from './Pages/ServiceTypes/ContentService';
 import MainServicePage from './Pages/MainServicePage';
 import BeforeAfter from "./Components/BeforeAfter/BeforeAfter"
 import Blog from './Components/Blog';
+import CursorFollower from "./Components/CursorFollower/CursorFollower"
 import BlogDetail from './Components/BlogDetail';
 
 // Layout component for wrapping all routes with Navbar, Footer, etc.
 const Layout = ({ children }) => (
   <>
     <ThemeToggleButton />
+     <CursorFollower />
     <Navbar />
   
     {children}
