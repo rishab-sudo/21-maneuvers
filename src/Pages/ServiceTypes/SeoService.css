@@ -242,7 +242,7 @@ max-width: 50%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-   background-color: #F5A522;
+   /* background-color: #F5A522; */
    padding: 0;
 
 }
