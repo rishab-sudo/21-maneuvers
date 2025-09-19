@@ -135,7 +135,7 @@ export default function ContactPage() {
               </Form.Group>
 
               <div className="text-end">
-                <Button variant="primary" type="submit">
+                <Button variant="" type="submit" style={{background:"#F2A836",fontWeight:"600"}}>
                   Submit
                 </Button>
               </div>

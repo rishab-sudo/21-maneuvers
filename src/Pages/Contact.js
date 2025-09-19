@@ -38,7 +38,7 @@ const Contact = () => {
               <div className='heading-text-div'>
                 <p>Careers & Press</p>
                 <p className='fw-bold'>hello@assettlor.com</p>
-                <p>Assistance hours:<br />Tuesday – Saturday <br />6 am to 8 pm EST</p>
+                <p>Assistance hours:<br />Tuesday – Saturday <br/>6 am to 8 pm EST</p>
               </div>
             </div>
           </div>

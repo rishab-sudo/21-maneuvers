@@ -47,10 +47,10 @@
   
   .submit-btn {
     align-self: flex-start;
-    padding: 15px 35px;
+    padding: 11px 35px;
     font-size: 18px;
     font-weight: bold;
-    background-color: #000;
+    background-color: #F2A836;
     color: white;
     border: none;
     border-radius: 0.375rem;

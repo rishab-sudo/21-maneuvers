@@ -163,12 +163,14 @@ body {
 }
 
 .mainservicepage-left-inner {
+  /* text-align: left; */
   max-width: 100%;
   top: 0;
 
 }
 
 .mainservicepage-left-inner h1 {
+  text-align: left;
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
