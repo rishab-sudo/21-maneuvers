@@ -53,16 +53,11 @@
   .contact-info {
     text-align: left;
   }
+
 }
 
 /* Social Icons Row */
-.social-icons {
-  width: 100% !important;
-  display: flex;
-  justify-content: space-around !important;
-  gap: 0rem !important;
-  margin-top: 1rem;
-}
+
 
 @media (min-width: 768px) {
   .social-icons {
@@ -96,4 +91,17 @@
     gap: 1rem;
     margin-top: 1.5rem;
   }
+
+}
+
+@media (max-width: 768px) {
+  .social-icons {
+  width: 100% !important;
+  display: flex;
+  align-items: center !important;
+  justify-content: space-around !important;
+  gap: .1rem !important;
+  margin-top: 1rem;
+  /* background-color: aliceblue; */
+}
 }
