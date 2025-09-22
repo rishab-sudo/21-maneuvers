@@ -75,11 +75,11 @@
 @media screen and (max-width: 768px) {
   .review-overlay-container {
     min-height: auto;
-    padding: 50px;
+    padding: 25px 15px;
   }
 
   .review-box {
-    max-width: 100%;
+   min-width: 100%;
     height: auto;
     padding: 25px;
   }
