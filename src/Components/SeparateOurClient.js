@@ -7,7 +7,7 @@ const SeparateOurClient = (props) => {
     <Container fluid className='Separate-container-fluid'>
       <Container className='Separate-content-container'>
         <div className='Separate-left-section'>
-          <p className='page_text'>{props.title}</p>
+          <p className='page_text'> {props.title} </p>
          
           <h3 className='page_main_heading'>
             {props.heading?.split("\n").map((line, i) => (
@@ -18,7 +18,7 @@ const SeparateOurClient = (props) => {
 
         <div className='Separate-right-section'>
           <div className='award-heading-box'>
-            <p className='page_text'>{props.description}</p>
+            <p className='page_text'>{props.description} </p>
           </div>
 
           <div className='award-imgs-box'>

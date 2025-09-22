@@ -38,13 +38,12 @@ const slides = [
     subheading: 'Drive Engagement with Compelling Content',
     about: 'We strategize and craft content that resonates with your audience, delivering measurable impact.',
     tags: [
-      { number: '01.', title: 'Strategic Campaign Management' },
+      { number: '01.', title: 'Strategic Campaign Management'},
       { number: '02.', title: ' Engaging Content Production' },
       { number: '03.', title: ' Data-Driven Performance Analysis' }
     ]
   }
 ];
-
 
 const HeroBanner = () => {
   return (

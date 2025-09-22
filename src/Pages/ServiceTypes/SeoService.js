@@ -117,7 +117,7 @@ const SeoService = () => {
               <p className="page_text">Conversions</p>
               <div className="dotted-line"></div>
               <p className="growth-number">
-                + <CountUp start={1} end={7 } duration={3} separator="," suffix=" K" decimals={1} />
+                + <CountUp start={1} end={7} duration={3} separator="," suffix=" K" decimals={1} />
               </p>
 </div>
 </Col>
@@ -150,7 +150,7 @@ const SeoService = () => {
 
 {/* seo - research -sec */}
 <Container fluid className="research-section">
-      <Container className="research-content-container">
+      <Container className="research-content-container ">
         <div className="research-left">
           <p className="research-title">Our research reveals that 
 </p>
@@ -176,8 +176,7 @@ const SeoService = () => {
   <p className="page_heading">How to focus on the 5% that matters</p> <br/>
   <div className="bullet-paragraphs">
   <div className="bullet-paragraphs">
-  <p className="square-bullet">Focus on improving rankings, driving qualified traffic, and capturing search intent
-</p>
+  <p className="square-bullet">Focus on improving rankings, driving qualified traffic, and capturing search intent</p>
   <p className="square-bullet">Prioritize content strategies that earn backlinks and boost engagement</p>
   <p className="square-bullet">Optimize technical SEO to enhance crawlability, site speed, and long-term visibility</p>
 </div>
@@ -185,7 +184,7 @@ const SeoService = () => {
 </div>
  </div>
 
-  <div className="focus-img-sec">
+<div className="focus-img-sec">
   <img className="focus-img" src={require("../../assets/chart.png")} style={{maxHeight:"100%",maxWidth:"100%"}} alt=""/>
   </div>
 </Container>
