@@ -10,7 +10,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "./SeoService.css";
 
-
 const slideData = [
   { image: require("../../assets/seo-img.png"), tagline: 'Boosts Visibility' },
   { image: require("../../assets/seo-img.png"), tagline: 'Drives Traffic' },

@@ -98,9 +98,7 @@ body.dark .footer {
 
 .page_text {
   font-size: 17px;
-
 }
-
 
 .page_main_heading {}
 
@@ -115,10 +113,8 @@ body.dark .footer {
   .page_main_heading {
     font-size: 25px;
     font-weight: 700;
-   
   }
-
-  .page_text {
+.page_text {
     font-size: 14px;
    
   }

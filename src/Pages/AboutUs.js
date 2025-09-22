@@ -61,45 +61,36 @@ const About = () => {
           <p className='page_main_heading'>About Studio </p>
         </Container>
       </Container> */}
-      <Container
-  fluid
-  className='aboutus-banner-section'
-  style={{
-   backgroundImage: `url(${bannerImg})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-    display: "flex",
-    alignItems: "center"
-  }}
->
-  <Container className='aboutus-banner-heading-div'>
-    {/* <p className='page_main_heading'>About Studio</p> */}
-  </Container>
-</Container>
+      <Container fluid className='banner-fluid g-0'>
+        <div className='aboutus-banner-section'
+          style={{
+            backgroundImage: `url(${bannerImg})`,
+          }}>
+        </div>
 
+      </Container>
 
       <Container fluid className='about-container-fluid'>
         <Container className='about-content-container'>
 
           <div className='about-left-section'>
             <p className='page_text fw-bold'> ABOUT US</p>
-            <p className='page_heading'>            
-          "People do not buy goods and services. They buy relations, stories and magic." <br/>
-Bharat Aggarwal
-</p>
+            <p className='page_heading'>
+              "People do not buy goods and services. They buy relations, stories and magic." <br />
+              Bharat Aggarwal
+            </p>
           </div>
 
           <div className='about-right-section'>
             <p className='page_text'>
-We’re a crew of curious minds and bold creators, always chasing the next big idea and unforgettable collaborations.
-</p>
- <div className=' page_text fw-bold'>
-    <h2 className='page_heading'>We’re 21 Maneuvers, a multidisciplinary force of strategy, story, and style.
-</h2>
-<p>From scrappy startups to seasoned giants, we craft bold brands, magnetic designs, and digital experiences that don’t just compete, they captivate.
-</p>
-<p>In a world of noise, we help you speak louder, clearer, and more creatively. Welcome to your next leap forward.</p>
+              We’re a crew of curious minds and bold creators, always chasing the next big idea and unforgettable collaborations.
+            </p>
+            <div className=' page_text fw-bold'>
+              <h2 className='page_heading'>We’re 21 Maneuvers, a multidisciplinary force of strategy, story, and style.
+              </h2>
+              <p>From scrappy startups to seasoned giants, we craft bold brands, magnetic designs, and digital experiences that don’t just compete, they captivate.
+              </p>
+              <p>In a world of noise, we help you speak louder, clearer, and more creatively. Welcome to your next leap forward.</p>
               {/* <div >
                 <div className='underline'></div>
                 <p>Social Media Management</p>
@@ -135,7 +126,7 @@ We’re a crew of curious minds and bold creators, always chasing the next big i
       </div>
       {/* About-FAQ-section */}
       <div className='w-auto'>
-        <Container style={{ marginTop: "6%", marginBottom: "5%",backgroundColor:"#0099FF" }}>
+        <Container style={{ marginTop: "6%", marginBottom: "5%", backgroundColor: "#0099FF" }}>
           <p className='page_text'> CAPABILITIES</p>
           <p className='page_heading'> Creative studio with<br />art & technologies.</p>
         </Container>
@@ -149,11 +140,11 @@ We’re a crew of curious minds and bold creators, always chasing the next big i
       {/* About us award section starts */}
       <Container fluid className='about-awards-container-fluid' >
         <Container className='text-center'>
-          <p className='page_heading'>21 Steps. One Vision. The Journey Begins.</p><br/>
-       <p className='page_text'>
-        Our story began not in a boardroom, but amidst the vibrant energy of Italy. During their Masters, our founders, fueled by late-night conversations and the timeless pursuit of growth, stumbled upon a profound question over drinks: What are the 21 essential things a brand truly needs to scale? That pivotal discussion sparked a vision. It was in that moment, distilling years of insights into actionable strategies, that the foundation of 21 Maneuvers was laid – 
-        built on the ambition to empower and scale brands through precise, impactful strategies.
-        </p>
+          <p className='page_heading'>21 Steps. One Vision. The Journey Begins.</p><br />
+          <p className='page_text'>
+            Our story began not in a boardroom, but amidst the vibrant energy of Italy. During their Masters, our founders, fueled by late-night conversations and the timeless pursuit of growth, stumbled upon a profound question over drinks: What are the 21 essential things a brand truly needs to scale? That pivotal discussion sparked a vision. It was in that moment, distilling years of insights into actionable strategies, that the foundation of 21 Maneuvers was laid –
+            built on the ambition to empower and scale brands through precise, impactful strategies.
+          </p>
         </Container>
       </Container>
       {/* About us award section ends */}
@@ -181,22 +172,22 @@ We’re a crew of curious minds and bold creators, always chasing the next big i
                   delay: 4000,
                   disableOnInteraction: false,
                 }}
-                  breakpoints={{
-  
-    992: {
-      slidesPerView: 2,
-      slidesPerGroup: 2,
-    },
-    768: {
-      slidesPerView: 1,
-      slidesPerGroup: 1,
-    },
- 
-    0: {
-      slidesPerView: 1,
-      slidesPerGroup: 1,
-    },
-  }}
+                breakpoints={{
+
+                  992: {
+                    slidesPerView: 2,
+                    slidesPerGroup: 2,
+                  },
+                  768: {
+                    slidesPerView: 1,
+                    slidesPerGroup: 1,
+                  },
+
+                  0: {
+                    slidesPerView: 1,
+                    slidesPerGroup: 1,
+                  },
+                }}
                 onInit={(swiper) => {
                   swiper.params.navigation.prevEl = '.testimonial-prev';
                   swiper.params.navigation.nextEl = '.testimonial-next';

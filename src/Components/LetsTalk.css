@@ -49,8 +49,8 @@
 /* Social Icons Row */
 .social-icons {
   display: flex;
-  justify-content: center;
-  gap: 1rem;
+  justify-content: space-around !important;
+  gap: 0rem !important;
   margin-top: 1rem;
 }
 

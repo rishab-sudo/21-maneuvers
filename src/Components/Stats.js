@@ -82,7 +82,7 @@ const Stats = () => {
             alt=""
           />
           <p>WORKING DAYS</p>
-          <Counter end={5000} />
+          <Counter end={1800} />
         </div>
 
         <div className="vertical-line"></div>

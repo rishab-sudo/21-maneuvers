@@ -259,10 +259,7 @@ const ServiceSlider = () => {
   </a>
 </div>
 
-
-
-
-  </>
+ </>
   );
 };
 
