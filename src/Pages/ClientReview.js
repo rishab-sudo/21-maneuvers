@@ -50,8 +50,8 @@ const ClientReview = () => {
                 <p className="page_text">“{review.text}"</p>
                 <p className="review-name ">{review.name}</p>
                 <div className="review-nav-btns">
-                  <span className="custom-prev review-nav-btn">&lt;</span>
-                  <span className="custom-next review-nav-btn">&gt;</span>
+                  <span className="custom-prev review-nav-btn"> &lt; </span>
+                  <span className="custom-next review-nav-btn"> &gt; </span>
                 </div>
               </div>
             </SwiperSlide>

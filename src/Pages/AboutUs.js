@@ -126,7 +126,7 @@ const About = () => {
       </div>
       {/* About-FAQ-section */}
       <div className='w-auto'>
-        <Container style={{ marginTop: "6%", marginBottom: "5%", backgroundColor: "#0099FF" }}>
+        <Container style={{ marginTop: "6%", marginBottom: "5%", }}>
           <p className='page_text'> CAPABILITIES</p>
           <p className='page_heading'> Creative studio with<br />art & technologies.</p>
         </Container>

@@ -1,18 +1,26 @@
-/* Container styling */
+/* ================================
+   CONTACT SECTION
+================================ */
 .contact-section {
   min-height: 100%;
   padding: 7% 0px;
 }
-/* Heading and social container */
+
+/* ================================
+   LEFT CONTENT (HEADING + TEXT)
+================================ */
 .contact-info {
-  text-align: center;
+  text-align: left; /* Let's Talk always left */
 }
-.fancy-text{
+
+.fancy-text {
   font-family: Eurotypo BKL Italic;
   font-size: 5vw;
 }
 
-/* Input styling */
+/* ================================
+   FORM STYLING
+================================ */
 .contact-form input,
 .contact-form textarea {
   border: none;
@@ -22,75 +30,75 @@
   padding: 8px 4px;
   background-color: transparent;
   box-shadow: none;
-  }
-  .custom-placeholder::placeholder {
-  color: #999; 
-  opacity: 1; 
 }
 
-/* Remove Bootstrap focus box-shadow */
+.custom-placeholder::placeholder {
+  color: #999;
+  opacity: 1;
+}
+
+/* Remove Bootstrap focus shadow */
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
   box-shadow: none;
-
-}
-.contact-form textarea{
-    max-height: 50px;
 }
 
+.contact-form textarea {
+  max-height: 50px;
+}
+
+/* ================================
+   SOCIAL ICONS (COMMON)
+================================ */
 .social-icons {
-  width: 50%;
+  width: 35% !important; /* smaller width on desktop */
   display: flex;
-  align-items: center !important;
-  justify-content: center !important;
-  gap: 1.5rem !important;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.5rem;
   margin-top: 1rem;
-  /* background-color: aliceblue; */
 }
 
-@media (min-width: 768px) {
-  .contact-info {
-    text-align: left;
+/* ================================
+   MOBILE VIEW
+================================ */
+@media (max-width: 767px) {
+
+  /* Social icons width 95% on mobile */
+  .social-icons {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
   }
 
-}
-
-/* Social Icons Row */
-
-
-@media (min-width: 768px) {
-  .social-icons {
-   min-width: 100% !important;
-  justify-content: space-around !important;
-}
-}
-
-/* Mobile-only social icons (below form) */
-.mobile-only {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 1.5rem;
-}
-
-@media (min-width: 768px) {
+  /* Show mobile icons */
   .mobile-only {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  /* Hide desktop icons */
+  .desktop-only {
     display: none;
   }
 }
 
-/* Desktop-only social icons (above form) */
-.desktop-only {
-  display: none;
-}
-
+/* ================================
+   DESKTOP VIEW
+================================ */
 @media (min-width: 768px) {
+
+  /* Show desktop icons */
   .desktop-only {
     display: flex;
-    justify-content: flex-start;
-    gap: 1rem;
-    margin-top: 1.5rem;
+  }
+
+  /* Hide mobile icons */
+  .mobile-only {
+    display: none;
   }
 }
-

@@ -17,10 +17,13 @@ import LetsTalk from "../Components/LetsTalk"
 import Blog from '../Components/Blog';
 import Stats from '../Components/Stats';
 
+// Home services image
 const images = [
-  require('../assets/home-service1.jpg'),
-  require('../assets/home-service2.jpg'),
-  require('../assets/home-service1.jpg'),
+  require('../assets/21 A.jpg'),
+  require('../assets/21 B.jpg'),
+    require('../assets/21 C.jpg'),
+      require('../assets/21 D.jpg'),
+        require('../assets/21 E.jpg'),
 ];
 
 const awardsList = [

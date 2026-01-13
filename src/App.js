@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState } from "react";
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { ThemeProvider } from './context/ThemeContext';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
@@ -21,9 +22,13 @@ import BeforeAfter from "./Components/BeforeAfter/BeforeAfter"
 import Blog from './Components/Blog';
 import CursorFollower from "./Components/CursorFollower/CursorFollower"
 import BlogDetail from './Components/BlogDetail';
+import ChatButton from "./Components/AiChatbox/ChatButton";
+import ChatWindow from "./Components/AiChatbox/ChatWindow";
+import useAIResponse from "./Components/AiChatbox/useAIResponse";
 
 // Layout component for wrapping all routes with Navbar, Footer, etc.
 const Layout = ({ children }) => (
+  
   <>
     <ThemeToggleButton />
      <CursorFollower />
@@ -90,12 +95,25 @@ const router = createBrowserRouter(
 );
 
 function App() {
+    const [open, setOpen] = useState(false);
+  const { askAI, loading } = useAIResponse();
+
   return (
+    <>
+      <ChatButton onClick={() => setOpen(true)} />
+
+      <ChatWindow
+        visible={open}
+        onClose={() => setOpen(false)}
+        askAI={askAI}
+        loading={loading}
+      />
     <ThemeProvider>
       <div className="App">
         <RouterProvider router={router} />
       </div>
     </ThemeProvider>
+    </>
   );
 }
 
