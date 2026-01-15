@@ -6,69 +6,54 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  /* Or space-between/center if needed */
   align-items: flex-start;
   gap: 5rem 1rem;
-  /* row-gap column-gap */
   padding: 1rem;
 }
 
-
 .card {
   flex: 0 0 calc(33.333% - 1rem);
-  /* Fixed width instead of growing/shrinking */
   max-width: 425px;
   height: 480px;
   overflow: hidden;
   margin-bottom: 0rem;
   background: none !important;
-  /* outline: 1px solid #f7a422; */
   border-radius: 15px;
+  position: relative;
+  display: block;
+  cursor: pointer; /* 👈 pointer on hover */
 }
+
+/* Base image */
 .card-image {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease ;
+  height: auto;
+  display: block;
+  transition: opacity 0.4s ease, transform 0.6s ease;
 }
-.card:hover .card-image {
-  transform: scale(1.05);
-}
-.overlay {
+
+/* Hover image */
+.hover-img {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-color 0.3s ease;
-}
-
-.card:hover .overlay {
-  background-color: rgba(0, 0, 0, 0.6);
-}
-
-.overlay-text {
-  color: white;
-  font-size: 1.5rem;
-  font-weight: bold;
   opacity: 0;
-  transform: scale(0.8);           
-  transition: opacity 0.3s ease,  
-              transform 0.3s ease; 
-  text-align: center;
+  transform: scale(1); /* initial */
 }
 
-.card:hover .overlay-text {
+/* 🔥 HOVER EFFECTS */
+.card:hover .default-img {
+  opacity: 0;
+}
+
+.card:hover .hover-img {
   opacity: 1;
-  transform: scale(1);           
+  transform: scale(1.08); /* 👈 smooth zoom */
 }
 
 
-/* Mobile: one card per row */
+
+/* Mobile */
 @media (max-width: 768px) {
   .card {
     width: 100%;

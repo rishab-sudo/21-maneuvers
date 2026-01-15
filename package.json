@@ -22,9 +22,10 @@
     "react-router-dom": "^6.30.0",
     "react-scripts": "5.0.1",
     "react-slick": "^0.30.3",
+    "react-swiper": "^0.1.5",
     "slick-carousel": "^1.8.1",
     "sweetalert2": "^11.19.1",
-    "swiper": "^11.2.6",
+    "swiper": "^11.2.10",
     "three": "^0.181.2",
     "web-vitals": "^2.1.4"
   },

@@ -12,18 +12,18 @@ import ClientReview from './ClientReview'
 import Separate from "../Components/SeparateOurClient"
 import Work from './OurWork'
 import FAQ from './FAQ';
-import faqImage from '../assets/slide21.jpg';
+import faqImage from '../assets/home/FAQ (2).png';
 import LetsTalk from "../Components/LetsTalk"
 import Blog from '../Components/Blog';
 import Stats from '../Components/Stats';
 
 // Home services image
 const images = [
-  require('../assets/21 A.jpg'),
-  require('../assets/21 B.jpg'),
-    require('../assets/21 C.jpg'),
-      require('../assets/21 D.jpg'),
-        require('../assets/21 E.jpg'),
+  require('../assets/home/h21-1.png'),
+  require('../assets/home/h21-2.png'),
+    require('../assets/home/h21-3.png'),
+      require('../assets/home/h21-4.png'),
+        require('../assets/home/h21-5.png'),
 ];
 
 // const awardsList = [
