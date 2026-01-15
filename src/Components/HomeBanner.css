@@ -81,7 +81,7 @@
   justify-content: center;
   gap: 2rem;
   padding: 2rem;
-  color: #000;
+  color: #fff;
   /* background-color: #000; */
 }
 body.dark .right-section{
@@ -112,7 +112,7 @@ body.dark.top-row{
   letter-spacing: 2px;
   margin-bottom: 10px;
   margin-bottom: 5%;
-  color: #000;
+  color: #fff;
   /* background-color: #000; */
 }
 body.dark .center-box h5{
@@ -132,8 +132,13 @@ body.dark .center-box h5{
  
 }
 .right-box {
-  background-color: rgba(211, 211, 211, 0.971);
-  color: #000;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* background-color: rgba(211, 211, 211, 0.971); */
+    background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  text-align: left !important;
   font-weight: bold;
   font-size: 15px;
   padding: 15px;
@@ -148,7 +153,7 @@ body.dark .right-box{
   align-items: center;
   gap: 2rem;
   font-size: 1.1rem;
-  color: #000;
+  color: #fff;
   margin-top: auto;
   padding-bottom: 2rem;
   margin-top: 5%;
@@ -211,7 +216,7 @@ body.dark .bottom-tag-box{
 
   .custom-nav-box {
     margin: 1rem auto 0;
-    width: 100%;
+    width: 100% !important;
     justify-content: space-between;
     padding: 10px 1rem;
   }
@@ -223,7 +228,7 @@ body.dark .bottom-tag-box{
   .top-row {
     flex-direction: column;
     align-items: flex-start;
-    width: 100%;
+    width: 100% !important;
   }
 
   .center-box h1 {
@@ -233,17 +238,18 @@ body.dark .bottom-tag-box{
   }
 
   .right-box {
+    padding: 15px 2px;
     margin-top: 1rem;
-    max-width: 90%;
+    max-width: 100%;
     width: 100%;
-    text-align: center;
+    text-align: center !important;
   }
 
   .bottom-tag-box {
     flex-direction: column;
     align-items: flex-start;
     margin-top: 2rem;
-    width: 100%;
+    width: 100% !important;
   }
 }
 

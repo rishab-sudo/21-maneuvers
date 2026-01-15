@@ -69,47 +69,47 @@ const About = () => {
         </div>
 
       </Container>
+<Container fluid className="about-container-fluid">
+  <Container className="about-content-container">
+    <div className="about-left-section">
+      <p className="page_text fw-bold">ABOUT US</p>
 
-      <Container fluid className='about-container-fluid'>
-        <Container className='about-content-container'>
+      <p className="page_text">
+        We’re a crew of curious minds and bold creators, always chasing the next
+        big idea and unforgettable collaborations.
+      </p>
 
-          <div className='about-left-section'>
-            <p className='page_text fw-bold'> ABOUT US</p>
-            <p className='page_heading'>
-              "People do not buy goods and services. They buy relations, stories and magic." <br />
-              Bharat Aggarwal
-            </p>
-          </div>
+      <h2 className="page_heading fw-bold">
+        We’re 21 Maneuvers, a multidisciplinary force of strategy, story, and style.
+      </h2>
 
-          <div className='about-right-section'>
-            <p className='page_text'>
-              We’re a crew of curious minds and bold creators, always chasing the next big idea and unforgettable collaborations.
-            </p>
-            <div className=' page_text fw-bold'>
-              <h2 className='page_heading'>We’re 21 Maneuvers, a multidisciplinary force of strategy, story, and style.
-              </h2>
-              <p>From scrappy startups to seasoned giants, we craft bold brands, magnetic designs, and digital experiences that don’t just compete, they captivate.
-              </p>
-              <p>In a world of noise, we help you speak louder, clearer, and more creatively. Welcome to your next leap forward.</p>
-              {/* <div >
-                <div className='underline'></div>
-                <p>Social Media Management</p>
-                <p>Graphic Designing</p>
-                <p>Website Designing</p>
-                <p>Ad Campaigns</p>
-              </div>
+      <p>
+        From scrappy startups to seasoned giants, we craft bold brands, magnetic
+        designs, and digital experiences that don’t just compete, they captivate.
+      </p>
 
-              <div >
-                <div className='underline'></div>
-                <p>SEO & Marketing</p>
-                <p>Brand Development</p>
-                <p>Performance Marketing</p>
-                <p>Content Creation</p>
-              </div> */}
-            </div>
-          </div>
-        </Container>
-      </Container>
+      <p>
+        In a world of noise, we help you speak louder, clearer, and more creatively.
+        Welcome to your next leap forward.
+      </p>
+
+      <p className="quote-heading">
+        “People do not buy goods and services. They buy relations, stories and magic.”
+        <br />
+        <span className="fw-bold">Bharat Aggarwal</span>
+      </p>
+    </div>
+
+    <div className="about-right-section">
+      <img
+        src="/about-image.jpg"
+        alt="About 21 Maneuvers"
+        className="about-image"
+      />
+    </div>
+  </Container>
+</Container>
+
 
       {/* About-bg-img */}
       <div className="about-bg">

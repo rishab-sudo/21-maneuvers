@@ -17,7 +17,25 @@ padding: 5% 0px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+    transition: all 0.1s ease;
+  cursor: pointer;
 }
+/* Hover effect for individual stat blocks */
+
+/* Text hover */
+.coffee-text-div:hover p,
+.coffee-text-div:hover h3 {
+  color: #f7a422; /* yellow */
+}
+
+/* Icon hover (image color using filter) */
+.coffee-text-div:hover .coffee-icons-img {
+  filter: brightness(0) saturate(100%)
+          invert(69%) sepia(77%) saturate(516%)
+          hue-rotate(355deg) brightness(102%) contrast(101%);
+  transition: filter 0.1s ease;
+}
+
 .coffee-icons-img{
   margin-bottom: 15px;
 }

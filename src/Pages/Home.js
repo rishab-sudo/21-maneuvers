@@ -26,13 +26,13 @@ const images = [
         require('../assets/21 E.jpg'),
 ];
 
-const awardsList = [
-  { img: require("../assets/award_21.png"), imgTitle: "5x Developer Award" },
-  { img: require("../assets/award_21.png"), imgTitle: "Best UI/UX 2023" },
-  { img: require("../assets/award_21.png"), imgTitle: "Innovation Champion" },
-  { img: require("../assets/award_21.png"), imgTitle: "Innovation Champion" },
-  { img: require("../assets/award_21.png"), imgTitle: "Innovation Champion" },
-]
+// const awardsList = [
+//   { img: require("../assets/award_21.png"), imgTitle: "5x Developer Award" },
+//   { img: require("../assets/award_21.png"), imgTitle: "Best UI/UX 2023" },
+//   { img: require("../assets/award_21.png"), imgTitle: "Innovation Champion" },
+//   { img: require("../assets/award_21.png"), imgTitle: "Innovation Champion" },
+//   { img: require("../assets/award_21.png"), imgTitle: "Innovation Champion" },
+// ]
 const faqData = [
   {
     question: "Custom-built websites that drive results",
@@ -57,67 +57,79 @@ const Home = () => {
     <>
     <HomeBanner />
     {/* Home-service-section */}
-       <Container fluid className='service-container-fluid'>
-           <Container  className='service-content-container'>
-   
-             <div className='service-left-section'>
-               <Swiper
-                 modules={[Navigation, Pagination, Autoplay]}
-                 navigation={{
-                   nextEl: '.custom-swiper-button-next',
-                   prevEl: '.custom-swiper-button-prev',
-                 }}
-                 pagination={{ clickable: true }}
-                 loop={true}
-                 autoplay={{
-                   delay: 3000,
-                   disableOnInteraction: false,
-                 }}
-                 className='service-image-swiper'
-               >
-                 {images.map((img, index) => (
-                   <SwiperSlide key={index}>
-                     <img src={img} alt={`service-${index}`} className="service-swiper-image" />
-                   </SwiperSlide>
-                 ))}
-   
-                 {/* Custom Navigation Buttons */}
-                 <div className="custom-swiper-button-prev">←</div>
-                 <div className="custom-swiper-button-next">→</div>
-               </Swiper>
-             </div>
-   
-             <div className='service-right-section'>
-               <div className='service-heading-box'>
-                 <p className='page_text'>OUR SERVICES</p>
-                 <p className='page_main_heading'>Complete Digital  <br />
-                  Growth Solutions &<br />
-                 Creative Brand Experiences
-                 </p>
-                 
-               </div>
-   
-               <div className='service-services-box page_text fw-bold'>
-                 <div  className='page_text'>
-                   <div className='underline'></div>
-                   <p> Digital Growth Marketing</p>
-                   <p>Visual Branding & Design</p>
-                   <p>Professional Shoots & Media</p>
-                        
-                 </div>
-   
-                 <div className='page_text' >
-                   <div className='underline'></div>
-                    <p>Social Media & Content Strategy</p>
-                   <p>Print & Digital Collateral</p>
-                   <p>Website Development</p>
-             
-                 </div>
-               </div>
-             </div>
-   
-           </Container>
-         </Container>
+    <Container fluid className="service-container-fluid">
+  <Container className="service-content-container">
+
+    {/* LEFT : IMAGE SLIDER */}
+    <div className="service-left-section">
+      <Swiper
+        modules={[Navigation, Pagination, Autoplay]}
+        navigation={{
+          nextEl: ".custom-swiper-button-next",
+          prevEl: ".custom-swiper-button-prev",
+        }}
+        pagination={{ clickable: true }}
+        loop
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
+        className="service-image-swiper"
+      >
+        {images.map((img, index) => (
+          <SwiperSlide key={index}>
+            <img
+              src={img}
+              alt={`Digital service showcase ${index + 1}`}
+              className="service-swiper-image"
+              loading="lazy"
+            />
+          </SwiperSlide>
+        ))}
+
+        {/* Custom Navigation Buttons */}
+        <div className="custom-swiper-button-prev">←</div>
+        <div className="custom-swiper-button-next">→</div>
+      </Swiper>
+    </div>
+
+    {/* RIGHT : CONTENT */}
+    <div className="service-right-section">
+
+      {/* Heading */}
+      <div className="service-heading-box">
+        <p className="page_text">OUR SERVICES</p>
+
+        <p className="page_main_heading">
+          Complete Digital <br />
+          Growth Solutions & <br />
+          Creative Brand Experiences
+        </p>
+      </div>
+
+      {/* Services List */}
+      <div className="service-services-box page_text fw-bold">
+
+        <div className="page_text">
+          <div className="underline"></div>
+          <p>Digital Growth Marketing</p>
+          <p>Visual Branding & Design</p>
+          <p>Professional Shoots & Media</p>
+        </div>
+
+        <div className="page_text">
+          <div className="underline"></div>
+          <p>Social Media & Content Strategy</p>
+          <p>Print & Digital Collateral</p>
+          <p>Website Development</p>
+        </div>
+
+      </div>
+    </div>
+
+  </Container>
+</Container>
+
       <div className=''>
         <FAQ
           faqs={faqData}
@@ -127,72 +139,13 @@ const Home = () => {
           imagePosition="right"
         />
       </div>
-      {/* <Separate
-      title="Awards & Honors"
-      heading={"The awards\nwon by our\nproject."}
-      description="Our clients describe us as a product team which creates amazing output, by crafting top-notch user experience."
-      awards={awardsList}
-    /> */}
       <Work />
-      
- <Stats/>
+       <Stats/>
       
       <ClientReview />
-      {/* <div>
-        <Separate
-          title="Our Client"
-          heading={"We’re going to\nbecame partners\nfor the long run.."}
-          description="Our clients describe us as a product team which creates amazing output, by crafting top-notch user experience."
-          awards={awardsList}
-        />
-      </div> */}
-
       <LetsTalk/>
-      {/* <div className="popup-overlay">
-      <div className="popup-form">
-        <h2>Get in Touch</h2>
-
-        <form onSubmit={handleSubmit}>
-          {step === 1 && (
-            <div className="form-step">
-              <input name="name" placeholder="Full Name" value={formData.name} onChange={handleChange} required />
-              <input name="email" placeholder="Email" value={formData.email} onChange={handleChange} required />
-              <button type="button" onClick={handleNext}>Next</button>
-            </div>
-          )}
-
-          {step === 2 && (
-            <div className="form-step">
-              <select name="service" value={formData.service} onChange={handleChange} required>
-                <option value="">Select Service</option>
-                <option value="Web Development">Web Development</option>
-                <option value="Marketing">Marketing</option>
-                <option value="SEO">SEO</option>
-              </select>
-              <select name="budget" value={formData.budget} onChange={handleChange} required>
-                <option value="">Select Budget</option>
-                <option value="Below $500">$500 or less</option>
-                <option value="$500-$2000">$500 - $2000</option>
-                <option value="Above $2000">Above $2000</option>
-              </select>
-              <button type="button" onClick={handleNext}>Next</button>
-            </div>
-          )}
-
-          {step === 3 && (
-            <div className="form-step">
-              <input name="phone" placeholder="Phone Number" value={formData.phone} onChange={handleChange} />
-              <textarea name="message" placeholder="Your Message" value={formData.message} onChange={handleChange} />
-              <button type="submit">Send</button>
-            </div>
-          )}
-        </form>
-      </div>
-    </div> */}
-
-
-
-    </>
+     
+</>
   )
 }
 

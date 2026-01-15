@@ -5,23 +5,28 @@ import { Container } from 'react-bootstrap';
 const workItems = [
   {
     id: 1,
-    image: require("../assets/slide21.jpg"),
+    image: require("../assets/services/P Marketing 2@3x.png"),
     text: 'Performance Marketing',
     link: '/performance-service',
   },
   {
     id: 2,
-    image: require("../assets/slide21.jpg"),
+    image: require("../assets/services/chat-gpt-seo.png"),
     text: 'SEO',
     link: '/seo-service',
   },
   {
     id: 3,
-    image: require("../assets/slide21.jpg"),
+    image: require("../assets/services/chat-gpt-content.png"),
     text: 'Content-Creation',
     link: '/content-creation',
   },
-
+  //   {
+  //   id: 4,
+  //   image: require("../assets/services/content creation.png"),
+  //   text: 'Content-Creation',
+  //   link: '/content-creation',
+  // },
 
 ];
 

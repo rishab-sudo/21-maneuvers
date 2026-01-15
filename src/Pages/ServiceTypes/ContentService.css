@@ -6,7 +6,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px 0px;
+    padding: 45px 0px;
 }
 
 .serviceType-images-section {
@@ -68,10 +68,11 @@ width: 45%;
 @media (max-width: 768px) {
   .serviceType-banner-section{
   max-height: 100%;
+  margin-top: 7rem;
   /* background-color: aqua; */
 }
 .serviceType-banner-container{
-    padding: 5rem 0px;
+    padding:  0px;
 }
 .elevate-content-container{
   display: flex;
@@ -86,5 +87,8 @@ line-height: normal !important ;
 .elevate-right-side{
 margin-top: auto;
 width: 100%;
+}
+.serviceType-images-section{
+  padding: 25px 0px;
 }
 }

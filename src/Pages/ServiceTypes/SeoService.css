@@ -1,5 +1,4 @@
 /* SeoService.css */
-
 .seo-banner-section {
   width: 100%;
   height: 100vh;
@@ -275,7 +274,8 @@ body.dark .square-bullet::before {
     overflow: hidden;
     display: flex;
     align-items: center;
-    padding: 7% 20px;
+    padding:  20px;
+    margin-top: 7rem;
   }
 
   .seo-banner-content {
@@ -285,7 +285,7 @@ body.dark .square-bullet::before {
     align-items: center;
     width: 100%;
     margin: auto;
-    gap: 7rem;
+    gap: 1.5rem !important;
   }
 
   .seo-left-content {
@@ -293,11 +293,13 @@ body.dark .square-bullet::before {
   }
 
   .seo-image-wrapper {
+    margin: 0;
     position: relative;
-    /* IMPORTANT: Circles are positioned relative to this */
-    max-width: 100%;
+    width: 100%;
   }
-
+.seo-circle{
+  display: none !important;
+}
   /* seo-benefits-sec */
   .seo-benefit-slide {
     padding: 1rem;

@@ -3,19 +3,34 @@
 ================================ */
 .contact-section {
   min-height: 100%;
-  padding: 7% 0px;
+  padding: 7% 0;
 }
 
 /* ================================
-   LEFT CONTENT (HEADING + TEXT)
+   LEFT CONTENT
 ================================ */
 .contact-info {
-  text-align: left; /* Let's Talk always left */
+  text-align: left;
 }
 
-.fancy-text {
-  font-family: Eurotypo BKL Italic;
-  font-size: 5vw;
+.contact-heading-block {
+  width: 100%;
+}
+
+/* Desktop default (UNCHANGED) */
+.main-heading {
+  display: flex;
+  flex-direction: column;
+font-size: 5vw;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.lets {
+  white-space: nowrap;
+}
+
+.dynamic-word {
+  display: block;
 }
 
 /* ================================
@@ -23,12 +38,12 @@
 ================================ */
 .contact-form input,
 .contact-form textarea {
-  border: none;
-  border-bottom: 1px solid #ccc;
-  border-radius: 0;
   width: 100%;
   padding: 8px 4px;
   background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0;
   box-shadow: none;
 }
 
@@ -37,7 +52,6 @@
   opacity: 1;
 }
 
-/* Remove Bootstrap focus shadow */
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
@@ -49,10 +63,10 @@
 }
 
 /* ================================
-   SOCIAL ICONS (COMMON)
+   SOCIAL ICONS (DESKTOP ONLY)
 ================================ */
 .social-icons {
-  width: 35% !important; /* smaller width on desktop */
+  width: 35% !important;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -61,44 +75,37 @@
 }
 
 /* ================================
-   MOBILE VIEW
+   MOBILE VIEW (SINGLE BLOCK)
 ================================ */
 @media (max-width: 767px) {
+  /* Layout safety */
+  .contact-info {
+    width: 100% !important;
+    text-align: left;
+  }
+  /* Let’s Talk + Digital in single line */
+  .main-heading {
+    font-size: 2rem;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.6rem;
+    white-space: nowrap;
+  }
 
-  /* Social icons width 95% on mobile */
+  .dynamic-word {
+    display: inline;
+  }
+
+  /* Description below heading */
+  .full-width-text {
+    width: 100% !important;
+    margin-top: 0.5rem;
+  }
+
+
+
+  /* Hide social icons on mobile */
   .social-icons {
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: space-around;
-  }
-
-  /* Show mobile icons */
-  .mobile-only {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 1.5rem;
-  }
-
-  /* Hide desktop icons */
-  .desktop-only {
-    display: none;
-  }
-}
-
-/* ================================
-   DESKTOP VIEW
-================================ */
-@media (min-width: 768px) {
-
-  /* Show desktop icons */
-  .desktop-only {
-    display: flex;
-  }
-
-  /* Hide mobile icons */
-  .mobile-only {
     display: none;
   }
 }

@@ -17,10 +17,13 @@
 .card {
   flex: 0 0 calc(33.333% - 1rem);
   /* Fixed width instead of growing/shrinking */
-  max-width: 450px;
-  height: 500px;
+  max-width: 425px;
+  height: 480px;
   overflow: hidden;
   margin-bottom: 0rem;
+  background: none !important;
+  /* outline: 1px solid #f7a422; */
+  border-radius: 15px;
 }
 .card-image {
   width: 100%;

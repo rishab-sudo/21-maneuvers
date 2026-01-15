@@ -18,7 +18,6 @@ import ThemeToggleButton from './Components/ThemeToggleButton';
 import PerformanceService from './Pages/ServiceTypes/PerformanceService';
 import ContentService from './Pages/ServiceTypes/ContentService';
 import MainServicePage from './Pages/MainServicePage';
-import BeforeAfter from "./Components/BeforeAfter/BeforeAfter"
 import Blog from './Components/Blog';
 import CursorFollower from "./Components/CursorFollower/CursorFollower"
 import BlogDetail from './Components/BlogDetail';
