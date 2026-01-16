@@ -79,7 +79,7 @@ export default function ContactPage() {
           textDecoration: 'none',
         }}
       >
-        <div style={{ cursor: 'pointer' }}>{item.icon}</div>
+        <div className='let-icon'>{item.icon}</div>
       </a>
     ))}
   </div>

@@ -68,7 +68,7 @@ body {
 }
 
 .right-image img {
-  max-width: 90%;
+  max-width: 95%;
   max-height: 600px;
   object-fit: contain;
   border-radius: 10px;
@@ -255,6 +255,8 @@ display: inline-block;
 }
 
 .circle-container {
+  margin-top: 5%;
+  margin-bottom: 2%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -262,6 +264,8 @@ display: inline-block;
   padding: 4rem 2rem;
   gap: 20rem;
   text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08) !important;
+
  }
 .circle-group {
   position: relative;

@@ -5,7 +5,7 @@
   overflow: hidden;
   display: flex;
   align-items: center;
-  padding: 7% 20px;
+  padding: 25px  20px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
   /* Bottom shadow */
 }
@@ -22,7 +22,8 @@
 
 .seo-left-content {
   max-width: 50%;
-  margin-top: 2.5%;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .seo-image-wrapper {
@@ -147,6 +148,11 @@
 /* graphite- css */
 .graphite-section {
   padding-top: 10%;
+   /* background-color: #F5A522; */
+}
+.graph-section2{
+  padding: 15px 0px;
+ 
 }
 
 .graphite-content-container {
@@ -290,6 +296,7 @@ body.dark .square-bullet::before {
 
   .seo-left-content {
     min-width: 100%;
+    
   }
 
   .seo-image-wrapper {

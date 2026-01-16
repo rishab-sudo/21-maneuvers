@@ -1,5 +1,5 @@
 .slider-section{
-  padding: 6% 0px;
+  padding: 5% 0px;
 
  }
  .seo-benefit-container{
@@ -28,7 +28,7 @@
   .square-box {
     width: 12px;
     height: 12px;
-    background-color: #000;
+    /* background-color: #000; */
     margin-right: 8px;
     display: inline-block;
   }

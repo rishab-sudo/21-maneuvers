@@ -18,14 +18,14 @@ const services = [
     name: 'Logo Design',
     title: ' Design a Logo That Speaks',
     description: ' Craft a visual identity that resonates. We turn your story into an unforgettable symbol. Make your first impression count.',
-    image: require("../assets/social-media-creative-design.png")
+    image: require("../assets/services/logo-mock.png")
   },
   {
     id: 2,
     name: 'Packaging Design',
     title: ' Packaging That Sells & Shines',
     description: '  Stand out on every shelf with purpose.We blend form, function, and emotion.Packaging that tells your brand story.',
-    image: require("../assets/social-media-creative-design.png")
+    image: require("../assets/services/pack-mock.png")
   },
   {
     id: 3,
@@ -39,22 +39,30 @@ const services = [
     name: 'Performance Marketing',
     title: 'Fueling Growth with Data-Driven Ads',
     description: ' From clicks to conversions, we optimize every step. Get real results with ROI-focused strategies.Performance marketing that drives smart growth.',
-    image: require("../assets/social-media-creative-design.png")
+    image: require("../assets/services/PM-mock2.png")
   },
   {
     id: 5,
     name: 'Social Media Branding',
     title: 'Crafting Your Brand Identity Today',
     description: 'Your imagination, our expertise. Build trust with scroll-stopping visuals. Limitless growth through powerful presence.',
-    image: require("../assets/social-media-creative-design.png")
+    image: require("../assets/services/smm-mock.png")
   },
   {
     id: 6,
     name: 'SEO',
     title: 'Be Found. Stay Relevant. Win.',
     description: ' Boost visibility with proven SEO strategies.We bring traffic that actually converts.Rank higher, grow faster, stay ahead.',
-    image: require("../assets/social-media-creative-design.png")
+    image: require("../assets/services/SEO-mock.png")
   },
+  {
+  id: 7,
+  name: 'Web Development',
+  title: 'Build Fast. Look Great. Convert More.',
+  description: 'Create high-performance websites that engage users and drive results. From design to deployment, we build scalable, secure, and conversion-focused web solutions.',
+  image: require("../assets/services/web-mock.png")
+},
+
 ];
 
 const repeatedServices = Array(3).fill(services).flat(); // Repeat a few times for scrollable overflow
@@ -137,7 +145,7 @@ const ServiceSlider = () => {
         </div>
       </div>
     </Container>
-
+<Container fluid className="mainservicepage-wrapper">
   <Container fluid className="mainservicepage-section">
   <div className="mainservicepage-content">
     {/* Left Side */}
@@ -169,7 +177,7 @@ const ServiceSlider = () => {
 
       <div className="mainservicepage-service">
         <h2 className='mb-2'>Growth Marketing</h2>
-        <img src={require("../assets/social-media-creative-design.png")} alt="" />
+        <img src={require("../assets/services/PM-mock2.png")} alt="" />
         <p className='page_text'>Accelerate your brand’s expansion with a full-funnel approach that combines data, creativity, and automation. We integrate performance, retention, and engagement strategies to drive measurable growth.</p>
         <ul className='page_text'>
           <li>Performance Marketing</li>
@@ -184,7 +192,7 @@ const ServiceSlider = () => {
 
       <div className="mainservicepage-service">
         <h2 className='mb-2'>Website Development</h2>
-        <img src={require("../assets/social-media-creative-design.png")} alt="" />
+        <img src={require("../assets/services/web-mock.png")} alt="" />
         <p className='page_text'> We craft responsive, user-centric websites that embody your brand’s identity—while helping you rank for your industry's top keywords through smart, integrated SEO.</p>
         <ul className='page_text'>
           <li>UI/UX Design</li>
@@ -197,7 +205,7 @@ const ServiceSlider = () => {
     </div>
   </div>
 </Container>
-
+</Container>
 {/* <div className="circle-container" style={{ marginTop: "7%" }}>
   {circleData.map((item, index) => (
     <a
@@ -215,7 +223,7 @@ const ServiceSlider = () => {
     </a>
   ))}
 </div> */}
-<div className="circle-container" style={{ marginTop: "7%" }}>
+<div className="circle-container" >
   {/* Circle Group 1 */}
   <a
     href="/performance-service"

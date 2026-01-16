@@ -1,7 +1,9 @@
 /* components/ImageSwiper.css */
 .image-swiper-wrapper {
+  margin-top: 4.5%;
     width: 100%;
-    padding: 7% 0px;
+    padding: 15px 0px;
+     /* background-color: #F5A522; */
   }
   
   .image-swiper-slide {
@@ -9,14 +11,16 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    
   }
   
   .image-swiper-img {
-    width: 100%;
-    height: auto;
+    width: 350px;
+    height: 370px;
     border-radius: 45px;
     object-fit: cover;
     border-radius: 15px !important;
+     /* background-color: #F5A522; */
   }
   
   .image-swiper-tagline {

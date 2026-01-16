@@ -31,6 +31,7 @@ font-family: Georgia, 'Times New Roman', Times, serif;
 
 .dynamic-word {
   display: block;
+  color: #f7a422 !important;
 }
 
 /* ================================
@@ -73,7 +74,12 @@ font-family: Georgia, 'Times New Roman', Times, serif;
   gap: 1.5rem;
   margin-top: 1rem;
 }
-
+.let-icon{
+  cursor: pointer;
+}
+.let-icon :hover{
+ color: #f7a422;
+}
 /* ================================
    MOBILE VIEW (SINGLE BLOCK)
 ================================ */

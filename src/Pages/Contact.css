@@ -10,10 +10,12 @@
 .link-text{
   color: #ffffff;
   text-decoration: none !important;
+  /* background-color: aqua; */
 
 }
 .body.light .link-text {
   color: #000;
+  /* background-color: aqua; */
 }
 
 .contact-banner-heading {

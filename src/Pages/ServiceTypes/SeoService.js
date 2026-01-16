@@ -126,8 +126,16 @@ const SeoService = () => {
 </Container>
     </Container>
 {/*  */}
+
+
+{/*  */}
+
+    <ImageSwiper slides={slideData} />;
+
+{/*  */}
+
 {/* seo-graphite-sec */}
-    <Container fluid className="graphite-section">
+    <Container fluid className="graphite-section graph-section2">
 <Container className="graphite-content-container">
   <div className="graphite-text-div">
    {/* <p>graphite</p> */}
@@ -142,11 +150,6 @@ const SeoService = () => {
 </Container>
     </Container>
 
-{/*  */}
-
-    <ImageSwiper slides={slideData} />;
-
-{/*  */}
 
 {/* seo - research -sec */}
 <Container fluid className="research-section">

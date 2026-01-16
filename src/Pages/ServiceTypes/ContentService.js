@@ -57,8 +57,8 @@ const ContentService = () => {
 <Container className='elevate-section'>
 <Container className='elevate-content-container'>   
   <div className='elevate-left-side'>
-<p className='fancy-txt'>Content <span style={{fontFamily:"arial"}}>That</span></p>
-<p className='extrabold-fancy-text'>Grabs & </p>
+<p className='fancy-txt'>Content <span style={{fontFamily:"arial"}}>That Grabs & </span></p>
+<p className='extrabold-fancy-text'></p>
 <p className='fancy-txt'></p>
 <p className='extrabold-fancy-text'style={{color:"#F5A522"}}>Converts</p>
 <p className='extrabold-fancy-text'style={{color:"#F5A522"}}> Fast!</p>
