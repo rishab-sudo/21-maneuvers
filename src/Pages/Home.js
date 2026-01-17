@@ -8,12 +8,12 @@ import 'swiper/css/pagination';
 import './Home.css';
 import HomeBanner from '../Components/HomeBanner'
 import ClientReview from './ClientReview'
-import Separate from "../Components/SeparateOurClient"
+
 import Work from './OurWork'
 import FAQ from './FAQ';
 import faqImage from '../assets/home/FAQ (2).png';
 import LetsTalk from "../Components/LetsTalk"
-import Blog from '../Components/Blog';
+
 import Stats from '../Components/Stats';
 
 // Home services image
