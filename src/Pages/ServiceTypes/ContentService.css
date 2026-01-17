@@ -68,8 +68,16 @@ max-width: 75%;
     text-align: center;
     padding: 5% 0px;
 }
+/*  */
+.serviceType-descp-section{
+  margin-top: 2.5%;
+  padding: 15px 0px;
+  /* background-color: #f7a422; */
+}
+/* ------------- */
 .elevate-section{
-  margin-top: 5%;
+  margin-top: 2.5%;
+  /* background-color: #f7a422; */
 }
 .elevate-content-container{
   display: flex;
