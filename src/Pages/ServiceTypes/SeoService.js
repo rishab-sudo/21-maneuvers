@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from 'react-router-dom';
-import { Container, Row, Col, Carousel } from "react-bootstrap";
+import { Container, Row, Col, } from "react-bootstrap";
 import CountUp from 'react-countup';
 import ImageSwiper from '../../Components/ImageSlider';
 import ServiceSlider from "../../Components/HomeServiceSlider";
@@ -20,8 +19,7 @@ const slideData = [
 
 const SeoService = () => {
 
-
-  return (
+return (
     <>
     {/* seo-banner-starts */}
  <div className="seo-banner-section">

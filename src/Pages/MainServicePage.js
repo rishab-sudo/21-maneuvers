@@ -5,11 +5,11 @@ import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import './MainServicePage.css';
 
-const circleData = [
-  { label: "Performance Marketing", back: "back-1", front: "front-1", link: "/performance-service" },
-  { label: "SEO", back: "back-2", front: "front-2", link: "/seo-service" },
-  { label: "Content Creation", back: "back-3", front: "front-3", link: "/content-creation" }
-];
+// const circleData = [
+//   { label: "Performance Marketing", back: "back-1", front: "front-1", link: "/performance-service" },
+//   { label: "SEO", back: "back-2", front: "front-2", link: "/seo-service" },
+//   { label: "Content Creation", back: "back-3", front: "front-3", link: "/content-creation" }
+// ];
 
 
 const services = [
@@ -50,7 +50,7 @@ const services = [
   },
   {
     id: 6,
-    
+
     name: 'SEO',
     title: 'Be Found. Stay Relevant. Win.',
     description: ' Boost visibility with proven SEO strategies.We bring traffic that actually converts.Rank higher, grow faster, stay ahead.',
