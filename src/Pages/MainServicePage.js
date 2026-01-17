@@ -50,6 +50,7 @@ const services = [
   },
   {
     id: 6,
+    
     name: 'SEO',
     title: 'Be Found. Stay Relevant. Win.',
     description: ' Boost visibility with proven SEO strategies.We bring traffic that actually converts.Rank higher, grow faster, stay ahead.',
