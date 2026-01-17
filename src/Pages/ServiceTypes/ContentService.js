@@ -4,16 +4,33 @@ import LetsTalk from "../../Components/LetsTalk"
 import "./ContentService.css"
 
 const ContentService = () => {
-   const images = [
-    require('../../assets/grain-town-digital-Post-design.png'),
-     require('../../assets/grain-town-digital-Post-design.png'),
-         require('../../assets/grain-town-digital-Post-design.png'),
-         require('../../assets/grain-town-digital-Post-design.png'),
-                 require('../../assets/grain-town-digital-Post-design.png'),
-                     require('../../assets/grain-town-digital-Post-design.png'),
-                         require('../../assets/grain-town-digital-Post-design.png'),
-                             require('../../assets/grain-town-digital-Post-design.png'),
-  ];
+  const images = [
+  {
+    src: require('../../assets/services/21Content6.png'),
+    bg: 'dark',
+  },
+  {
+    src: require('../../assets/services/21Content2.png'),
+    bg: 'orange',
+  },
+  {
+    src: require('../../assets/services/21Content3.png'),
+    bg: 'orange',
+  },
+  {
+    src: require('../../assets/services/21Content4.png'),
+    bg: 'dark',
+  },
+  {
+    src: require('../../assets/services/21Content5.png'),
+    bg: 'dark',
+  },
+  {
+       src: require('../../assets/services/21Content1.png'),
+    bg: 'orange',
+  },
+];
+
   return (
    <>
     <Container  fluid className='serviceType-banner-section'>
@@ -24,20 +41,25 @@ const ContentService = () => {
   <p className="page_text">In a world overwhelmed by noise, we create moments that stick. At 21 Maneuvers, we fuse culture, content, and technology to shape meaningful digital impact, because in today’s world, visibility isn’t enough. Memorability wins.
 </p>
 <p className='page_text'>21 Maneuvers | ELEVATING YOU INTO A BIGGER DIGITAL UNIVERSE</p>
-<img className='mt-2 performance-banner-img' src={require("../../assets/social-media-creative-design.png")} alt="content-service-banner"/>
+<img className='mt-2 performance-banner-img' src={require("../../assets/services/Brandid.png")} alt="content-service-banner"/>
 </Container>
 </Container>
 
   <Container fluid className='serviceType-images-section'>
       <Container fluid className='serviceType-content-container'>
        <Row className="serviceType-row">
-  {images.map((imgSrc, index) => (
-    <Col xs={12} md={6} key={index} className='p-0 g-0'>
-      <div className="serviceType-image-wrapper">
-        <img src={imgSrc} alt={`Post ${index + 1}`} />
-      </div>
-    </Col>
-  ))}
+{images.map((item, index) => (
+  <Col xs={12} md={6} key={index} className="p-0 g-0">
+    <div className="serviceType-image-wrapper">
+      <img
+        src={item.src}
+        alt={`Post ${index + 1}`}
+        className={`img-bg-${item.bg}`}
+      />
+    </div>
+  </Col>
+))}
+
 </Row>
   </Container>
     </Container>

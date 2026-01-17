@@ -457,13 +457,16 @@ display: inline-block;
   }
   .mainservicepage-right {
   max-height: 100%;
-  gap: 2.5rem;
+  gap: 1.5rem;
   height: auto;
   max-height: unset;
   padding: .5rem;
   margin-top: 2rem;
+  /* background-color: #F5A522; */
   }
-
+.service-right-text-div{
+  margin-top: 1.56rem;
+}
  .demo-heading {
   font-size: 35px !important;
   font-weight: 600;

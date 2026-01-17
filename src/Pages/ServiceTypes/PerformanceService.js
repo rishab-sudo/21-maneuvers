@@ -25,6 +25,9 @@ const ContentService = () => {
             <p className='page_text'>We don’t just take you online. We position you precisely where your audience scrolls, clicks, and connects. With sharp strategy and standout creativity, 21 Maneuvers navigates the digital maze, turning presence into performance.
             </p>
             <p className='page_text'>FUELING RESULTS, NOT JUST REACH</p>
+            <div className='pm-banner-img-div'>
+              <img src={require("../../assets/services/PM-mock.png")} alt="performance-marketing"/>
+            </div>
           </div>
 
 

@@ -163,8 +163,9 @@ const ServiceSlider = () => {
     <div className="mainservicepage-right">
       <div className="mainservicepage-service">
         <h2 className='mb-2'>Brand & Identity</h2>
-        <img className=" mainservicepage-service-img" src={require("../assets/social-media-creative-design.png")} alt="" />
-        <p className='page_text'>From logos to packaging, we craft cohesive brand ecosystems that resonate deeply and leave a lasting impression. Every visual element reflects your brand’s story, values, and vision with clarity and consistency.</p>
+        <img className=" mainservicepage-service-img" src={require("../assets/services/Brandid.png")} alt="" />
+        <div className="service-right-text-div">
+        <p className='page_text '>From logos to packaging, we craft cohesive brand ecosystems that resonate deeply and leave a lasting impression. Every visual element reflects your brand’s story, values, and vision with clarity and consistency.</p>
         <ul className='page_text'>
           <li>Logo Design</li>
           <li> Packaging Design </li>
@@ -173,12 +174,14 @@ const ServiceSlider = () => {
           <li>Hoardings & Banners</li>
         </ul>
       </div>
+      </div>
 
 
       <div className="mainservicepage-service">
         <h2 className='mb-2'>Growth Marketing</h2>
         <img src={require("../assets/services/PM-mock2.png")} alt="" />
         <p className='page_text'>Accelerate your brand’s expansion with a full-funnel approach that combines data, creativity, and automation. We integrate performance, retention, and engagement strategies to drive measurable growth.</p>
+         <div className="service-right-text-div">
         <ul className='page_text'>
           <li>Performance Marketing</li>
           <li>Social Media Strategy & Content Marketing</li>
@@ -189,10 +192,12 @@ const ServiceSlider = () => {
           <li> Funnel Strategy & Campaign Setup </li>
         </ul>
       </div>
+</div>
 
       <div className="mainservicepage-service">
         <h2 className='mb-2'>Website Development</h2>
         <img src={require("../assets/services/web-mock.png")} alt="" />
+           <div className="service-right-text-div">
         <p className='page_text'> We craft responsive, user-centric websites that embody your brand’s identity—while helping you rank for your industry's top keywords through smart, integrated SEO.</p>
         <ul className='page_text'>
           <li>UI/UX Design</li>
@@ -202,6 +207,8 @@ const ServiceSlider = () => {
           <li>SEO Optimization</li>
         </ul>
       </div>
+      </div>
+      
     </div>
   </div>
 </Container>
