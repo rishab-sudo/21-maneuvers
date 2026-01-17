@@ -4,33 +4,33 @@ import { FaFacebookF, FaInstagram, FaWhatsapp, FaLinkedinIn } from 'react-icons/
 import "./Footer.css"
 
 const Footer = () => {
-    const [email, setEmail] = useState('');
+    const [ setEmail] = useState('');
     const [consent, setConsent] = useState(false);
-    const [error, setError] = useState('');
+    const [ setError] = useState('');
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
+    // const handleSubmit = (e) => {
+    //     e.preventDefault();
 
-        if (!consent) {
-            setError("One or more fields have an error. Please check and try again.");
-            return;
-        }
+    //     if (!consent) {
+    //         setError("One or more fields have an error. Please check and try again.");
+    //         return;
+    //     }
 
-        // Process signup (e.g., API call or alert)
-        alert("Signed up!");
+    //     // Process signup (e.g., API call or alert)
+    //     alert("Signed up!");
 
-        // Clear input & error
-        setEmail('');
-        setConsent(false);
-        setError('');
-    };
+    //     // Clear input & error
+    //     setEmail('');
+    //     setConsent(false);
+    //     setError('');
+    // };
 
-      const socialIcons = [
-        { icon: <FaFacebookF />, name: 'Facebook' },
-        { icon: <FaInstagram />, name: 'Instagram' },
-        { icon: <FaWhatsapp />, name: 'WhatsApp' },
-        { icon: <FaLinkedinIn />, name: 'LinkedIn' }
-      ];
+      // const socialIcons = [
+      //   { icon: <FaFacebookF />, name: 'Facebook' },
+      //   { icon: <FaInstagram />, name: 'Instagram' },
+      //   { icon: <FaWhatsapp />, name: 'WhatsApp' },
+      //   { icon: <FaLinkedinIn />, name: 'LinkedIn' }
+      // ];
     return (
         <>
             <Container fluid className='footer-container-fluid'>
