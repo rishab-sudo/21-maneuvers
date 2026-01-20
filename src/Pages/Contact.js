@@ -14,11 +14,12 @@ const Contact = () => {
         className="contact-banner"
         style={{ backgroundImage: `url(${contactBg})` }}
       >
-        <Link to="/home" className="back-arrow">
+        {/* <Link to="/home" className="back-arrow">
           ←
-        </Link>
+        </Link> 
         <h2 className="contact-banner-heading">Contact Us</h2>
-      </div>
+     */}
+        </div>
 
 
       <Container className='contactUs-content-container'>
@@ -30,34 +31,36 @@ const Contact = () => {
           <div  className='left-col'>
             <div className='left-col-content'>
               <div className='heading-text-div'>
-                <p>Work Inquiries</p>
-                <p className='fw-bold'>+91 9311849502</p>
-                <p>Assistance hours:<br /> Monday – Saturday <br />11 am to 7 pm EST</p>
+                <p className='service-points' >Work Inquiries</p>
+                <p className='fw-bold service-points'>+91 9311849502</p>
+                <p className='service-points' >Assistance hours:<br /> Monday – Saturday <br />11 am to 7 pm EST</p>
               </div>
 
               <div className='heading-text-div'>
-                <p>Careers & Press</p>
-                <p className='fw-bold'>hello@assettlor.com</p>
-                <p>Assistance hours:<br />Tuesday – Saturday <br/>6 am to 8 pm EST</p>
+                <p className='service-points'>Careers & Press</p>
+                <p className='fw-bold service-points'>hello@assettlor.com</p>
+                <p className='service-points' >Assistance hours:<br />Tuesday – Saturday <br/>6 am to 8 pm EST</p>
               </div>
             </div>
           </div>
 
           <div  className='right-col'>
             <div className='right-col-content'>
-              <div>
-                <p className='fw-bold'>Post address</p>
+              <div >
+                <p className='fw-bold service-points '>Post address</p>
+              <span className='service-points'>
                 <p className='fw-bold'>Assettlor Interactive Studios.</p>
                 <p>K.B. Marketing OPC Pvt. Ltd, C-12-35 Rampur Bagh,</p>
                 <p>Bareilly,</p>
                 <p>India </p>
+                </span>
               </div>
               <div>
-                <p className='fw-bold'>Social media</p>
+                <p className='fw-bold service-points'>Social media</p>
                  <a style={{ textDecoration:"none"}} href="https://www.facebook.com/21Maneuvers" target="_blank" rel="noopener noreferrer" > <p className='fw-bold link-text' >Facebook</p></a>
                         <a style={{ textDecoration:"none"}} href="https://www.instagram.com/21.maneuvers/" target="_blank" rel="noopener noreferrer" >  <p className='fw-bold link-text' style={{ marginTop: "-8px" }}>Instagram</p></a>
                         <a style={{ textDecoration:"none"}} href="https://wa.me/919927600436" target="_blank" rel="noopener noreferrer" >     <p className='fw-bold link-text' style={{ marginTop: "-8px" }}>Whatsapp</p></a>
-                        <a style={{ textDecoration:"none"}} href="https://www.linkedin.com/company/21-maneuvers/" target="_blank" rel="noopener noreferrer" > <p className='fw-bold link-text' style={{ marginTop: "-8px" }}>Linkedin</p></a>
+                        <a  style={{ textDecoration:"none"}} href="https://www.linkedin.com/company/21-maneuvers/" target="_blank" rel="noopener noreferrer" > <p className='fw-bold link-text' style={{ marginTop: "-8px" }}>Linkedin</p></a>
                
               </div>
             </div>

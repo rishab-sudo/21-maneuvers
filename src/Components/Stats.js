@@ -28,15 +28,15 @@ const Stats = () => {
       <Container className="coffee-content-container">
 
         <div className="coffee-text-div">
-          <img src={require("../assets/coffee_icon.png")} alt="" />
-          <p>COFFEE CUPS</p>
+          <img className="mb-2 coffee-icons-img" src={require("../assets/coffee_icon.png")} alt="" />
+          <p >COFFEE CUPS</p>
           <Counter end={500} startCounting={startCounting} />
         </div>
 
         <div className="vertical-line" />
 
         <div className="coffee-text-div">
-          <img src={require("../assets/projects_icon.png")} alt="" />
+          <img className="mb-2 coffee-icons-img" src={require("../assets/projects_icon.png")} alt="" />
           <p>PROJECTS</p>
           <Counter end={100} startCounting={startCounting} />
         </div>
@@ -44,7 +44,7 @@ const Stats = () => {
         <div className="vertical-line" />
 
         <div className="coffee-text-div">
-          <img src={require("../assets/working_days_icon.png")} alt="" />
+          <img className="mb-2 coffee-icons-img" src={require("../assets/working_days_icon.png")} alt="" />
           <p>WORKING DAYS</p>
           <Counter end={1800} startCounting={startCounting} />
         </div>
@@ -52,7 +52,7 @@ const Stats = () => {
         <div className="vertical-line" />
 
         <div className="coffee-text-div">
-          <img src={require("../assets/clients_icon.png")} alt="" />
+          <img className="mb-2 coffee-icons-img" src={require("../assets/clients_icon.png")} alt="" />
           <p>CLIENTS</p>
           <Counter end={100} startCounting={startCounting} />
         </div>
