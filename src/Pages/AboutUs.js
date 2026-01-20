@@ -124,23 +124,22 @@ const About = () => {
     </div>
 
     {/* Stats Boxes */}
-<div className="aboutus-stats">
-  <div className="aboutus-stat-box">
-    <img src={require("../assets/icon/awards.png")} alt="Awards" />
-    <div className="stat-text">
-      <h3>21+</h3>
-      <p>Awards & Recognitions</p>
-    </div>
-  </div>
-
-  <div className="aboutus-stat-box">
-    <img src={require("../assets/icon/happyclient.png")} alt="Clients" />
-    <div className="stat-text">
-      <h3>100+</h3>
-      <p>Happy Clients Worldwide</p>
-    </div>
+<div className="aboutus-stat-box">
+  <img src={require("../assets/icon/awards.png")} alt="Awards" />
+  <div className="stat-text">
+    <Counter end={21} />
+    <p>Awards & Recognitions</p>
   </div>
 </div>
+
+<div className="aboutus-stat-box">
+  <img src={require("../assets/icon/happyclient.png")} alt="Clients" />
+  <div className="stat-text">
+    <Counter end={100} />
+    <p>Happy Clients Worldwide</p>
+  </div>
+</div>
+
 
 
   </div>
