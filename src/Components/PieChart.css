@@ -1,6 +1,7 @@
 .pie-main-container {
     margin-top: 2.5%;
-  padding: 15px 0;
+  padding: 2.9% 0;
+  box-shadow: 0 -2px 14px rgba(0, 0, 0, 0.08);
   /* background-color: #f7a422; */
 }
 
@@ -35,10 +36,18 @@ width: 100%;
   margin-bottom: 30px;
 }
 
-.pie-points {
+.pie-point {
   display: flex;
-  flex-direction: column;
-  gap: 18px;
+  align-items: flex-start;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.pie-icon {
+  width: 42px;
+  height: 50px;
+  flex-shrink: 0; /* icon stays fixed */
+  margin-top: 4px;
 }
 
 .pie-point h4 {

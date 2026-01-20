@@ -55,7 +55,7 @@ const HomeServiceSlider = () => {
                 <p className="seo-benefit-index">
                   <span className="square-box"></span> {index + 1}
                 </p>
-                <p className="seo-benefit-title">{benefit.title}</p>
+                <p className="seo-benefit-title ">{benefit.title}</p>
                 <p className="seo-benefit-desc">{benefit.desc}</p>
               </div>
             </SwiperSlide>

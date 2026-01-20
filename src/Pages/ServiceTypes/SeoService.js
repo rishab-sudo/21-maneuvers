@@ -35,7 +35,7 @@ const SeoService = () => {
 
           {/* Right image + circles */}
           <div className="seo-image-wrapper">
-            <img className="seo-banner-right-img" src={require("../../assets/seo-img.png")} alt="SEO" />
+            <img className="seo-banner-right-img" src={require("../../assets/SEO Banner.png")} alt="SEO" />
 
             {/* Circles attached to image */}
             <div className="seo-circle circle-1">
@@ -92,9 +92,9 @@ const SeoService = () => {
           <Row>
             <Col lg={4} md={4} sm={12}>
               <div>
-                <p className="page_text"> Impressions</p>
+                <p className="page_text service-points"> Impressions</p>
                 <div className="dotted-line"></div>
-                <p className="growth-number">
+                <p className="growth-number service-points">
                   + <CountUp start={1} end={17} duration={3} separator="," suffix=" M" decimals={1} />
                 </p>
               </div>
@@ -102,9 +102,9 @@ const SeoService = () => {
 
             <Col lg={4} md={4} sm={12}>
               <div>
-                <p className="page_text">Clicks</p>
+                <p className="page_text service-points">Clicks</p>
                 <div className="dotted-line"></div>
-                <p className="growth-number">
+                <p className="growth-number service-points">
                   + <CountUp start={1} end={1.2} duration={3} separator="," suffix=" M" decimals={1} />
                 </p>
               </div>
@@ -112,9 +112,9 @@ const SeoService = () => {
 
             <Col lg={4} md={4} sm={12}>
               <div>
-                <p className="page_text">Conversions</p>
+                <p className="page_text service-points">Conversions</p>
                 <div className="dotted-line"></div>
-                <p className="growth-number">
+                <p className="growth-number service-points">
                   + <CountUp start={1} end={7} duration={3} separator="," suffix=" K" decimals={1} />
                 </p>
               </div>
@@ -156,7 +156,7 @@ const SeoService = () => {
             <p className="research-title">Our research reveals that
             </p>
             <p className="research-number">
-              <CountUp start={1} end={95} duration={2} separator="," suffix=" %" decimals={0} />
+              <CountUp start={1} end= {95} duration={2} separator="," suffix=" %" decimals={0} />
             </p>
           </div>
 
@@ -175,7 +175,7 @@ const SeoService = () => {
                     <div className="focus-img-sec">
             <img className="focus-img" src={require("../../assets/chart.png")} style={{ maxHeight: "100%", maxWidth: "100%" }} alt="" />
           </div>
-          
+
           <div className="graphite-text-div">
             <p></p>
             <p className="page_heading">How to focus on the 5% that matters</p> <br />

@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from 'react'
-import { Container, Row, Col } from 'react-bootstrap'
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Navigation } from 'swiper/modules';
+import { Container, } from 'react-bootstrap'
 import 'swiper/css';
 import 'swiper/css/navigation';
 import FAQ from './FAQ';
-import faqImage from "../assets/21-creative2.jpg"
+import faqImage from "../assets/home/About FAQ.png"
 import bannerImg from "../assets/21-about2.jpg"
 import Piechart from "../Components/PieChart"
 import "./AboutUs.css"
@@ -84,11 +82,12 @@ const About = () => {
 
       <p>
        Driven by curiosity and collaboration, we blend strategic thinking 
-       with bold creativity to craft impactful marketing campaigns, digital experiences, and brand stories that inspire action
+       with bold creativity to craft impactful marketing campaigns, digital experiences, and brand stories that inspire action.
       </p>
 
-      <p className='fw-bold'>
-   People don’t just connect with brands, they connect with meaning.
+      <p className='fw-bold quote-text'>
+"People do not buy goods and services. They buy relations, stories and magic."<br/>
+<span className='signature'>Bharat Aggarwal</span>
       </p>
 
      
@@ -127,7 +126,7 @@ const About = () => {
     {/* Stats Boxes */}
 <div className="aboutus-stats">
   <div className="aboutus-stat-box">
-    <img src="/icons/award.svg" alt="Awards" />
+    <img src={require("../assets/icon/awards.png")} alt="Awards" />
     <div className="stat-text">
       <h3>21+</h3>
       <p>Awards & Recognitions</p>
@@ -135,7 +134,7 @@ const About = () => {
   </div>
 
   <div className="aboutus-stat-box">
-    <img src="/icons/clients.svg" alt="Clients" />
+    <img src={require("../assets/icon/happyclient.png")} alt="Clients" />
     <div className="stat-text">
       <h3>100+</h3>
       <p>Happy Clients Worldwide</p>
@@ -152,12 +151,10 @@ const About = () => {
 
 
 <Piechart/>
+<div className='separation-line'></div>
       {/* About-FAQ-section */}
       <div className='w-auto'>
-        <Container style={{ marginTop: "6%", marginBottom: "0%", }}>
-          <p className='page_text'> CAPABILITIES</p>
-          <p className='page_heading'> Creative studio with<br />art & technologies.</p>
-        </Container>
+
         <FAQ
           faqs={faqData}
           heading="We work in the fields of art direction."
@@ -170,7 +167,9 @@ const About = () => {
         <Container className='text-center'>
           <p className='page_heading'>21 Steps. One Vision. The Journey Begins.</p><br />
           <p className='page_text'>
-            Our story began not in a boardroom, but amidst the vibrant energy of Italy. During their Masters, our founders, fueled by late-night conversations and the timeless pursuit of growth, stumbled upon a profound question over drinks: What are the 21 essential things a brand truly needs to scale? That pivotal discussion sparked a vision. It was in that moment, distilling years of insights into actionable strategies, that the foundation of 21 Maneuvers was laid –
+            Our story began not in a boardroom, but amidst the vibrant energy of Italy. During their Masters, our founders, 
+            fueled by late-night conversations and the timeless pursuit of growth, stumbled upon a profound question over drinks: What are the 21 essential things a brand truly needs to scale? That pivotal discussion sparked a vision. 
+            It was in that moment, distilling years of insights into actionable strategies, that the foundation of 21 Maneuvers was laid 
             built on the ambition to empower and scale brands through precise, impactful strategies.
           </p>
         </Container>
@@ -178,7 +177,7 @@ const About = () => {
       {/* About us award section ends */}
 
       {/* About-us testimonials section starts */}
-      <Container fluid className='about-testimonial-container-fluid'>
+      {/* <Container fluid className='about-testimonial-container-fluid'>
         <Container>
           <Row>
             <Col lg={4} md={6} sm={12} xs={12}>
@@ -258,7 +257,7 @@ const About = () => {
                   </div>
                 </SwiperSlide>
 
-                {/* Arrows */}
+              
                 <div className="testimonial-arrows">
                   <button className="testimonial-prev arrow-circle">{'<'}</button>
                   <button className="testimonial-next arrow-circle">{'>'}</button>
@@ -268,7 +267,7 @@ const About = () => {
 
           </Row>
         </Container>
-      </Container>
+      </Container> */}
       {/* About-us testimonials section ends */}
     </>
   )

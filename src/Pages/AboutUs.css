@@ -9,6 +9,11 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+.separation-line{
+  width: 100%;
+  height: 2px;
+  background-color: #f7a422;
+}
 /* ------------------ */
 .about-container-fluid{
   margin-top: 3.5%;
@@ -27,8 +32,13 @@
  max-width: 45%;
  /* background-color: #cf2e2e; */
 }
-.quote-heading{
-  font-size: 25px;
+.quote-text:hover{
+color: #F2A836;
+}
+.signature {
+font-family: 'Great Vibes', cursive;
+  color: #f7a422;
+  letter-spacing: 2.5px;
 }
 /* Right section wrapper */
 .about-right-section {
@@ -63,10 +73,10 @@
   padding: 22px;
   text-align: center;
   transition: all 0.3s ease;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 body.dark .aboutus-card{
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 8px 11px rgba(0, 0, 0, 0.35);
 }
 .aboutus-card img {
   width: 42px;
@@ -136,8 +146,12 @@ margin: auto;
 
 /* AWARDS */
 .about-awards-container-fluid {
-  padding: 5% 0px;
+  padding: 2.5% 0;
+ box-shadow: 0 -2px 14px rgba(0, 0, 0, 0.08);
+  position: relative;
+  z-index: 1;
 }
+
 
 .about-awards-text-div {
   width: 80%;

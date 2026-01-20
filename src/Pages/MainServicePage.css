@@ -255,16 +255,16 @@ display: inline-block;
 }
 
 .circle-container {
-  margin-top: 5%;
-  margin-bottom: 2%;
+  margin-top: 3.5%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 4rem 2rem;
+  padding:2.5%;
   gap: 20rem;
   text-align: center;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08) !important;
+ box-shadow: 0 -2px 14px rgba(0, 0, 0, 0.08);
+ /* background-color: aqua; */
 
  }
 .circle-group {
@@ -276,6 +276,7 @@ display: inline-block;
   width: 200px;
   height: 200px;
   transition: all 0.3s ease;
+  margin-top: 35px;
 
 }
 
@@ -307,7 +308,7 @@ display: inline-block;
 .circle-overlay-text {
   position: absolute;
   z-index: 100;
-  font-size: 1.2rem;
+  font-size: 24px;
   font-weight: 600;
   text-align: center;
   pointer-events: none;

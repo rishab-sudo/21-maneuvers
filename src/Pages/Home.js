@@ -99,7 +99,7 @@ const Home = () => {
       <div className="service-heading-box">
         <p className="page_text">OUR SERVICES</p>
 
-        <p className="page_main_heading">
+        <p className="page_main_heading ">
           Complete Digital <br />
           Growth Solutions & <br />
           Creative Brand Experiences
@@ -109,18 +109,18 @@ const Home = () => {
       {/* Services List */}
       <div className="service-services-box page_text fw-bold">
 
-        <div className="page_text">
+        <div className="page_text ">
           <div className="underline"></div>
-          <p>Digital Growth Marketing</p>
-          <p>Visual Branding & Design</p>
-          <p>Professional Shoots & Media</p>
+          <p className='service-points'>Digital Growth Marketing</p>
+          <p className='service-points'>Visual Branding & Design</p>
+          <p className='service-points'>Professional Shoots & Media</p>
         </div>
 
-        <div className="page_text">
+        <div className="page_text ">
           <div className="underline"></div>
-          <p>Social Media & Content Strategy</p>
-          <p>Print & Digital Collateral</p>
-          <p>Website Development</p>
+          <p className='service-points'>Social Media & Content Strategy</p>
+          <p className='service-points'>Print & Digital Collateral</p>
+          <p className='service-points'>Website Development</p>
         </div>
 
       </div>

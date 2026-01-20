@@ -1,16 +1,16 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState,useEffect,useMemo } from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import { FaFacebookF, FaInstagram, FaWhatsapp, FaLinkedinIn } from 'react-icons/fa';
 import "./LetsTalk.css";
 
 export default function ContactPage() {
       const [description, setDescription] = useState("Buisness");
-      const descriptions = [
-"Creative",
-"Ideas",
-"Digital",
-"Strategy"
-  ];
+  const descriptions = useMemo(() => [
+    "Creative",
+    "Ideas",
+    "Digital",
+    "Strategy"
+  ], []);
       useEffect(() => {
     const interval = setInterval(() => {
       const nextDescription = descriptions[Math.floor(Math.random() * descriptions.length)];

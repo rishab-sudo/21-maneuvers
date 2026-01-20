@@ -72,6 +72,9 @@
 .service-heading-box {
   width: 100%;
 }
+.service-points:hover{
+color: #f7a422 !important;
+}
 
 /* ================================
    SERVICES LIST

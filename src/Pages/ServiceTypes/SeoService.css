@@ -6,9 +6,13 @@
   display: flex;
   align-items: center;
   padding: 25px  20px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-  /* Bottom shadow */
+
+
 }
+
+  /* box-shadow: 0 5px 7px rgba(0, 0, 0, 0.3); */
+  /* Bottom shadow */
+
 
 
 .seo-banner-content {
@@ -41,8 +45,9 @@
   margin-top: auto;
   bottom: 0;
   width: 100%;
-  height: 375px;
+  height: auto !important;
   display: block;
+  /* background-color: #999; */
 }
 
 /* Base style for all 3 circles */
@@ -90,7 +95,7 @@
 }
 
 .flip-back {
-  background-color: #ffcc85fb;
+  background-color: rgba(255, 204, 133, 0.96);
   transform: rotateY(180deg);
   font-size: 10px;
   padding: 15px;
@@ -105,7 +110,7 @@
   transform: translate(-50%, -50%);
 } */
 .circle-1 {
-  top: -126px;
+  top: -65px;
   /* Moved 20px higher */
   left: 200px;
   transform: translate(-50%, -50%);
@@ -195,6 +200,7 @@
   font-size: 20rem;
   font-weight: 500;
   line-height: 1;
+  color: #F5A522;
 }
 
 .research-right {
@@ -270,6 +276,8 @@ body.dark .square-bullet::before {
 
 .seo-bottom-text-div {
   width: 70%;
+  /* text-align: justify; */
+  
 }
 
 /* mobile-css */

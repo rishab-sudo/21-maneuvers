@@ -167,7 +167,7 @@ const ServiceSlider = () => {
         <img className=" mainservicepage-service-img" src={require("../assets/services/Brandid.png")} alt="" />
         <div className="service-right-text-div">
         <p className='page_text '>From logos to packaging, we craft cohesive brand ecosystems that resonate deeply and leave a lasting impression. Every visual element reflects your brand’s story, values, and vision with clarity and consistency.</p>
-        <ul className='page_text'>
+        <ul className='page_text service-points'>
           <li>Logo Design</li>
           <li> Packaging Design </li>
           <li> Social Media Branding</li>
@@ -183,7 +183,7 @@ const ServiceSlider = () => {
         <img src={require("../assets/services/PM-mock2.png")} alt="" />
         <p className='page_text'>Accelerate your brand’s expansion with a full-funnel approach that combines data, creativity, and automation. We integrate performance, retention, and engagement strategies to drive measurable growth.</p>
          <div className="service-right-text-div">
-        <ul className='page_text'>
+        <ul className='page_text service-points'>
           <li>Performance Marketing</li>
           <li>Social Media Strategy & Content Marketing</li>
           <li>Email Marketing & Automation Workflows</li>
@@ -200,7 +200,7 @@ const ServiceSlider = () => {
         <img src={require("../assets/services/web-mock.png")} alt="" />
            <div className="service-right-text-div">
         <p className='page_text'> We craft responsive, user-centric websites that embody your brand’s identity—while helping you rank for your industry's top keywords through smart, integrated SEO.</p>
-        <ul className='page_text'>
+        <ul className='page_text service-points'>
           <li>UI/UX Design</li>
           <li>Frontend & Backend Development</li>
           <li>E-commerce Solutions</li>
