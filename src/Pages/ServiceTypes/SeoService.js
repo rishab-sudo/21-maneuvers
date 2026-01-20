@@ -143,7 +143,7 @@ const SeoService = () => {
             {/* <button>Let's Connect </button> */}
           </div>
           <div className="graphite-img-wrapper">
-            <img className="graphite-img" src={require("../../assets/chart.png")} style={{ maxHeight: "100%", maxWidth: "100%" }} alt="" />
+            <img className="graphite-img" src={require("../../assets/seo-chart.png")} style={{ maxHeight: "100%", maxWidth: "100%" }} alt="" />
           </div>
         </Container>
       </Container>
@@ -173,7 +173,7 @@ const SeoService = () => {
       <Container fluid className="focus-section">
         <Container className="focus-content-container">
                     <div className="focus-img-sec">
-            <img className="focus-img" src={require("../../assets/chart.png")} style={{ maxHeight: "100%", maxWidth: "100%" }} alt="" />
+            <img className="focus-img" src={require("../../assets/seo-chart.png")} style={{ maxHeight: "100%", maxWidth: "100%" }} alt="" />
           </div>
 
           <div className="graphite-text-div">

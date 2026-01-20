@@ -1,19 +1,14 @@
 /* SeoService.css */
 .seo-banner-section {
   width: 100%;
-  height: 100vh;
+  height: auto;
   overflow: hidden;
   display: flex;
   align-items: center;
-  padding: 25px  20px;
-
+  padding: 15px  20px;
+/* background-color: aqua; */
 
 }
-
-  /* box-shadow: 0 5px 7px rgba(0, 0, 0, 0.3); */
-  /* Bottom shadow */
-
-
 
 .seo-banner-content {
   display: flex;
@@ -22,6 +17,7 @@
   width: 100%;
   margin: auto;
   gap: 2rem;
+  margin-top: 3.5%;
 }
 
 .seo-left-content {
@@ -96,6 +92,7 @@
 
 .flip-back {
   background-color: rgba(255, 204, 133, 0.96);
+  color:  #000!important;
   transform: rotateY(180deg);
   font-size: 10px;
   padding: 15px;
