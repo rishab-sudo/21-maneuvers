@@ -11,14 +11,17 @@ export default function ContactPage() {
     "Digital",
     "Strategy"
   ], []);
-      useEffect(() => {
-    const interval = setInterval(() => {
-      const nextDescription = descriptions[Math.floor(Math.random() * descriptions.length)];
-      setDescription(nextDescription);
-    }, 2000); // Change text every 2 seconds
 
-    return () => clearInterval(interval); // Cleanup interval on unmount
-  }, []);
+  useEffect(() => {
+  const interval = setInterval(() => {
+    const nextDescription =
+      descriptions[Math.floor(Math.random() * descriptions.length)];
+    setDescription(nextDescription);
+  }, 2000);
+
+  return () => clearInterval(interval);
+}, [descriptions]);
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
