@@ -7,6 +7,7 @@ import 'swiper/css/navigation';
 import FAQ from './FAQ';
 import faqImage from "../assets/21-creative2.jpg"
 import bannerImg from "../assets/21-about2.jpg"
+import Piechart from "../Components/PieChart"
 import "./AboutUs.css"
 
 const faqData = [
@@ -74,56 +75,83 @@ const About = () => {
     <div className="about-left-section">
       <p className="page_text fw-bold">ABOUT US</p>
 
-      <p className="page_text">
-        We’re a crew of curious minds and bold creators, always chasing the next
-        big idea and unforgettable collaborations.
-      </p>
-
-      <h2 className="page_heading fw-bold">
-        We’re 21 Maneuvers, a multidisciplinary force of strategy, story, and style.
+  <h2 className="page_heading fw-bold">
+    We’re 21 Maneuvers,
       </h2>
-
-      <p>
-        From scrappy startups to seasoned giants, we craft bold brands, magnetic
-        designs, and digital experiences that don’t just compete, they captivate.
+      <p className="page_text">
+       A multidisciplinary force of strategy, story, and style.
       </p>
 
       <p>
-        In a world of noise, we help you speak louder, clearer, and more creatively.
-        Welcome to your next leap forward.
+       Driven by curiosity and collaboration, we blend strategic thinking 
+       with bold creativity to craft impactful marketing campaigns, digital experiences, and brand stories that inspire action
       </p>
 
-      <p className="quote-heading">
-        “People do not buy goods and services. They buy relations, stories and magic.”
-        <br />
-        <span className="fw-bold">Bharat Aggarwal</span>
+      <p className='fw-bold'>
+   People don’t just connect with brands, they connect with meaning.
       </p>
+
+     
     </div>
 
-    <div className="about-right-section">
-      <img
-        src="/about-image.jpg"
-        alt="About 21 Maneuvers"
-        className="about-image"
-      />
+   <div className="about-right-section">
+  <div className="aboutus-cards">
+
+    {/* Heading */}
+    <h3 className="aboutus-heading">Our Creative Process</h3>
+    <p className="aboutus-subtext">
+      Turning ideas into powerful campaigns through clarity, creativity, and execution.
+    </p>
+
+    {/* Cards Row */}
+    <div className="aboutus-card-grid">
+      <div className="aboutus-card">
+        <img src={require("../assets/icon/discovery.png")} alt="Discovery" />
+        <h4>Discovery & Strategy</h4>
+        <p>Understanding your brand, goals, and audience to build a strong foundation.</p>
+      </div>
+
+      <div className="aboutus-card">
+        <img src={require("../assets/icon/creative.png")} alt="Creative" />
+        <h4>Creative Development</h4>
+        <p>Designing ideas that are visually compelling, meaningful, and memorable.</p>
+      </div>
+
+      <div className="aboutus-card">
+        <img src={require("../assets/icon/execution.png")} alt="Execution" />
+        <h4>Execution & Growth</h4>
+        <p>Launching, optimizing, and scaling campaigns for measurable impact.</p>
+      </div>
     </div>
+
+    {/* Stats Boxes */}
+<div className="aboutus-stats">
+  <div className="aboutus-stat-box">
+    <img src="/icons/award.svg" alt="Awards" />
+    <div className="stat-text">
+      <h3>21+</h3>
+      <p>Awards & Recognitions</p>
+    </div>
+  </div>
+
+  <div className="aboutus-stat-box">
+    <img src="/icons/clients.svg" alt="Clients" />
+    <div className="stat-text">
+      <h3>100+</h3>
+      <p>Happy Clients Worldwide</p>
+    </div>
+  </div>
+</div>
+
+
+  </div>
+</div>
+
   </Container>
 </Container>
 
 
-      {/* About-bg-img */}
-      <div className="about-bg">
-        <div className="stats-wrapper">
-          <div className="stat-card">
-            <Counter end={21} />
-            <p className="fw-bold">Awards</p>
-          </div>
-          <div className="stat-card stat-card2">
-            <Counter end={100} />
-            <p className="fw-bold">Clients</p>
-          </div>
-        </div>
-      </div>
+<Piechart/>
       {/* About-FAQ-section */}
       <div className='w-auto'>
         <Container style={{ marginTop: "6%", marginBottom: "0%", }}>

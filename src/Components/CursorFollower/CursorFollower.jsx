@@ -36,7 +36,14 @@ export default function CursorFollower() {
       p.y = lerp(p.y || p.ty, p.ty, 0.35);
 
       // offset Y by +12 so it sits just under the arrow
-      cursor.style.transform = `translate3d(${p.x - 18}px, ${p.y - 18 + 12}px, 0)`;
+const GAP = 35; // 👈 increase/decrease gap here
+
+cursor.style.transform = `translate3d(
+  ${p.x - 18}px,
+  ${p.y - 18 + GAP}px,
+  0
+)`;
+
 
       rafRef.current = requestAnimationFrame(loop);
     };
