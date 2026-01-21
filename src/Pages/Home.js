@@ -54,6 +54,7 @@ const Home = () => {
     return (
     <>
     <NewBanner />
+
     {/* Home-service-section */}
     <Container fluid className="service-container-fluid">
   <Container className="service-content-container">
@@ -93,9 +94,7 @@ const Home = () => {
 
     {/* RIGHT : CONTENT */}
     <div className="service-right-section">
-
-      {/* Heading */}
-      <div className="service-heading-box">
+ <div className="service-heading-box">
         <p className="page_text">OUR SERVICES</p>
 
         <p className="page_main_heading ">
@@ -128,15 +127,14 @@ const Home = () => {
   </Container>
 </Container>
 
-      <div className=''>
+    
         <FAQ
           faqs={faqData}
-          heading="We Design, Build & Market with Purpose
-"
+          heading="We Design, Build & Market with Purpose"
           image={faqImage}
           imagePosition="right"
         />
-      </div>
+  
       <Work />
        <Stats/>
       
