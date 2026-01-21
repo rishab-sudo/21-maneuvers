@@ -4,7 +4,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import FAQ from './FAQ';
 import faqImage from "../assets/home/About FAQ.png"
-import bannerImg from "../assets/21-about2.jpg"
+import aboutBannerImg from "../assets/home/About banner1.png"
 import Piechart from "../Components/PieChart"
 import "./AboutUs.css"
 
@@ -60,14 +60,13 @@ const About = () => {
           <p className='page_main_heading'>About Studio </p>
         </Container>
       </Container> */}
-      <Container fluid className='banner-fluid g-0'>
-        <div className='aboutus-banner-section'
-          style={{
-            backgroundImage: `url(${bannerImg})`,
-          }}>
-        </div>
-
-      </Container>
+        <section className="aboutbanner">
+      <img
+        src={aboutBannerImg}
+        alt="About Banner"
+        className="aboutbanner-image"
+      />
+    </section>
 <Container fluid className="about-container-fluid">
   <Container className="about-content-container">
     <div className="about-left-section">

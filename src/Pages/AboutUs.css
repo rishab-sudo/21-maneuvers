@@ -1,20 +1,21 @@
-.banner-fluid{
-    width: 100%;
-    height: 45vh !important;
-  }
-.aboutus-banner-section{
-  padding: 0px;
-  height: 100%;
-  width: 100% !important;
-  background-size: cover;
-  background-repeat: no-repeat;
+.aboutbanner {
+  width: 100%;
+  overflow: hidden;
 }
+
+/* Image */
+.aboutbanner-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+/* ------------------ */
 .separation-line{
   width: 100%;
   height: 2px;
   background-color: #f7a422;
 }
-/* ------------------ */
 .about-container-fluid{
   margin-top: 3.5%;
   padding: 35px 0px;
@@ -206,29 +207,16 @@ margin: auto;
 /* ===== MOBILE VIEW ===== */
 /* ======================= */
 @media screen and (max-width: 768px) {
-  .about-container-fluid {}
-
-  .banner-fluid{
-    width: 100%;
-    height:35vh !important;
-    /* background-color: #cf2e2e; */
-    padding: 0 !important;
-    margin: 0 !important;
-    
+  .aboutbanner-image {
+    height: auto !important;
+    object-fit: cover;
+    /* background-color: #b5b5b5; */
   }
-
-.aboutus-banner-section {
-  margin: 0;
-  height:35vh;
-  width: 100%; 
-  background-repeat: no-repeat;
-  background-size: contain !important;
-}
 /*  */
   .about-content-container {
     width: 100%;
     /* margin: auto !important; */
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     flex-direction: column;
     text-align: center;
   }
@@ -306,6 +294,13 @@ margin: auto;
 }
 }
 /* Responsive */
+@media (min-width: 1200px) {
+  .aboutbanner-image {
+    max-height: 520px;
+    object-fit: cover;
+  }
+}
+
 @media (max-width: 992px) {
   .about-content-container {
     flex-direction: column;

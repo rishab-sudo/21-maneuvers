@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import ContactForm from '../Components/ContactForm'
 import { Container} from 'react-bootstrap'
-import contactBg from '../assets/slide21.jpg';
+import aboutBannerImg from '../assets/home/About banner1.png';
 import "./Contact.css"
 
 const Contact = () => {
@@ -10,16 +10,13 @@ const Contact = () => {
     <> 
   
     <Container fluid className='g-0' >
-      <div
-        className="contact-banner"
-        style={{ backgroundImage: `url(${contactBg})` }}
-      >
-        {/* <Link to="/home" className="back-arrow">
-          ←
-        </Link> 
-        <h2 className="contact-banner-heading">Contact Us</h2>
-     */}
-        </div>
+       <section className="aboutbanner">
+      <img
+        src={aboutBannerImg}
+        alt="About Banner"
+        className="aboutbanner-image"
+      />
+    </section>
 
 
       <Container className='contactUs-content-container'>

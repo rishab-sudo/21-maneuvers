@@ -6,9 +6,8 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import './Home.css';
-import HomeBanner from '../Components/HomeBanner'
+import NewBanner from "../Components/NewBanner"
 import ClientReview from './ClientReview'
-
 import Work from './OurWork'
 import FAQ from './FAQ';
 import faqImage from '../assets/home/FAQ (2).png';
@@ -54,7 +53,7 @@ const faqData = [
 const Home = () => {
     return (
     <>
-    <HomeBanner />
+    <NewBanner />
     {/* Home-service-section */}
     <Container fluid className="service-container-fluid">
   <Container className="service-content-container">

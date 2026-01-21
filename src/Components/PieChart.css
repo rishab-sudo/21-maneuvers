@@ -47,7 +47,7 @@ width: 100%;
   width: 42px;
   height: 50px;
   flex-shrink: 0; /* icon stays fixed */
-  margin-top: 4px;
+  margin-top: 1px;
 }
 
 .pie-point h4 {

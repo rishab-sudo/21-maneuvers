@@ -213,9 +213,9 @@ body {
  background-color: #00aaff;
 } */
  .mainservicepage-service {
-  margin-top: 0rem; /* Increased for better spacing */
+  margin-top: 0rem; 
   margin-bottom: 0rem; 
-  height: auto; /* UPDATED: prevent forced full height that causes overflow on smaller screens */
+  height: auto; 
   display: flex;
   flex-direction: column;
   justify-content: center;
