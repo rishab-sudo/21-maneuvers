@@ -59,7 +59,7 @@ const WhyChoose = () => {
         {/* Right Image */}
         <div className="whychoose-right">
           <img
-            src={require("../assets/home/Main Banner.png")}
+            src={require("../assets/home/WhyUss.png")}
             alt="Why Choose Us"
             className="whychoose-image"
           />

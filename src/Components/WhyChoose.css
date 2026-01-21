@@ -61,11 +61,18 @@
   text-align: center;
 }
 
+/* Default = DARK THEME IMAGE */
 .whychoose-image {
+  content: url("../assets/home/WhyUss.png");
   width: 100%;
   height: auto;
-  max-width: 480px;
 }
+
+/* LIGHT THEME IMAGE */
+body.light .whychoose-image {
+  content: url("../assets/home/Why\ white 2.png");
+}
+
 
 /* Responsive */
 @media (max-width: 991px) {

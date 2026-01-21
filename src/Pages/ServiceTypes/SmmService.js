@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
 import LetsTalk from "../../Components/LetsTalk"
-import "./ContentService.css"
+import "./SmmService.css"
 
 const ContentService = () => {
   const images = [
@@ -33,10 +33,11 @@ const ContentService = () => {
 
   return (
    <>
+   
     <Container  fluid className='serviceType-banner-section'>
 <Container className='serviceType-banner-container'>
 
-  <h1> Content Creation</h1>
+  <h1 className='page_heading mb-3'> Social Media Marketing</h1>
   <p className="page_text">POWERING BRANDS WITH DATA-DRIVEN CAMPAIGNS THAT DELIVER RESULTS</p>
   <p className="page_text">In a world overwhelmed by noise, we create moments that stick. At 21 Maneuvers, we fuse culture, content, and technology to shape meaningful digital impact, because in today’s world, visibility isn’t enough. Memorability wins.
 </p>

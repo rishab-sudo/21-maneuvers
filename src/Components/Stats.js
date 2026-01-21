@@ -38,7 +38,7 @@ const Stats = () => {
         <div className="coffee-text-div">
           <img className="mb-2 coffee-icons-img" src={require("../assets/projects_icon.png")} alt="" />
           <p>PROJECTS</p>
-          <Counter end={100} startCounting={startCounting} />
+          <Counter end={1000} startCounting={startCounting} />
         </div>
 
         <div className="vertical-line" />

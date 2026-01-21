@@ -16,7 +16,8 @@ import Footer from './Components/Footer';
 import './App.css';
 import ThemeToggleButton from './Components/ThemeToggleButton';
 import PerformanceService from './Pages/ServiceTypes/PerformanceService';
-import ContentService from './Pages/ServiceTypes/ContentService';
+import SmmService from './Pages/ServiceTypes/SmmService';
+import GraphicDesigning from "./Pages/ServiceTypes/GraphicDesigning"
 import MainServicePage from './Pages/MainServicePage';
 import Blog from './Components/Blog';
 import CursorFollower from "./Components/CursorFollower/CursorFollower"
@@ -70,8 +71,12 @@ const router = createBrowserRouter(
       element: <Layout><PerformanceService /></Layout>,
     },
     {
-      path: '/content-creation',
-      element: <Layout><ContentService /></Layout>,
+      path: '/Smm-service',
+      element: <Layout><SmmService /></Layout>,
+    },
+      {
+      path: '/Graphic-Designing',
+      element: <Layout><GraphicDesigning /></Layout>,
     },
     {
       path: '*',

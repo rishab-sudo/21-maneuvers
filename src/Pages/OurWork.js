@@ -17,25 +17,34 @@ const workItems = [
   },
   {
     id: 2,
+       image: require("../assets/services/creation black.png"),
+    hoverImage: require("../assets/services/creation  color.png"),
+    text: "Social Media Marketing",
+    link: "/Smm-service",
+
+  },
+      {
+    id: 3,
+    image: require("../assets/services/content-mock.png"),
+    hoverImage: require("../assets/services/web color 2.png"),
+    text: "Graphic Designing",
+    link: "Graphic-Designing",
+  },
+  {
+    id: 4,
     image: require("../assets/services/seo black (2).png"),
     hoverImage: require("../assets/services/seo 22.png"),
     text: "SEO",
     link: "/seo-service",
   },
-  {
-    id: 3,
-    image: require("../assets/services/creation black.png"),
-    hoverImage: require("../assets/services/creation  color.png"),
-    text: "Content-Creation",
-    link: "/content-creation",
-  },
-  {
-    id: 4,
-    image: require("../assets/services/web black.png"),
-    hoverImage: require("../assets/services/web color 2.png"),
-    text: "Website Development",
-    link: "/website-development",
-  },
+
+  // {
+  //   id: 4,
+  //   image: require("../assets/services/web black.png"),
+  //   hoverImage: require("../assets/services/web color 2.png"),
+  //   text: "Website Development",
+  //   link: "/website-development",
+  // },
 ];
 
 const Work = () => {
