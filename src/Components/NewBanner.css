@@ -72,6 +72,25 @@ background: linear-gradient(180deg, #ffffff, #f7a422);
   width: 100%;
 }
 
+
+
+@media (max-width: 575px) {
+  .newbanner {
+    height: auto;
+  }
+
+  .newbanner-title {
+    font-size: 26px !important;
+  }
+
+  .newbanner-title span {
+    font-size: 24px !important;
+  }
+
+  .newbanner-image {
+    max-width: 95% !important;
+  }
+}
 /* Responsive */
 @media (max-width: 991px) {
   .newbanner-title {
@@ -84,23 +103,5 @@ background: linear-gradient(180deg, #ffffff, #f7a422);
 
   .newbanner-image {
     max-width: 220px;
-  }
-}
-
-@media (max-width: 575px) {
-  .newbanner {
-    height: 90vh;
-  }
-
-  .newbanner-title {
-    font-size: 32px;
-  }
-
-  .newbanner-title span {
-    font-size: 22px;
-  }
-
-  .newbanner-image {
-    max-width: 180px;
   }
 }

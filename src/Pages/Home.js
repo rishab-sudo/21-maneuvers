@@ -14,6 +14,7 @@ import faqImage from '../assets/home/FAQ (2).png';
 import LetsTalk from "../Components/LetsTalk"
 
 import Stats from '../Components/Stats';
+import WhyChoose from '../Components/WhyChoose';
 
 // Home services image
 const images = [
@@ -54,7 +55,7 @@ const Home = () => {
     return (
     <>
     <NewBanner />
-
+<WhyChoose/>
     {/* Home-service-section */}
     <Container fluid className="service-container-fluid">
   <Container className="service-content-container">
