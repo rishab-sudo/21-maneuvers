@@ -262,7 +262,7 @@ const ServiceSlider = () => {
 
   {/* Circle Group 3 */}
   <a
-    href="/content-creation"
+    href="/Smm-service"
     className="circle-link"
     style={{ textDecoration: "none" }}
   >

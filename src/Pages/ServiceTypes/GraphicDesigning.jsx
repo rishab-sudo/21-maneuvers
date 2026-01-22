@@ -37,7 +37,8 @@ const GraphicDesigning = () => {
    </Container>
    </Container>
     <section className="graphic-designing">
-      <Container>
+      <Container className="graphic-container">
+        {/* <h1>Services We Offer</h1> */}
         <div className="graphic-grid">
           {images.map((item, index) => (
             <div className="graphic-card" key={index}>
