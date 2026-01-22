@@ -1,245 +1,264 @@
 /* RESET */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: sans-serif;
-    background: #fff;
-    color: #000;
-  }
-  
-  /* NAVBAR BASE */
-  .logo-21{
-    width: 135px;
-    height: 65px;
-    /* background-color: #e30613; */
-  }
-  .navbar {
-    display: flex;
-    align-items: center;
-    padding: 1rem 2rem;
-    background: transparent;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    transition: background-color 0.4s ease, padding 0.3s ease;
-    
-  }
-  .navbar.scrolled {
-    /* background-color: rgba(0, 0, 0, 0.95); */
-    background-color: #fff;
-    padding: 0.8rem 2rem;
-  }
-  
-  .nav-left {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: #fff;
+  color: #000;
+}
+
+/* NAVBAR BASE */
+.logo-21 {
+  width: 135px;
+  height: 65px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: transparent;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.4s ease, padding 0.3s ease;
+}
+
+.navbar.scrolled {
+  background-color: #fff;
+  padding: 0.8rem 2rem;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
 /* HAMBURGER ICON */
-  .hamburger {
-    position: relative;
-    width: 25px;
-    height: 20px;
-    border: none;
-    background: none;
-    cursor: pointer;
-    z-index: 1001;
-  }
-  
-  .hamburger span {
-    position: absolute;
-    height: 3px;
-    width: 100%;
-    background: #fff;
-    transition: 0.3s ease;
-    border-radius: 2px;
-  }
-  
-  .hamburger span:nth-child(1) {
-    top: 0;
-  }
-  .hamburger span:nth-child(2) {
-    top: 8px;
-  }
-  .hamburger span:nth-child(3) {
-    top: 16px;
-  }
-  
-  .hamburger.open span:nth-child(1) {
-    transform: rotate(45deg);
-    top: 8px;
-  }
-  .hamburger.open span:nth-child(2) {
-    opacity: 0;
-  }
-  .hamburger.open span:nth-child(3) {
-    transform: rotate(-45deg);
-    top: 8px;
-  }
+.hamburger {
+  position: relative;
+  width: 25px;
+  height: 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  z-index: 1001;
+}
 
-/* When menu is open, make logo and hamburger lines white */
-.navbar.menu-open .logo {
-    color: #fff;
-  }
-  
-  .navbar.menu-open .hamburger span {
-    background: #fff;
-  }
-  
-  /* MENU OVERLAY - DEFAULT (HIDDEN) */
-  .menu-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    background-color: rgba(20, 20, 20, 0.98);
-    z-index: 999;
-    overflow: hidden;
-    transition: all 0.5s ease;
-    opacity: 0;
-    pointer-events: none;
-  }
-  
-  /* DESKTOP VERSION */
-  .menu-overlay.desktop {
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: 5rem 3rem;
-  }
-  
-  .menu-overlay.desktop.active {
-    opacity: 1;
-    pointer-events: auto;
-  }
-  
-  /* Add fade-in animation for links */
-  .menu-overlay.desktop.active .menu-links li {
-    opacity: 0;
-    transform: translateX(-20px);
-    animation: fadeInLeft 0.4s forwards;
-  }
-  
-  .menu-overlay.desktop.active .menu-links li:nth-child(1) {
-    animation-delay: 0.2s;
-  }
-  .menu-overlay.desktop.active .menu-links li:nth-child(2) {
-    animation-delay: 0.4s;
-  }
-  .menu-overlay.desktop.active .menu-links li:nth-child(3) {
-    animation-delay: 0.6s;
-  }
-  .menu-overlay.desktop.active .menu-links li:nth-child(4) {
-    animation-delay: 0.8s;
-  }
-  
-  @keyframes fadeInLeft {
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-  
-  /* MOBILE VERSION */
-  .menu-overlay.mobile {
-    width: 0;
-    padding: 2rem 1.5rem;
-    transition: width 0.5s ease;
-  }
-  
-  .menu-overlay.mobile.active {
-    width: 80%;
-    opacity: 1;
-    pointer-events: auto;
-  }
-  
-  /* MENU LINKS */
-  .menu-links {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-self: start;
-    align-items: flex-start;
-    gap: 2rem;
-  }
-  
-  .menu-links a {
-    font-size: 60px;
-    font-weight: 600;
-    color: #fff;
-    text-decoration: none;
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-    transition: all 0.4s ease;
-  }
+.hamburger span {
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #fff;
+  transition: 0.3s ease;
+  border-radius: 2px;
+}
 
-  .menu-links a::before {
-    content: attr(data-text);
-    position: absolute;
-    top: 100%;
+.hamburger span:nth-child(1) { top: 0; }
+.hamburger span:nth-child(2) { top: 8px; }
+.hamburger span:nth-child(3) { top: 16px; }
+
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 8px;
+}
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 8px;
+}
+
+/* MENU OPEN COLORS */
+.navbar.menu-open .hamburger span {
+  background: #fff;
+}
+
+/* MENU OVERLAY */
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: rgba(20, 20, 20, 0.98);
+  z-index: 999;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* DESKTOP */
+.menu-overlay.desktop {
+  width: 100%;
+  display: flex;
+  padding: 6.5rem 5.2rem;
+}
+
+.menu-overlay.desktop.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.menu-overlay.desktop.active .menu-links li {
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: fadeInLeft 0.4s forwards;
+}
+
+@keyframes fadeInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* MOBILE */
+.menu-overlay.mobile {
+  width: 0;
+  padding: 7rem .6rem;
+  transition: width 0.5s ease;
+}
+
+.menu-overlay.mobile.active {
+  width: 80%;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* MENU LINKS */
+.menu-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.menu-links a {
+  font-size: 60px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.4s ease;
+}
+
+.menu-links a:hover {
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+}
+
+/* ========================================================= */
+/* SERVICES DROPDOWN + MOBILE ARROW */
+/* ========================================================= */
+
+.services-link {
+  position: relative;
+}
+
+/* Row for text + arrow */
+.services-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Arrow (mobile only) */
+.dropdown-arrow {
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.dropdown-arrow.rotate {
+  transform: rotate(180deg);
+}
+
+/* Side dropdown (desktop) */
+.services-dropdown {
+  position: absolute;
+  top: 0;
+  left: 280px;
+  width: 260px;
+  margin-top: -45px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-20px);
+  transition: all 0.4s ease;
+}
+
+.services-link:hover .services-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+/* Dropdown items */
+.services-dropdown a {
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* MOBILE SERVICES BEHAVIOUR */
+@media screen and (max-width: 768px) {
+  .services-dropdown {
+    position: relative;
     left: 0;
+    top: 0;
     width: 100%;
-    color: transparent;
-    -webkit-text-stroke: 1px #fff;
-    text-stroke: 1px #fff;
-    transition: top 0.4s ease;
+    padding-left: 1rem;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    margin-top: 15px;
   }
-  /* Hover effect: transparent fill + double outline */
-  .menu-links a:hover {
-    color: transparent;
-    -webkit-text-stroke: 1px #fff; 
-    text-stroke: 1px #fff;
-  }
-  
+.dropdown-arrow {
+  font-size: 35px !important;
+  margin-left: -11px;
  
-  .menu-links a.active {
-    color: #e30613 !important; 
-    -webkit-text-stroke: 0;
+}
+  .services-link.open .services-dropdown {
+    display: flex;
   }
-  
-/* service divides */
 
-/*  */
+  .services-dropdown a {
+    font-size: 15px !important;
+    line-height: 15px !important;
+  }
+}
 
-  /* RESPONSIVE WRAPPERS */
-  @media screen and (max-width: 768px) {
-    .menu-overlay.desktop {
-      display: none;
-    }
-    .menu-links a {
-        font-size: 20px;
-     }
-    
-      .menu-links {
-        margin-top: 5.25rem;
-        margin-left: 2px;
-        gap: 1.5rem; /* slightly tighter spacing for mobile */
-      }
-      .hamburger {
-    left: 0 !important;
-      }
-      
-      .hamburger span {
-        position: absolute;
-        height: 3px;
-        width: 100%;
-        background: #000;
-        transition: 0.3s ease;
-        border-radius: 2px;
-      }
+/* ========================================================= */
+/* RESPONSIVE */
+/* ========================================================= */
+
+@media screen and (max-width: 768px) {
+  .menu-overlay.desktop {
+    display: none;
   }
-  
-  @media screen and (min-width: 768px) {
-    .menu-overlay.mobile {
-      display: none;
-    }
+
+  .menu-links a {
+    font-size: 20px;
   }
-  
+
+  .hamburger span {
+    background: #000;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-overlay.mobile {
+    display: none;
+  }
+}

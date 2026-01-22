@@ -45,14 +45,14 @@ const WhyChoose = () => {
                 engagement, growth, and ROI.
               </span>
             </li>
-
+{/* 
             <li>
               <strong>🤝 Partners, Not Vendors</strong>
               <span>
                 We believe in long-term collaboration, working as an extension
                 of your team, not just a service provider.
               </span>
-            </li>
+            </li> */}
           </ul>
         </div>
 

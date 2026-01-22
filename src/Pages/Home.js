@@ -117,9 +117,9 @@ const Home = () => {
 
         <div className="page_text ">
           <div className="underline"></div>
-          <p className='service-points'>Social Media & Content Strategy</p>
           <p className='service-points'>Print & Digital Collateral</p>
           <p className='service-points'>Website Development</p>
+          <p className='service-points'>Social Media & Content Strategy</p>
         </div>
 
       </div>
