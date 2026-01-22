@@ -32,8 +32,8 @@ const workItems = [
   },
   {
     id: 4,
-    image: require("../assets/services/seo-color3.png"),
-    hoverImage: require("../assets/services/seo-black3.png"),
+    image: require("../assets/services/seo-black3.png"),
+    hoverImage: require("../assets/services/seo-color3.png"),
     text: "SEO",
     link: "/seo-service",
   },
