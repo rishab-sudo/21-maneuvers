@@ -43,10 +43,10 @@
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 30px;
-background: linear-gradient(180deg, #ffffff, #f7a422);
+/* background: linear-gradient(180deg, #ffffff, #f7a422);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;
+  background-clip: text; */
 }
 
 
@@ -55,10 +55,10 @@ background: linear-gradient(180deg, #ffffff, #f7a422);
   font-weight: 600;
   font-size: 40px;
   margin-top: 15px;
-  background: linear-gradient(180deg, #ffffff, #f7a422);
+  /* background: linear-gradient(180deg, #ffffff, #f7a422);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;
+  background-clip: text; */
 }
 
 /* Image */

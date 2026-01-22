@@ -195,7 +195,7 @@ const SeoService = () => {
 
       <Container>
         <div className="seo-bottom-text-div">
-          <p className="page_heading " style={{ fontWeight: "400" }}>
+          <p className="seo-bottom-para" style={{ fontWeight: "400" }}>
             By cutting out the guesswork, 21 Maneuvers delivers SEO that actually works, again and again. Our strategic, creative led approach drives scalable results across industries, turning rankings into revenues.
             How much impact will SEO have on your growth?
 
