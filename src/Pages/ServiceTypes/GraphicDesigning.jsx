@@ -1,5 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
+import LetsTalk from "../../Components/LetsTalk"
 import "./GraphicDesigning.css";
 
 const images = [
@@ -51,6 +52,41 @@ const GraphicDesigning = () => {
         </div>
       </Container>
     </section>
+
+        <Container className='serviceType-descp-section'>
+          <Container className='serviceType-descp-content-container'>
+    <p className='page_text'>21 Maneuvers | DESIGNING VISUAL IDENTITIES THAT COMMAND ATTENTION</p>
+    <h1>We Build Strategic Digital Campaigns</h1>
+    <h1> That Deliver Real ROI</h1>
+    <p className='mt-5 page_text'>At 21 Maneuvers, graphic design is where strategy meets storytelling. Every color, layout, and pixel is crafted to create impact, evoke emotion, and leave a lasting impression. Because good design is seen great design is remembered.</p>
+    <p className='page_text'>
+    </p>
+        <p className="page_text">21 Maneuvers | ELEVATING YOU INTO A BIGGER DIGITAL UNIVERSE</p>
+          </Container>
+        </Container>
+
+        <Container className='elevate-section'>
+        <Container className='elevate-content-container'>   
+          <div className='elevate-left-side'>
+        <p className='fancy-txt'>Design <span style={{fontFamily:"arial"}}> That Engages & </span></p>
+        <p className='extrabold-fancy-text'></p>
+        <p className='fancy-txt'></p>
+        <p className='extrabold-fancy-text'style={{color:"#F5A522"}}>Endures</p>
+        <p className='extrabold-fancy-text'style={{color:"#F5A522"}}> Fast!</p>
+          </div>
+          <div className='elevate-right-side'>
+        <p className='page_text'>
+     In the fight for attention, design is your strongest advantage.
+At 21 Maneuvers, we create scroll-stopping graphic design that blends visual impact with strategic intent. 
+Every layout, color choice, and composition is engineered to communicate clearly, connect emotionally, and convert instantly.
+From high-impact social creatives and ad visuals to brand identities and web graphics, our designs don’t just look good 
+they guide the eye, reinforce your message, and move audiences to act. Because when design is done right, performance follows.
+        </p>
+          </div>
+        </Container>
+        </Container>
+        
+            <LetsTalk/>
      </>
   );
 };
