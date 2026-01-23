@@ -5,14 +5,7 @@ import "./PerformanceService.css"
 
 const ContentService = () => {
 
-  const data = [
-    { amount: '₹2,50,000', label: 'Total banner Spend' },
-    { amount: '₹1,80,000', label: 'Facebook banners' },
-    { amount: '₹70,000', label: 'Google banners' },
-    { amount: '₹40,000', label: 'Instagram banners' },
-    { amount: '₹30,000', label: 'YouTube banners' },
-    { amount: '₹1,20,000', label: 'Affiliate Marketing' },
-  ];
+
 
 
   return (
@@ -30,72 +23,126 @@ const ContentService = () => {
             </div>
           </div>
 
-
-          <div className="performance-boxes-container">
-            {data.map((item, index) => (
-              <div key={index} className="performance-banner-box">
-                <div className="performance-amount">{item.amount}</div>
-                <div className="performance-label">{item.label}</div>
-              </div>
-            ))}
-          </div>
-        </Container>
+      </Container>
       </Container>
 
-      <Container fluid>
+      <Container fluid className='pm-box-fluid1'>
+        <div className="section-heading text-center ">
+    <h1>Platforms That Power High-Impact Campaigns</h1>
+  <p className="page_text">Where Performance Meets Precision</p>
+</div>
         <Container className='performance-platform-container'>
 
           <div className='performance-platform-box'>
-            <div className=''>
+          <div className='img-heading-div'>
               <img className='ads-icon' src={require("../../assets/google.png")} alt="" />
-            </div>
-            <div className='ads-text-div'>
               <p>Google Ads</p>
-              <p> rs 10,0000</p>
-              <p>1800 Leads</p>
-              <p> 520 Connections</p>
+            </div>
+            <div className='ads-text-div'>
+              <p>
+               Targeted, high-intent
+              campaigns driving quality
+             traffic and conversions.</p>
             </div>
           </div>
 
           <div className='performance-platform-box'>
-            <div className=''>
+          <div className='img-heading-div'>
               <img className='ads-icon' src={require("../../assets/meta.png")} alt="" />
-            </div>
-            <div className='ads-text-div'>
               <p>Meta Ads</p>
-              <p> rs 10,0000</p>
-              <p>1800 Leads</p>
-              <p> 520 Connections</p>
+            </div>
+            <div className='ads-text-div'>
+              <p>
+            Precision-targeted ads across
+           1Facebook and Instagram
+            maximizing your ROAS.</p>
             </div>
           </div>
 
           <div className='performance-platform-box'>
-            <div className=''>
+            <div className='img-heading-div'>
               <img className='ads-icon' src={require("../../assets/linkedin.png")} alt="" />
+              <p>Linkedin Ads</p>
             </div>
             <div className='ads-text-div'>
-              <p>Linkedin Ads</p>
-              <p> rs 10,0000</p>
-              <p>1800 Leads</p>
-              <p> 520 Connections</p>
+              <p>
+             Targeted B2B campaigns
+            connecting with key 
+            nakers professionally</p>
             </div>
           </div>
 
           <div className='performance-platform-box'>
-            <div >
+            <div className='img-heading-div'>
               <img className='ads-icon' src={require("../../assets/whatsapp.png")} alt="" />
+              <p>Whatsapp Marketing</p>
             </div>
             <div className='ads-text-div'>
-              <p>Whatsapp Marketing</p>
-              <p> rs 10,0000</p>
-              <p>1800 Leads</p>
-              <p> 520 Connections</p>
+              <p>
+               Engaging campaigns
+              through WhatsApp to
+              capture and convert leads.</p>
+            </div>
+          </div>
+        </Container>
+      </Container>
+
+<div className='pm-graph-img-div'>
+<img className='pm-graph-img' src={require("../../assets/services/pm-graph3.png")}alt="performance-marketing"/>
+</div>
+
+{/* conector-boxes */}
+   <Container fluid className='pm-box-fluid2'>
+    <div className="section-heading text-center ">
+  <h1>From Clicks to Conversions Across Every Platform</h1>
+  <p className="page_text">A Connected Performance Ecosystem</p>
+</div>
+      <Container className='performance-platform-container '>
+
+          <div className='performance-platform-box'>
+          <div className='img-heading-div'>
+              <img className='ads-icon' src={require("../../assets/google.png")} alt="" />
+              <p>Instant Search Visibility</p> 
+            </div>
+            <div className='ads-text-div'>
+        <p> Appear exactly when users are actively searching for your products or services. </p>
+            </div>
+          </div>
+
+               <div className='performance-platform-box'>
+          <div className='img-heading-div'>
+              <img className='ads-icon' src={require("../../assets/google.png")} alt="" />
+              <p>Measurable ROI</p> 
+            </div>
+            <div className='ads-text-div'>
+        <p> Track every click, lead, and conversion with complete performance transparency.</p>
+            </div>
+          </div>
+
+              <div className='performance-platform-box'>
+          <div className='img-heading-div'>
+              <img className='ads-icon' src={require("../../assets/google.png")} alt="" />
+              <p>Precision Targeting</p> 
+            </div>
+            <div className='ads-text-div'>
+        <p> Reach high-intent audiences using smart data, keywords, and behavior insights. </p>
+            </div>
+          </div>
+
+          <div className='performance-platform-box'>
+            <div className='img-heading-div'>
+              <img className='ads-icon' src={require("../../assets/whatsapp.png")} alt="" />
+              <p>Optimized Ad Spend</p>
+            </div>
+            <div className='ads-text-div'>
+              <p>
+Budgets are continuously refined to maximize conversions and reduce waste.</p>
             </div>
           </div>
         </Container>
 
       </Container>
-
+{/*  */}
       <Container className='serviceType-descp-section'>
         <Container className='serviceType-descp-content-container'>
           <p className='page_text' >We Unlock Digital Possibilities.
@@ -109,7 +156,7 @@ const ContentService = () => {
         </Container>
       </Container>
 
-
+{/*  */}
       <Container className='amplify-section'>
         <Container className='amplify-content-container'>
           <div className='amplify-left-side'>

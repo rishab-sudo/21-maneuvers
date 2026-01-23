@@ -18,6 +18,7 @@ import ThemeToggleButton from './Components/ThemeToggleButton';
 import PerformanceService from './Pages/ServiceTypes/PerformanceService';
 import SmmService from './Pages/ServiceTypes/SmmService';
 import GraphicDesigning from "./Pages/ServiceTypes/GraphicDesigning"
+import WebsiteService from "./Pages/ServiceTypes/WebsiteService"
 import MainServicePage from './Pages/MainServicePage';
 import Blog from './Components/Blog';
 import CursorFollower from "./Components/CursorFollower/CursorFollower"
@@ -78,6 +79,10 @@ const router = createBrowserRouter(
       path: '/Graphic-Designing',
       element: <Layout><GraphicDesigning /></Layout>,
     },
+    {
+  path: '/WebsiteService',
+  element: <Layout><WebsiteService /></Layout>,
+},
     {
       path: '*',
       element: <Layout><Home /></Layout>, // fallback route
