@@ -37,6 +37,13 @@ const workItems = [
     text: "SEO",
     link: "/seo-service",
   },
+    {
+    id: 5,
+    image: require("../assets/services/web-black2.png"),
+    hoverImage: require("../assets/services/web-color2.png"),
+    text: "Website Development",
+    link: "/Website-Service",
+  },
 
   // {
   //   id: 4,

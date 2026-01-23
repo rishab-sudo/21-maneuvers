@@ -80,7 +80,7 @@ const router = createBrowserRouter(
       element: <Layout><GraphicDesigning /></Layout>,
     },
     {
-  path: '/WebsiteService',
+  path: '/Website-Service',
   element: <Layout><WebsiteService /></Layout>,
 },
     {
