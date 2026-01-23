@@ -7,26 +7,27 @@ import './ClientReview.css';
 import { Container } from 'react-bootstrap';
 
 const ClientReview = () => {
-  const reviews = [
-    {
-      name: "Stacey Rickson",
-      title: "Web Developer",
-      image: require("../assets/client-21.jpg"),
-      text: "From our first call to the final product launch, the team was incredibly responsive, creative, and technically sharp. They understood our business needs and transformed them into a digital experience that truly stands out."
-    },
-    {
-      name: "Liam Carter",
-      title: "CTO, TechNova",
-      image: require("../assets/client-21.jpg"),
-      text: "From our first call to the final product launch, the team was incredibly responsive, creative, and technically sharp. They understood our business needs and transformed them into a digital experience that truly stands out."
-    },
-    {
-      name: "Ava Johnson",
-      title: "Founder, BrightNest",
-      image: require("../assets/client-21.jpg"),
-      text: "From our first call to the final product launch, the team was incredibly responsive, creative, and technically sharp. They understood our business needs and transformed them into a digital experience that truly stands out."
-    },
-  ];
+const reviews = [
+  {
+    name: "Alutuff",
+    title: "Alutuff",
+    image: require("../assets/client-21.jpg"),
+    text: "From our first strategy call to consistent monthly results, the team was highly responsive, data driven, and proactive. Their social media management and SEO efforts improved our visibility, engagement, and lead quality significantly."
+  },
+  {
+    name: "Welham",
+    title: "Welham",
+    image: require("../assets/client-21.jpg"),
+    text: "From our first strategy call to consistent monthly results, the team was highly responsive, data driven, and proactive. Their performance marketing campaigns delivered strong ROI and helped us scale leads across multiple channels."
+  },
+  {
+    name: "Moder Jawellers",
+    title: "Moder Jawellers",
+    image: require("../assets/client-21.jpg"),
+    text: "From our first strategy call to consistent monthly results, the team was highly responsive, data driven, and proactive. Their SEO and social media execution strengthened our brand presence and generated steady, qualified enquiries."
+  },
+];
+
 
   return (
     <Container fluid className="review-overlay-container">
