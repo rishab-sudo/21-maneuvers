@@ -98,7 +98,7 @@ const Navbar = () => {
     <Link to="/Smm-service" onClick={closeMenu}>Social Media Marketing</Link>
     <Link to="/performance-service" onClick={closeMenu}>Performance Marketing</Link>
     <Link to="/Graphic-Designing" onClick={closeMenu}>Graphic Designing</Link>
-           <Link to="/WebsiteService" onClick={closeMenu}>Website Development</Link>
+           <Link to="/Website-Service" onClick={closeMenu}>Website Development</Link>
        <Link to="/Seo-service" onClick={closeMenu}>Seo</Link>
   </div>
 </li>
