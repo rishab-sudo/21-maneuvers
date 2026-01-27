@@ -1,18 +1,18 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import ImageSwiper from "../../Components/ImageSlider"
+// import ImageSwiper from "../../Components/ImageSlider"
 import LetsTalk from "../../Components/LetsTalk"
 import "./WebsiteService.css";
 
 const WebsiteService = () => {
 
-  const slideData = [
-  { image: require("../../assets/seo-img.png"), tagline: 'Boosts Visibility' },
-  { image: require("../../assets/seo-img.png"), tagline: 'Drives Traffic' },
-  { image: require("../../assets/seo-img.png"), tagline: 'Builds Trust' },
-  { image: require("../../assets/seo-img.png"), tagline: 'Cost-Effective' },
-  { image: require("../../assets/seo-img.png"), tagline: 'Better Experience' },
-];
+//   const slideData = [
+//   { image: require("../../assets/seo-img.png"), tagline: 'Boosts Visibility' },
+//   { image: require("../../assets/seo-img.png"), tagline: 'Drives Traffic' },
+//   { image: require("../../assets/seo-img.png"), tagline: 'Builds Trust' },
+//   { image: require("../../assets/seo-img.png"), tagline: 'Cost-Effective' },
+//   { image: require("../../assets/seo-img.png"), tagline: 'Better Experience' },
+// ];
 
   return (
     <>
