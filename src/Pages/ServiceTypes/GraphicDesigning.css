@@ -5,6 +5,9 @@
 .graphic-container{
   min-width: 95% !important;
 }
+.gd-banner-img{
+  /* height: 450px !important; */
+}
 /* ===== GRID SYSTEM ===== */
 .graphic-grid {
   display: grid;

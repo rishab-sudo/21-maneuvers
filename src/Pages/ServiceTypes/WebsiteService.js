@@ -125,16 +125,16 @@ const WebsiteService = () => {
     {/* RIGHT SIDE */}
     <div className='elevate-right-side'>
       <p className='page_text'>
-        Your website is not just a digital presence — it’s your most powerful business asset.
+        Your website is not just a digital presence it’s your most powerful business asset.
         We specialize in high-performance website development and ongoing maintenance that delivers speed,
         security, scalability, and seamless user experience.
-        <br /><br />
+        {/* <br /><br />
         From modern UI/UX design and responsive development to SEO-optimized architecture and lightning-fast load times,
-        every website we build is engineered to rank higher, convert better, and grow with your business.
+        every website we build is engineered to rank higher, convert better, and grow with your business. */}
         <br /><br />
         Our website maintenance services ensure your site stays updated, secure, and bug-free with continuous monitoring,
         performance optimization, backups, and technical support. Whether it’s a business website, corporate platform,
-        or eCommerce solution — we don’t just build websites, we future-proof them for long-term success.
+        or eCommerce solution we don’t just build websites, we future-proof them for long-term success.
       </p>
     </div>
 
