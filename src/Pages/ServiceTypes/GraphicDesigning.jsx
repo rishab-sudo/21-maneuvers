@@ -4,17 +4,17 @@ import LetsTalk from "../../Components/LetsTalk"
 import "./GraphicDesigning.css";
 
 const images = [
-  { src: require("../../assets/services/content-mock.png"), title: "Brand Identity" },
-  { src: require("../../assets/services/content-mock.png"), title: "Poster Design" },
-  { src: require("../../assets/services/content-mock.png"), title: "Social Media" },
+  { src: require("../../assets/services/gd-bdrand-Identity.png"), title: "Brand Identity" },
+  { src: require("../../assets/services/gd-Print-design.png"), title: "Poster Design" },
+  { src: require("../../assets/services/gd-logo.png"), title: "Logo Design" },
 
-  { src: require("../../assets/services/content-mock.png"), title: "Campaign Visual" },
-
-  { src: require("../../assets/services/content-mock.png"), title: "Packaging" },
+  { src: require("../../assets/services/gd-social-media.png"), title: "Social media " },
+  
+  { src: require("../../assets/services/gd-Packging.png"), title: "Packaging" },
   { src: require("../../assets/services/content-mock.png"), title: "Ad Creative" },
   { src: require("../../assets/services/content-mock.png"), title: "UI Graphics" },
-
-  { src: require("../../assets/services/content-mock.png"), title: "Website Banner" },
+  
+  { src: require("../../assets/services/gd-web-design2.png"), title: "Website Design" },
   { src: require("../../assets/services/content-mock.png"), title: "Marketing Design" },
 
    { src: require("../../assets/services/content-mock.png"), title: "Print Design" },

@@ -99,7 +99,48 @@ const WebsiteService = () => {
         </Container>
       </Container>
 
-       <ImageSwiper slides={slideData} />;
+       {/* <ImageSwiper slides={slideData} />; */}
+       <Container className='elevate-section'>
+  <Container className='elevate-content-container'>   
+
+    {/* LEFT SIDE */}
+    <div className='elevate-left-side'>
+      <p className='fancy-txt'>
+        Websites <span style={{fontFamily:"arial"}}> That Perform & </span>
+      </p>
+
+      <p className='extrabold-fancy-text'></p>
+
+      <p className='fancy-txt'></p>
+
+      <p className='extrabold-fancy-text' style={{color:"#F5A522"}}>
+        Scale
+      </p>
+
+      <p className='extrabold-fancy-text' style={{color:"#F5A522"}}>
+        Faster
+      </p>
+    </div>
+
+    {/* RIGHT SIDE */}
+    <div className='elevate-right-side'>
+      <p className='page_text'>
+        Your website is not just a digital presence — it’s your most powerful business asset.
+        We specialize in high-performance website development and ongoing maintenance that delivers speed,
+        security, scalability, and seamless user experience.
+        <br /><br />
+        From modern UI/UX design and responsive development to SEO-optimized architecture and lightning-fast load times,
+        every website we build is engineered to rank higher, convert better, and grow with your business.
+        <br /><br />
+        Our website maintenance services ensure your site stays updated, secure, and bug-free with continuous monitoring,
+        performance optimization, backups, and technical support. Whether it’s a business website, corporate platform,
+        or eCommerce solution — we don’t just build websites, we future-proof them for long-term success.
+      </p>
+    </div>
+
+  </Container>
+</Container>
+
 
        <LetsTalk/>
     </>
