@@ -34,7 +34,7 @@ const GraphicDesigning = () => {
      <p className="page_text">In a world driven by visuals, we design stories that captivate and communicate. At 21 Maneuvers, we merge creativity, strategy, and emotion to craft timeless designs that resonate across every platform. Because great design doesn’t just look good, it makes people feel something.
    </p>
    <p className='page_text'>21 Maneuvers | DESIGNING THE VISUAL LANGUAGE OF IMPACT</p>
-   <img className='mt-2 performance-banner-img gd-banner-img' src={require("../../assets/services/GraphicServicesBanner.png")} alt="content-service-banner"/>
+   <img className='mt-2 performance-banner-img gd-banner-img ok' src={require("../../assets/services/GraphicServicesBanner.png")} alt="content-service-banner"/>
    </Container>
    </Container>
     <section className="graphic-designing">
