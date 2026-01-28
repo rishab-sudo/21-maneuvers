@@ -6,7 +6,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 45px 0px;
+    padding: 15px 0px;
     padding-bottom: 0px !important;
     /* background-color: #f7a422; */
 }
@@ -19,7 +19,7 @@ max-width: 75%;
   
 }
 .serviceType-content-container{
-  padding: 15px;
+  padding: 5px;
 }
 
 .serviceType-banner-container h1,

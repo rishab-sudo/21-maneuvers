@@ -34,9 +34,8 @@
 .newbanner-content {
   padding: 65px 20px 40px;  /* top | left-right | bottom */
   max-width: 900px;
+  color: #ffffff;
 }
-
-
 /* Heading */
 .newbanner-title {
   font-size: 56px;
@@ -48,8 +47,6 @@
   -webkit-text-fill-color: transparent;
   background-clip: text; */
 }
-
-
 .newbanner-title span {
   display: block;
   font-weight: 600;
