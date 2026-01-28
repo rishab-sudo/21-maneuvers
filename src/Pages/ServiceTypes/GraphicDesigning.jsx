@@ -8,17 +8,17 @@ const images = [
   { src: require("../../assets/services/gd-Print-design.png"), title: "Poster Design" },
   { src: require("../../assets/services/gd-logo.png"), title: "Logo Design" },
 
-  { src: require("../../assets/services/gd-social-media.png"), title: "Social media " },
+  { src: require("../../assets/services/gd-social-media.png"), title: "Social Media " },
   
   { src: require("../../assets/services/gd-Packging.png"), title: "Packaging" },
-  { src: require("../../assets/services/content-mock.png"), title: "Ad Creative" },
-  { src: require("../../assets/services/content-mock.png"), title: "UI Graphics" },
+  { src: require("../../assets/services/gd-Ecard.png"), title: "E Cards" },
+  { src: require("../../assets/services/gd-Web3.png"), title: "Websites" },
   
-  { src: require("../../assets/services/gd-web-design2.png"), title: "Website Design" },
-  { src: require("../../assets/services/content-mock.png"), title: "Marketing Design" },
+  // { src: require("../../assets/services/gd-web-design2.png"), title: "Website Design" },
+  // { src: require("../../assets/services/content-mock.png"), title: "Marketing Design" },
 
-   { src: require("../../assets/services/content-mock.png"), title: "Print Design" },
-  { src: require("../../assets/services/content-mock.png"), title: "Motion Frames" },
+  //  { src: require("../../assets/services/content-mock.png"), title: "Print Design" },
+  // { src: require("../../assets/services/content-mock.png"), title: "Motion Frames" },
 
  
 ];

@@ -1,6 +1,6 @@
 .graphic-designing {
    margin-top: 4.2rem;
-  padding: 0px ;
+  padding: 25px ;
 }
 .graphic-container{
   min-width: 95% !important;
@@ -15,6 +15,7 @@
   grid-auto-rows: 444px;
   gap: 24px;
   justify-content: center;
+margin-bottom: 15px;
 }
 
 /* ===== CARD ===== */

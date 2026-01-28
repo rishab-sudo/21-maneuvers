@@ -1,170 +1,74 @@
 import React from 'react';
-import { useState } from "react";
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { ThemeProvider } from './context/ThemeContext';
+
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
 import Navbar from './Components/Navbar';
+import Footer from './Components/Footer';
+import ThemeToggleButton from './Components/ThemeToggleButton';
+import CursorFollower from "./Components/CursorFollower/CursorFollower";
+import ScrollToTopButton from "./Components/ScrollToTopButton";
+
 import Home from './Pages/Home';
 import About from './Pages/AboutUs';
 import Contact from './Pages/Contact';
-import SeoService from "./Pages/ServiceTypes/SeoService"
-import Footer from './Components/Footer';
-import './App.css';
-import ThemeToggleButton from './Components/ThemeToggleButton';
+import SeoService from "./Pages/ServiceTypes/SeoService";
 import PerformanceService from './Pages/ServiceTypes/PerformanceService';
 import SmmService from './Pages/ServiceTypes/SmmService';
-import GraphicDesigning from "./Pages/ServiceTypes/GraphicDesigning"
-import WebsiteService from "./Pages/ServiceTypes/WebsiteService"
+import GraphicDesigning from "./Pages/ServiceTypes/GraphicDesigning";
+import WebsiteService from "./Pages/ServiceTypes/WebsiteService";
 import MainServicePage from './Pages/MainServicePage';
 import Blog from './Components/Blog';
-import CursorFollower from "./Components/CursorFollower/CursorFollower"
 import BlogDetail from './Components/BlogDetail';
-import ChatButton from "./Components/AiChatbox/ChatButton";
-import ChatWindow from "./Components/AiChatbox/ChatWindow";
-import useAIResponse from "./Components/AiChatbox/useAIResponse";
 
-// Layout component for wrapping all routes with Navbar, Footer, etc.
+import './App.css';
+
+/* Layout */
 const Layout = ({ children }) => (
-  
   <>
     <ThemeToggleButton />
-     <CursorFollower />
+    <CursorFollower />
     <Navbar />
-  
     {children}
     <Footer />
+    <ScrollToTopButton />
   </>
 );
 
-// Define routes
+/* Routes */
 const router = createBrowserRouter(
   [
-    {
-      path: '/',
-      element: <Layout><Home /></Layout>,
-    },
-    {
-      path: '/home',
-      element: <Layout><Home /></Layout>,
-    },
-    {
-      path: '/about',
-      element: <Layout><About /></Layout>,
-    },
-      {
-      path: '/services',
-      element: <Layout><MainServicePage /></Layout>,
-    },
-    {
-      path: '/contact',
-      element: <Layout><Contact /></Layout>,
-    },
-    {
-      path: '/seo-service',
-      element: <Layout><SeoService /></Layout>,
-    },
-    {
-      path: '/performance-service',
-      element: <Layout><PerformanceService /></Layout>,
-    },
-    {
-      path: '/Smm-service',
-      element: <Layout><SmmService /></Layout>,
-    },
-      {
-      path: '/Graphic-Designing',
-      element: <Layout><GraphicDesigning /></Layout>,
-    },
-    {
-  path: '/Website-Service',
-  element: <Layout><WebsiteService /></Layout>,
-},
-    {
-      path: '*',
-      element: <Layout><Home /></Layout>, // fallback route
-    },
-{
-  path: '/blog',
-  element: <Layout><Blog /></Layout>,
-},
-{
-  path: '/blog/:id',
-  element: <Layout><BlogDetail /></Layout>,
-},
+    { path: '/', element: <Layout><Home /></Layout> },
+    { path: '/home', element: <Layout><Home /></Layout> },
+    { path: '/about', element: <Layout><About /></Layout> },
+    { path: '/services', element: <Layout><MainServicePage /></Layout> },
+    { path: '/contact', element: <Layout><Contact /></Layout> },
+    { path: '/seo-service', element: <Layout><SeoService /></Layout> },
+    { path: '/performance-service', element: <Layout><PerformanceService /></Layout> },
+    { path: '/Smm-service', element: <Layout><SmmService /></Layout> },
+    { path: '/Graphic-Designing', element: <Layout><GraphicDesigning /></Layout> },
+    { path: '/Website-Service', element: <Layout><WebsiteService /></Layout> },
+    { path: '/blog', element: <Layout><Blog /></Layout> },
+    { path: '/blog/:id', element: <Layout><BlogDetail /></Layout> },
+    { path: '*', element: <Layout><Home /></Layout> },
   ],
   {
-    future: {
-      v7_startTransition: true,
-    },
+    future: { v7_startTransition: true },
   }
 );
 
 function App() {
-    const [open, setOpen] = useState(false);
-  const { askAI, loading } = useAIResponse();
-
   return (
-    <>
-      <ChatButton onClick={() => setOpen(true)} />
-
-      <ChatWindow
-        visible={open}
-        onClose={() => setOpen(false)}
-        askAI={askAI}
-        loading={loading}
-      />
     <ThemeProvider>
       <div className="App">
         <RouterProvider router={router} />
       </div>
     </ThemeProvider>
-    </>
   );
 }
 
 export default App;
-// import React from 'react';
-// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-// import { ThemeProvider } from './context/ThemeContext'; // import ThemeProvider
-// import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-// import 'bootstrap/dist/js/bootstrap.bundle';
-// import 'bootstrap/dist/css/bootstrap.min.css';
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
-// import Navbar from './Components/Navbar';
-// import Home from './Pages/Home';
-// import About from './Pages/AboutUs';
-// import Contact from './Pages/Contact';
-// import SeoService from "./Pages/SeoService"
-// import Footer from './Components/Footer';
-// import './App.css';
-// import ThemeToggleButton from './Components/ThemeToggleButton'; // import Toggle Button
-
-// function App() {
-//   return (
-//     <ThemeProvider>
-//       <div className="App">
-//         <Router>
-//           <ThemeToggleButton /> {/* Toggle Button */}
-//           <Navbar />
-//           <Routes>
-//             <Route path="*" element={<Home />} />
-//             <Route path="/home" element={<Home />} />
-//             <Route path="/about" element={<About />} />
-//             <Route path="/contact" element={<Contact />} />
-//             <Route path="/seo-service" element={<SeoService />} />
-//           </Routes>
-//           <Footer />
-//         </Router>
-//       </div>
-//     </ThemeProvider>
-//   );
-// } 
-
-// export default App;
-// App.js
-
