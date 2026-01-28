@@ -30,12 +30,15 @@
     width: 12px;
     height: 12px;
     /* background-color: #000; */
-    /* margin-right: 8px; */
+    margin-right: 8px;
     display: inline-block;
    
   }
   body.dark .square-box{
 background-color: #fff;
+  }
+   body.light .square-box{
+background-color: #000;
   }
   .seo-benefit-title {
     font-size: 1.5rem;
@@ -61,8 +64,7 @@ background-color: #fff;
 margin: 0px auto 0rem auto;
 
     }
-  
-    .seo-benefit-title {
+   .seo-benefit-title {
       font-size: 1rem;
     }
   

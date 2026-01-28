@@ -8,6 +8,24 @@
 .gd-banner-img{
   /* height: 450px !important; */
 }
+/* DEFAULT = LIGHT THEME */
+.light-img {
+  display: block;
+}
+
+.dark-img {
+  display: none;
+}
+
+/* DARK THEME */
+body.dark .light-img {
+  display: none !important;
+}
+
+body.dark .dark-img {
+  display: block !important;
+}
+
 /* ===== GRID SYSTEM ===== */
 .graphic-grid {
   display: grid;
