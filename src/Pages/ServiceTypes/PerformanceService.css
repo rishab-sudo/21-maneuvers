@@ -121,6 +121,7 @@ height: 215px;
 }
 .amplify-left-side{
   max-width: 100%;
+  line-height: normal;
 }
 .amplify-right-side{
 margin-top: auto;
